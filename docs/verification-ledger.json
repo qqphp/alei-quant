@@ -1,0 +1,28 @@
+{
+  "run_id": "9620c770-c48e-460d-8f99-0c3f4095520f",
+  "data_version": 48,
+  "engine": "cash-ledger-0.2.0",
+  "days": 570,
+  "fills": 78,
+  "cashflow_records": 10,
+  "status": "verified",
+  "cash_positions_receivables_nav": "all daily balances match independently reconstructed ledger",
+  "fees": "every fill commission, transfer and historical stamp recomputed with Decimal",
+  "next_open_timing_and_T1": "every fill signal is previous trading day; sells covered by earlier buy lots",
+  "limitation": "sample has cash dividends; no bonus share, ST, IPO or exchange queue replay coverage",
+  "first_fill": {
+    "code": "sh.600000",
+    "date": "2024-06-04",
+    "fees": {
+      "stamp": 0.0,
+      "total": 98.05,
+      "transfer": 3.16,
+      "commission": 94.89
+    },
+    "side": "buy",
+    "price": 8.28,
+    "notional": 316296.0,
+    "quantity": 38200,
+    "signal_date": "2024-06-03"
+  }
+}

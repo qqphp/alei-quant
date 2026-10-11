@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-10T10:45:40.305129+08:00",
+  "job": {
+    "id": "481f7593-2b6c-45ae-987c-8f22e34f557d",
+    "status": "failed",
+    "error": "回测超过清单内存上限，已停止该任务；请缩小股票池或历史窗口",
+    "runner_pid": 35212,
+    "peak_rss": 81838080,
+    "started_at": "2026-10-10 10:45:13.708326+08:00",
+    "finished_at": "2026-10-10 10:45:15.830438+08:00"
+  },
+  "resource_limits": {
+    "memory_bytes": 33554432,
+    "timeout_seconds": 3600
+  },
+  "validation_note": "资源限制验收：只将本次运行的内存预算降为32MiB；使用正常经典策略，不分配额外巨量内存。预期失败并终止该运行进程树。",
+  "result_published": false,
+  "remaining_matching_python_processes": [],
+  "other_collection": {
+    "status": "queued",
+    "progress": 4167,
+    "runner_pid": 38168
+  }
+}

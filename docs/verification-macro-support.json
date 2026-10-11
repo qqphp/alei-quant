@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-10T19:53:02.703401+00:00",
+  "version": 21049,
+  "cases": [
+    {
+      "dataset": "deposit_rate",
+      "rows": 43,
+      "pages": 1,
+      "first": "1990-04-15",
+      "last": "2015-10-24",
+      "latest_effectiveDate": null,
+      "all_http_csv_source_values_equal": true,
+      "all_field_counts_equal": true,
+      "unsupported_strategy_rejected": true
+    },
+    {
+      "dataset": "loan_rate",
+      "rows": 43,
+      "pages": 1,
+      "first": "1990-04-15",
+      "last": "2015-10-24",
+      "latest_effectiveDate": null,
+      "all_http_csv_source_values_equal": true,
+      "all_field_counts_equal": true,
+      "unsupported_strategy_rejected": true
+    },
+    {
+      "dataset": "reserve_ratio",
+      "rows": 47,
+      "pages": 1,
+      "first": "1999-11-18",
+      "last": "2018-06-24",
+      "latest_effectiveDate": "2018-07-05",
+      "all_http_csv_source_values_equal": true,
+      "all_field_counts_equal": true,
+      "unsupported_strategy_rejected": true
+    },
+    {
+      "dataset": "money_month",
+      "rows": 441,
+      "pages": 5,
+      "first": "1990-01",
+      "last": "2026-09",
+      "latest_effectiveDate": null,
+      "all_http_csv_source_values_equal": true,
+      "all_field_counts_equal": true,
+      "unsupported_strategy_rejected": true
+    },
+    {
+      "dataset": "money_year",
+      "rows": 35,
+      "pages": 1,
+      "first": "1990",
+      "last": "2024",
+      "latest_effectiveDate": null,
+      "all_http_csv_source_values_equal": true,
+      "all_field_counts_equal": true,
+      "unsupported_strategy_rejected": true
+    }
+  ],
+  "boundary_fixtures": {
+    "invalid_dates_nan_empty_zero": true,
+    "invalid_month": true,
+    "empty_series": true,
+    "location": "in-memory only; no database fixture writes"
+  },
+  "main_database_writes": 0,
+  "sdk_calls": 0,
+  "scope": "All persisted rows of five macro families at the pinned version; HTTP all pages, CSV, counts and manifest rejection. Does not prove completeness of the provider's policy history.",
+  "browser": {
+    "download_dataset": "money_month",
+    "download_version": 21104,
+    "download_rows": 441,
+    "download_bytes": 45708,
+    "download_sha256": "4f790cd6f94493cc90d2cb3d137ef13e3764d784b0bb9f2108cf7e5ffb418c2a",
+    "download_all_source_values_equal": true,
+    "second_page_retains_version_and_all_rows_stats": true,
+    "dataset_change_clears_prior_page_and_rows": true,
+    "reserve_announcement_and_effective_dates_separate": true,
+    "console_error_warn": [],
+    "screenshot": "screenshots/macro-support.png"
+  },
+  "build": {
+    "typescript": "passed",
+    "production": "passed",
+    "script_kb": 774.69,
+    "large_bundle_warning": true
+  },
+  "total_source_rows": 609
+}

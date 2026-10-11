@@ -1,0 +1,116 @@
+{
+  "version": 126,
+  "period_bars_checked": 213,
+  "period_mismatches": [],
+  "minute_samples": [
+    {
+      "code": "sh.600000",
+      "frequency": "5",
+      "bars": 48,
+      "expected": 48,
+      "volume_matches_daily": true,
+      "first": "20261009093500000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sh.600000",
+      "frequency": "15",
+      "bars": 16,
+      "expected": 16,
+      "volume_matches_daily": true,
+      "first": "20261009094500000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sh.600000",
+      "frequency": "30",
+      "bars": 8,
+      "expected": 8,
+      "volume_matches_daily": true,
+      "first": "20261009100000000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sh.600000",
+      "frequency": "60",
+      "bars": 4,
+      "expected": 4,
+      "volume_matches_daily": true,
+      "first": "20261009103000000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sz.000001",
+      "frequency": "5",
+      "bars": 48,
+      "expected": 48,
+      "volume_matches_daily": true,
+      "first": "20261009093500000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sz.000001",
+      "frequency": "15",
+      "bars": 16,
+      "expected": 16,
+      "volume_matches_daily": true,
+      "first": "20261009094500000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sz.000001",
+      "frequency": "30",
+      "bars": 8,
+      "expected": 8,
+      "volume_matches_daily": true,
+      "first": "20261009100000000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sz.000001",
+      "frequency": "60",
+      "bars": 4,
+      "expected": 4,
+      "volume_matches_daily": true,
+      "first": "20261009103000000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sh.600519",
+      "frequency": "5",
+      "bars": 48,
+      "expected": 48,
+      "volume_matches_daily": true,
+      "first": "20261009093500000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sh.600519",
+      "frequency": "15",
+      "bars": 16,
+      "expected": 16,
+      "volume_matches_daily": true,
+      "first": "20261009094500000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sh.600519",
+      "frequency": "30",
+      "bars": 8,
+      "expected": 8,
+      "volume_matches_daily": true,
+      "first": "20261009100000000",
+      "last": "20261009150000000"
+    },
+    {
+      "code": "sh.600519",
+      "frequency": "60",
+      "bars": 4,
+      "expected": 4,
+      "volume_matches_daily": true,
+      "first": "20261009103000000",
+      "last": "20261009150000000"
+    }
+  ],
+  "note": "现有样本实测，不能推断全部证券/所有历史时段一致"
+}

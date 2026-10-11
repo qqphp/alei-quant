@@ -1,0 +1,17 @@
+{
+  "active_before": [
+    "3a12e654-ac88-4be4-800c-d784e07551b5",
+    "992e8963-2eb8-4dbd-86f2-8f9c2874e1eb"
+  ],
+  "active_after": [
+    "3a12e654-ac88-4be4-800c-d784e07551b5",
+    "992e8963-2eb8-4dbd-86f2-8f9c2874e1eb"
+  ],
+  "all_stably_active_visible": true,
+  "original_backfill_visible": true,
+  "original_backfill_newer_jobs": 238,
+  "terminal_recent_limit": 100,
+  "returned_rows": 102,
+  "sdk_calls": 0,
+  "main_database_writes": 0
+}

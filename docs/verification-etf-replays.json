@@ -1,0 +1,28 @@
+{
+  "replays": [
+    {
+      "case": "daily_claim",
+      "original": "9d2fd9e5-52b1-481c-a95f-b1312056a05f",
+      "replay": "0182e76b-fdd2-4a58-ba53-df776a9fa6e0",
+      "full_result_equal": true
+    },
+    {
+      "case": "classic_daily",
+      "original": "134b01ab-3aba-4533-a08b-89f5f8173315",
+      "replay": "3e6a346e-8323-4da2-9411-909dd197d52e",
+      "full_result_equal": true
+    },
+    {
+      "case": "minute_claim",
+      "original": "b06a0562-4aff-451b-b48a-a33ac5f04562",
+      "replay": "3067746c-5e39-4a1e-b92e-7615b0e5801b",
+      "full_result_equal": true
+    },
+    {
+      "case": "minute_late",
+      "original": "46380e9b-c459-418c-9e21-2afddad791a4",
+      "replay": "774df5a8-cbaf-4452-9ab5-73fa1678287a",
+      "full_result_equal": true
+    }
+  ]
+}

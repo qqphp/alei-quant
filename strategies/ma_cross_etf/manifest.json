@@ -1,0 +1,38 @@
+{
+  "id": "ma_cross_etf",
+  "name": "双均线 · ETF 日线示例",
+  "version": "1.0.0",
+  "api_version": "1",
+  "entrypoint": "strategy.py:Strategy",
+  "description": "相同 10/30 交叉逻辑；限定最大30日均线与31根预热，适配较短ETF历史。仅为功能示例。",
+  "frequency": "d",
+  "datasets": [
+    "bars:d",
+    "dividends"
+  ],
+  "lookback": 31,
+  "parameters": {
+    "fast": {
+      "type": "integer",
+      "default": 10,
+      "minimum": 2,
+      "maximum": 29,
+      "label": "短期均线"
+    },
+    "slow": {
+      "type": "integer",
+      "default": 30,
+      "minimum": 3,
+      "maximum": 30,
+      "label": "长期均线"
+    },
+    "exposure": {
+      "type": "number",
+      "default": 0.95,
+      "minimum": 0,
+      "maximum": 1,
+      "label": "总目标仓位"
+    }
+  },
+  "dependencies": []
+}

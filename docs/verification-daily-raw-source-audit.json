@@ -1,0 +1,14 @@
+{
+  "raw_source_method_at_28052_matches_prior_published_counts": true,
+  "current_version": 29511,
+  "current_present": 4092151,
+  "current_missing": 559868,
+  "current_missing_codes": 687,
+  "files_sha256": {
+    "runtime/audit-daily-member-coverage.py": "988fb8cefc11b65105afe2a01e45e012e8a29ada62a249d1fb598352c7414ca9",
+    "docs/verification-daily-member-raw-historical.json": "45f1a3d785f4ea8303861865e7c1941a573d36c8b9af196bb24585d078a9aad1",
+    "docs/verification-daily-presence-version.json": "41184b31b7079230f081dba84195166e4dd92c1629d1ff3ed87444421818a4d7",
+    "scripts/verify-final-source-restore.py": "3c892c7b8462bb000d943d8095a34d8d0987f0f18f5ad4c0b18db55cb6e9065c"
+  },
+  "final_restore_verifier": "已准备并解析语法、确认PG行摘要函数，尚未执行最终恢复；原任务完成且三个版本相同的前置门槛保留。"
+}

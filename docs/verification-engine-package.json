@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-10T13:36:43.834865",
+  "checks": [
+    {
+      "run": "f7d040ff-ac0a-4f87-b311-d3b25ee320fc",
+      "reference": "1b4e4595-e326-4c15-bb2c-ee9b77ff09b4",
+      "full_result_equal": true,
+      "engine": "cash-ledger-0.7.0",
+      "days": 570
+    },
+    {
+      "run": "265ab827-b790-4a48-8bcf-6dbc7bef7a05",
+      "reference": "937692d2-5838-41e8-a0c5-f0144b68c8cc",
+      "full_result_equal": true,
+      "engine": "cash-ledger-0.7.0",
+      "days": 570
+    },
+    {
+      "run": "8cd94dc9-027d-406f-8ceb-78fbac9230a7",
+      "reference": "27d8f1c1-ffd6-4879-8df0-0d87f5608078",
+      "full_result_equal": true,
+      "engine": "cash-ledger-0.7.0",
+      "days": 570
+    },
+    {
+      "run": "3f4378ee-7f59-475f-b7b3-88729c0c9a1b",
+      "reference": "1b4e4595-e326-4c15-bb2c-ee9b77ff09b4",
+      "full_result_equal": true,
+      "engine": "cash-ledger-0.6.2",
+      "days": 570
+    }
+  ],
+  "package_features": "real root __init__, nested relative imports, callback-time relative and legacy absolute helper imports; immutable digest archived, disabled model still historically replayable",
+  "package_replay": {
+    "original": "3f4378ee-7f59-475f-b7b3-88729c0c9a1b",
+    "replay": "1ca83d9c-ddb8-48fa-9511-3c3a7eb51c2a",
+    "status": "completed",
+    "full_result_equal": true
+  }
+}

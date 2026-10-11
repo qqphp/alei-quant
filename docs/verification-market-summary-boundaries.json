@@ -1,0 +1,37 @@
+{
+  "database": "stock_alei_restore_20261011_020849_2b7971",
+  "cases": [
+    {
+      "case": "missing_one_index_falls_back",
+      "common_day": "2026-10-08",
+      "counts_ranks_zero_and_missing_equal": true
+    },
+    {
+      "case": "latest_complete_day_selected",
+      "common_day": "2026-10-09",
+      "counts_ranks_zero_and_missing_equal": true
+    },
+    {
+      "case": "missing_one_stock_falls_back",
+      "common_day": "2026-10-08",
+      "counts_ranks_zero_and_missing_equal": true
+    },
+    {
+      "case": "unknown_classification_falls_back",
+      "common_day": "2026-10-08",
+      "counts_ranks_zero_and_missing_equal": true
+    },
+    {
+      "case": "non_trading_calendar_day_falls_back",
+      "common_day": "2026-10-08",
+      "counts_ranks_zero_and_missing_equal": true
+    },
+    {
+      "case": "no_verified_complete_day",
+      "no_partial_stats_or_indices": true
+    }
+  ],
+  "sdk_calls": 0,
+  "main_database_writes": 0,
+  "scope": "Constructed pool, calendar and bar fixtures only in the named restore clone. Its current source/index state is now labelled test data, not a clean snapshot. Existing pinned real reports remain at their older versions."
+}

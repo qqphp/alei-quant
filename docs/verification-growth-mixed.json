@@ -1,0 +1,132 @@
+{
+  "checked_at": "2026-10-10T19:59:58.723412+08:00",
+  "cases": [
+    {
+      "case": "mixed_hold",
+      "run": "125e390c-44d7-421d-82b0-30617ffaac7b",
+      "daily_states": 7,
+      "fills": 6,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 19.97,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "派息到账",
+          "cash": 19.97
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 18.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 18.0
+        }
+      ],
+      "final_cash": 100146.84,
+      "final_positions": {
+        "sh.600000": 0,
+        "sh.688320": 0,
+        "sz.300001": 0
+      }
+    },
+    {
+      "case": "mixed_classic",
+      "run": "212de965-d93f-41e0-af41-6cf497850f6d",
+      "daily_states": 631,
+      "fills": 87,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 135.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 135.0
+        },
+        {
+          "date": "2024-07-18",
+          "code": "sh.600000",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 1040.04,
+          "bonus": 0
+        },
+        {
+          "date": "2024-07-18",
+          "code": "sh.600000",
+          "type": "派息到账",
+          "cash": 1040.04
+        },
+        {
+          "date": "2025-07-04",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 202.5,
+          "bonus": 0
+        },
+        {
+          "date": "2025-07-04",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 202.5
+        },
+        {
+          "date": "2025-07-16",
+          "code": "sh.600000",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 1254.6,
+          "bonus": 0
+        },
+        {
+          "date": "2025-07-16",
+          "code": "sh.600000",
+          "type": "派息到账",
+          "cash": 1254.6
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 180.0,
+          "bonus": 0
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 180.0
+        }
+      ],
+      "final_cash": 63767.96,
+      "final_positions": {
+        "sh.600000": 0,
+        "sh.688320": 787,
+        "sz.300001": 0
+      }
+    }
+  ],
+  "scope": "真实三板块固定池、统一现金账户；独立核对每日日末、前一日量/下一开盘/费用/唯一现金权益与前缀 SMA，不证明样本外策略有效或真实盘口撮合"
+}

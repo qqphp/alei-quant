@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-10-10T14:26:09.071495+08:00",
+  "engine": "cash-ledger-0.9.0",
+  "minute_cases": [
+    {
+      "frequency": "5",
+      "run": "c477dcbf-83ea-4e8b-8083-e12b4e5d29ee",
+      "data_version": 7574,
+      "minute_cash_nav_position_sellable_checks": 192,
+      "fees_next_bar_previous_volume_and_T1_fills": 2,
+      "overnight_signal": "2023-06-14T15:00:00+08:00",
+      "ex_open_execution": "2023-06-15T09:30:00+08:00",
+      "registered_quantity": 600,
+      "bonus": 240,
+      "sold_quantity": 840,
+      "one_cash_payment": 491.4,
+      "last_cash": 9807.0,
+      "source_range_differences": 0
+    },
+    {
+      "frequency": "15",
+      "run": "b2627dfa-96de-4b4f-a354-9afe2f334d6e",
+      "data_version": 7574,
+      "minute_cash_nav_position_sellable_checks": 64,
+      "fees_next_bar_previous_volume_and_T1_fills": 2,
+      "overnight_signal": "2023-06-14T15:00:00+08:00",
+      "ex_open_execution": "2023-06-15T09:30:00+08:00",
+      "registered_quantity": 600,
+      "bonus": 240,
+      "sold_quantity": 840,
+      "one_cash_payment": 491.4,
+      "last_cash": 9819.0,
+      "source_range_differences": 0
+    },
+    {
+      "frequency": "30",
+      "run": "82c4ed23-fce8-430c-bb4f-c8b5985218f7",
+      "data_version": 7574,
+      "minute_cash_nav_position_sellable_checks": 32,
+      "fees_next_bar_previous_volume_and_T1_fills": 2,
+      "overnight_signal": "2023-06-14T15:00:00+08:00",
+      "ex_open_execution": "2023-06-15T09:30:00+08:00",
+      "registered_quantity": 600,
+      "bonus": 240,
+      "sold_quantity": 840,
+      "one_cash_payment": 491.4,
+      "last_cash": 9885.0,
+      "source_range_differences": 0
+    },
+    {
+      "frequency": "60",
+      "run": "0186a4b4-ef74-43bd-85e7-70c8fc09f2dc",
+      "data_version": 7574,
+      "minute_cash_nav_position_sellable_checks": 16,
+      "fees_next_bar_previous_volume_and_T1_fills": 2,
+      "overnight_signal": "2023-06-14T15:00:00+08:00",
+      "ex_open_execution": "2023-06-15T09:30:00+08:00",
+      "registered_quantity": 600,
+      "bonus": 240,
+      "sold_quantity": 840,
+      "one_cash_payment": 491.4,
+      "last_cash": 9873.0,
+      "source_range_differences": 0
+    }
+  ],
+  "total_minutes": 304,
+  "zero_adjustment": {
+    "run": "ce934f94-f376-4a29-b836-9c6537cbb91b",
+    "old_sell_quantity": 100,
+    "new_quantity": 0,
+    "cancelled_without_fill": true,
+    "positions": 700
+  },
+  "scope": "Actual single capital-reserve transfer, same-day share release and cash payment. OHLC next-bar approximation, not order book reconstruction or fractional allocation proof.",
+  "archive_replays": [
+    {
+      "case": "daily",
+      "run": "88dc9a18-bc30-4b64-896d-33c6a5552708",
+      "full_result_equal": true
+    },
+    {
+      "case": "minute_5",
+      "run": "76aacd84-ebcd-47cd-8504-bdfec262d675",
+      "full_result_equal": true
+    },
+    {
+      "case": "minute_15",
+      "run": "2551a57c-f334-483f-bd48-ed5104fff64c",
+      "full_result_equal": true
+    },
+    {
+      "case": "minute_30",
+      "run": "db44c7cd-84ad-4ecb-8c91-92d4bdf035c6",
+      "full_result_equal": true
+    },
+    {
+      "case": "minute_60",
+      "run": "06775481-a575-4bb2-96e3-c422fe3301cf",
+      "full_result_equal": true
+    }
+  ]
+}

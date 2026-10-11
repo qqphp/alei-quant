@@ -1,0 +1,58 @@
+{
+  "version_at_start": 330,
+  "database_size": 68916927,
+  "records_at_finish": 67529.0,
+  "concurrent_collection": true,
+  "queries": [
+    {
+      "route": "/instruments?type=1&with_bars=true&sort=amount&direction=desc&size=30",
+      "milliseconds": [
+        261.5,
+        110.5,
+        118.9
+      ],
+      "median_ms": 118.9,
+      "bytes": 14480
+    },
+    {
+      "route": "/instruments?type=1&pe_min=0&pe_max=20&size=30",
+      "milliseconds": [
+        131.9,
+        102.1,
+        120.4
+      ],
+      "median_ms": 120.4,
+      "bytes": 14181
+    },
+    {
+      "route": "/overview",
+      "milliseconds": [
+        1294.9,
+        1122.7,
+        958.7
+      ],
+      "median_ms": 1122.7,
+      "bytes": 3228
+    },
+    {
+      "route": "/bars/sh.600000?start=2023-01-01&end=2026-10-09",
+      "milliseconds": [
+        274.2,
+        296.8,
+        214.6
+      ],
+      "median_ms": 274.2,
+      "bytes": 486448
+    }
+  ],
+  "scope": "当前实际规模的顺序本机请求，非满容量并发压测",
+  "overview_after_merge": {
+    "milliseconds": [
+      280.5,
+      158.9,
+      156.0
+    ],
+    "median_ms": 158.9,
+    "version": 431
+  }
+}

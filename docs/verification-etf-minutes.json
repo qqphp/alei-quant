@@ -1,0 +1,260 @@
+{
+  "engine": "0.10.1旧收盘与0.10.2新规则/数据库权益",
+  "checked_at": "2026-10-10T15:03:51.086262+08:00",
+  "cases": [
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "claim_5",
+      "run": "b06a0562-4aff-451b-b48a-a33ac5f04562",
+      "frequency": "5",
+      "minute_checks": 624,
+      "daily_checks": 13,
+      "fills": 2,
+      "T1_rejections": 0,
+      "close_differences": 6,
+      "cashflows": [
+        {
+          "date": "2026-01-19",
+          "code": "sh.510300",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 2386.2,
+          "bonus": 0
+        },
+        {
+          "date": "2026-01-27",
+          "code": "sh.510300",
+          "type": "派息到账",
+          "cash": 2386.2
+        }
+      ]
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "t1_5",
+      "run": "e370b10d-012d-4140-b150-ec9a8c3901f5",
+      "frequency": "5",
+      "minute_checks": 96,
+      "daily_checks": 2,
+      "fills": 1,
+      "T1_rejections": 1,
+      "close_differences": 1,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "classic_5",
+      "run": "1bf99402-3910-4d54-8faa-30ec8aca6eb4",
+      "frequency": "5",
+      "minute_checks": 336,
+      "daily_checks": 7,
+      "fills": 16,
+      "T1_rejections": 16,
+      "close_differences": 10,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "claim_15",
+      "run": "ee1a31a9-6b82-4b56-b9d3-d252495ff2e8",
+      "frequency": "15",
+      "minute_checks": 208,
+      "daily_checks": 13,
+      "fills": 2,
+      "T1_rejections": 0,
+      "close_differences": 6,
+      "cashflows": [
+        {
+          "date": "2026-01-19",
+          "code": "sh.510300",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 2398.5,
+          "bonus": 0
+        },
+        {
+          "date": "2026-01-27",
+          "code": "sh.510300",
+          "type": "派息到账",
+          "cash": 2398.5
+        }
+      ]
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "t1_15",
+      "run": "55aa5abd-831c-4f3a-ae3a-215a6f7d18ab",
+      "frequency": "15",
+      "minute_checks": 32,
+      "daily_checks": 2,
+      "fills": 1,
+      "T1_rejections": 1,
+      "close_differences": 1,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "classic_15",
+      "run": "3387621e-85fa-47b4-aed9-9108c78066a2",
+      "frequency": "15",
+      "minute_checks": 112,
+      "daily_checks": 7,
+      "fills": 11,
+      "T1_rejections": 1,
+      "close_differences": 10,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "claim_30",
+      "run": "c076f2ce-f810-45d3-aa19-2d0f8f542731",
+      "frequency": "30",
+      "minute_checks": 104,
+      "daily_checks": 13,
+      "fills": 2,
+      "T1_rejections": 0,
+      "close_differences": 6,
+      "cashflows": [
+        {
+          "date": "2026-01-19",
+          "code": "sh.510300",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 2386.2,
+          "bonus": 0
+        },
+        {
+          "date": "2026-01-27",
+          "code": "sh.510300",
+          "type": "派息到账",
+          "cash": 2386.2
+        }
+      ]
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "t1_30",
+      "run": "8e897872-d45a-4f7c-ada7-280501e705de",
+      "frequency": "30",
+      "minute_checks": 16,
+      "daily_checks": 2,
+      "fills": 1,
+      "T1_rejections": 1,
+      "close_differences": 1,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "classic_30",
+      "run": "2cc5a360-7dc2-498c-a098-f7f35c08bb96",
+      "frequency": "30",
+      "minute_checks": 56,
+      "daily_checks": 7,
+      "fills": 4,
+      "T1_rejections": 1,
+      "close_differences": 10,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "claim_60",
+      "run": "e683badb-0cc9-46a8-86b5-c81ccb9e0f1a",
+      "frequency": "60",
+      "minute_checks": 52,
+      "daily_checks": 13,
+      "fills": 2,
+      "T1_rejections": 0,
+      "close_differences": 6,
+      "cashflows": [
+        {
+          "date": "2026-01-19",
+          "code": "sh.510300",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 2398.5,
+          "bonus": 0
+        },
+        {
+          "date": "2026-01-27",
+          "code": "sh.510300",
+          "type": "派息到账",
+          "cash": 2398.5
+        }
+      ]
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "t1_60",
+      "run": "8dfe452c-90dc-4717-bce4-40d133a36cb6",
+      "frequency": "60",
+      "minute_checks": 8,
+      "daily_checks": 2,
+      "fills": 1,
+      "T1_rejections": 1,
+      "close_differences": 1,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.1",
+      "case": "classic_60",
+      "run": "a0818cd1-ce2d-423b-8632-ad1032682dfb",
+      "frequency": "60",
+      "minute_checks": 28,
+      "daily_checks": 7,
+      "fills": 0,
+      "T1_rejections": 0,
+      "close_differences": 13,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.2",
+      "case": "classic_late_5",
+      "run": "37095d0d-7dc6-4041-b573-1eef628bb45e",
+      "frequency": "5",
+      "minute_checks": 192,
+      "daily_checks": 4,
+      "fills": 10,
+      "T1_rejections": 3,
+      "close_differences": 0,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.2",
+      "case": "classic_late_15",
+      "run": "3a3b386b-2e34-439c-b2af-fde1436e8d77",
+      "frequency": "15",
+      "minute_checks": 64,
+      "daily_checks": 4,
+      "fills": 4,
+      "T1_rejections": 0,
+      "close_differences": 0,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.2",
+      "case": "classic_late_30",
+      "run": "7872bf38-5e2b-473d-b337-d6dc7dfc6ad5",
+      "frequency": "30",
+      "minute_checks": 32,
+      "daily_checks": 4,
+      "fills": 3,
+      "T1_rejections": 1,
+      "close_differences": 0,
+      "cashflows": []
+    },
+    {
+      "engine": "cash-ledger-0.10.2",
+      "case": "classic_late_60",
+      "run": "46380e9b-c459-418c-9e21-2afddad791a4",
+      "frequency": "60",
+      "minute_checks": 16,
+      "daily_checks": 4,
+      "fills": 0,
+      "T1_rejections": 0,
+      "close_differences": 0,
+      "cashflows": []
+    }
+  ],
+  "before_failures_retained": true,
+  "scope": "真实两只国内股票ETF；旧基金日收盘与分钟末价分别估值，无逐笔数据无法重建末一分钟加权收盘。"
+}

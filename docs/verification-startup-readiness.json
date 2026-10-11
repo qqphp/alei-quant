@@ -1,0 +1,56 @@
+{
+  "before": {
+    "status": "waiting",
+    "progress": 25227,
+    "total": 31346,
+    "error": "本段已提交 48 项操作，达到 100 项或 60 秒调度阈值；让出唯一采集通道后按检查点继续",
+    "checkpoint": {
+      "next_operation": 25227,
+      "operations_digest": "98b2ca478dd197d3c181e8680108c1ee92b93b0f9527386589dfd5b42863ccaf"
+    }
+  },
+  "after": {
+    "status": "waiting",
+    "progress": 25227,
+    "total": 31346,
+    "error": "本段已提交 48 项操作，达到 100 项或 60 秒调度阈值；让出唯一采集通道后按检查点继续",
+    "checkpoint": {
+      "next_operation": 25227,
+      "operations_digest": "98b2ca478dd197d3c181e8680108c1ee92b93b0f9527386589dfd5b42863ccaf"
+    }
+  },
+  "recorded_at": "2026-10-11T11:04:47.0031320+08:00",
+  "health": {
+    "status": "ok",
+    "database": "stock_alei",
+    "worker": true,
+    "postgres": "PostgreSQL 18.6 on x86_64-windows",
+    "version": 27506,
+    "backtest_assets": {
+      "etf_codes": {
+        "sh.510050": "单市场股票（沪）ETF",
+        "sh.510300": "境内跨市场股票 ETF"
+      },
+      "etf_start": "2026-01-05",
+      "etf_end": "2026-10-09",
+      "growth_start": "2023-01-01",
+      "growth_end": "2026-10-09"
+    }
+  },
+  "resumed": {
+    "status": "running",
+    "progress": 25235,
+    "total": 31346,
+    "error": null,
+    "checkpoint": {
+      "next_operation": 25235,
+      "operations_digest": "98b2ca478dd197d3c181e8680108c1ee92b93b0f9527386589dfd5b42863ccaf"
+    }
+  },
+  "checkpoint_preserved": true,
+  "files": {
+    "scripts/start.ps1": "0f392bb1e73e062819164623d2b76e0aade4362fe1c53643396fc8c58343f7d2",
+    "scripts/stop.ps1": "ab5bb476be52e820626a64bbc576fe78ce0a9f40561fcb7ea76ebbab81206d17",
+    "README.md": "26b487f5b40599cb7e44aacc03fcab821affbb0de14ac287e7c8e94bdbfc0f90"
+  }
+}

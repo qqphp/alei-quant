@@ -1,0 +1,38 @@
+{
+  "id": "ma_cross_etf_60",
+  "name": "双均线 · ETF 60分钟示例",
+  "version": "1.0.0",
+  "api_version": "1",
+  "entrypoint": "strategy.py:Strategy",
+  "description": "10/30根对应分钟bar交叉，31根预热；已核验国内股票ETF仍执行T+1。仅为功能示例。",
+  "frequency": "60",
+  "datasets": [
+    "bars:60",
+    "dividends"
+  ],
+  "lookback": 31,
+  "parameters": {
+    "fast": {
+      "type": "integer",
+      "default": 10,
+      "minimum": 2,
+      "maximum": 29,
+      "label": "短期均线"
+    },
+    "slow": {
+      "type": "integer",
+      "default": 30,
+      "minimum": 3,
+      "maximum": 30,
+      "label": "长期均线"
+    },
+    "exposure": {
+      "type": "number",
+      "default": 0.95,
+      "minimum": 0,
+      "maximum": 1,
+      "label": "总目标仓位"
+    }
+  },
+  "dependencies": []
+}

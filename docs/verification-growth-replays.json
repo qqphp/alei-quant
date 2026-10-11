@@ -1,0 +1,233 @@
+{
+  "checked_at": "2026-10-10T20:08:05.164980+08:00",
+  "cases": [
+    {
+      "case": "stock_570",
+      "old": "1b4e4595-e326-4c15-bb2c-ee9b77ff09b4",
+      "current": "0f8ea0a6-08f5-4d0c-8581-2b36fc4d0836",
+      "full_result_equal": true,
+      "daily_states": 570,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e"
+    },
+    {
+      "case": "financial_87",
+      "old": "c2096312-a7ea-4d28-957a-e67ec93d791a",
+      "current": "2fae4d3f-e4bb-46a3-bf4f-79b8eaa37ce9",
+      "full_result_equal": true,
+      "daily_states": 87,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e"
+    },
+    {
+      "case": "etf_60",
+      "old": "774df5a8-cbaf-4452-9ab5-73fa1678287a",
+      "current": "62d1cf63-14d8-4557-ae38-6d9fef7458c8",
+      "full_result_equal": true,
+      "daily_states": 4,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e"
+    },
+    {
+      "case": "replay_quantity_201",
+      "old": "39941b7d-d822-47b3-abd7-856d4d6b1dd9",
+      "current": "c7703121-7a08-4e9e-acce-34d76f7124be",
+      "full_result_equal": true,
+      "daily_states": 7,
+      "engine_digest": "20721fa909fa9c4d8c267503eb5febc6aee16b2f0a039fac5e752215895812f2"
+    },
+    {
+      "case": "replay_partial_odd_exit",
+      "old": "f844b844-f2f4-430c-b6ef-36720124c32b",
+      "current": "4f19ecdb-a61f-4662-9dea-8e4c2682a2fa",
+      "full_result_equal": true,
+      "daily_states": 7,
+      "engine_digest": "20721fa909fa9c4d8c267503eb5febc6aee16b2f0a039fac5e752215895812f2"
+    },
+    {
+      "case": "replay_classic_star",
+      "old": "d4c8d0e3-d1f1-42bd-a77f-07a2f0e4ccd0",
+      "current": "dd36ea96-62c5-4794-bd90-d563804c878b",
+      "full_result_equal": true,
+      "daily_states": 631,
+      "engine_digest": "20721fa909fa9c4d8c267503eb5febc6aee16b2f0a039fac5e752215895812f2"
+    },
+    {
+      "case": "final_tick_sample",
+      "old": "da847fc2-f3fc-46ae-818f-58381708fc5b",
+      "current": "fbda0043-5503-41a4-b400-080d88378641",
+      "full_result_equal": true,
+      "daily_states": 7,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e"
+    }
+  ],
+  "reference_audit_unchanged_cases": [
+    {
+      "case": "quantity_199",
+      "old": "2fc99de8-86cd-413b-9b26-2d4b47d116ef",
+      "current": "59b2133d-2a18-4023-b1a7-c1b6161e30f8",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "quantity_200",
+      "old": "ce146a07-5741-449d-8a8a-5d50af9668b1",
+      "current": "3ccea93a-8080-47fd-8776-ae6301598918",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "quantity_201",
+      "old": "39941b7d-d822-47b3-abd7-856d4d6b1dd9",
+      "current": "da847fc2-f3fc-46ae-818f-58381708fc5b",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "quantity_299",
+      "old": "87c86af9-f495-4bc0-b2d4-fdb85bf955d7",
+      "current": "b2a3eabb-ffe0-4bc4-8c42-0c3b41cb5535",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "before_registration_exit",
+      "old": "13e49b5e-9fd9-43e6-b74b-12ce85c004be",
+      "current": "03224a88-c6f1-4acc-a4d8-d99bdcc81ee6",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "buy_on_ex",
+      "old": "7f0511df-f62a-4a66-a3f1-fd2b91377c25",
+      "current": "0db6ed66-10bd-4921-acb2-e476979c7b9a",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "partial_odd_exit",
+      "old": "f844b844-f2f4-430c-b6ef-36720124c32b",
+      "current": "9efad134-a4a1-4223-909f-2e70b0b60f5f",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "small_partial_exit",
+      "old": "306a869e-a71d-4ee0-a2a6-b1408b2c9558",
+      "current": "41111706-2bc2-4558-90ba-2b940086f33c",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "invalid_reduction",
+      "old": "363299fa-9d9e-4b99-9d28-3175ac9d7214",
+      "current": "58fd9f20-76d3-4f7f-8818-26fdec768642",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "order_limit",
+      "old": "204b0bc9-e18c-4133-970c-bfd4ded5ff70",
+      "current": "4a8e8253-a981-4f87-92d3-0377c4fefe11",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "minimum_commission_budget",
+      "old": "ff317c15-2db8-4d91-bee4-50abca2dad18",
+      "current": "ebea473e-b101-495f-9a98-3b38cb9fc3de",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "classic_star",
+      "old": "d4c8d0e3-d1f1-42bd-a77f-07a2f0e4ccd0",
+      "current": "b86b34e9-08a7-4dca-bb19-6a26b41c6012",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_quantity_99",
+      "old": "3f97f965-9e61-4c2b-983d-bd7661a1116c",
+      "current": "59b838f5-4203-49d4-b77a-c4258214042b",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_quantity_100",
+      "old": "1a5e4b29-1c75-4692-ace7-e5ee77a55a35",
+      "current": "3c9b39e6-7e31-4404-9aa0-7972988bbc87",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_quantity_199",
+      "old": "945a8639-094a-4cdb-845c-90eaf5d88472",
+      "current": "f30c398a-96e2-4819-8d4a-36ac146f73d8",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_quantity_201",
+      "old": "9fd21946-1d2b-4208-a551-3be0411c6df3",
+      "current": "7284f10b-0928-48e7-b373-da46acb3af92",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_quantity_299",
+      "old": "cb4df46d-47d3-4d5e-9765-7782c21848c4",
+      "current": "822b1141-6ede-4e21-a353-147d019277e4",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_order_limit",
+      "old": "38f5959c-1f7b-4978-ae62-bfbf00ba79f6",
+      "current": "99fc6fd4-ebbc-4211-ba19-03b3db83e98e",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_minimum_commission",
+      "old": "53c4ddce-098b-4724-b71c-9a6821e3380b",
+      "current": "0255e496-cad2-46f5-be0d-86d49a6d4abe",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_buy_on_ex",
+      "old": "6d2b197a-0c16-4483-8208-ac98e1252fe4",
+      "current": "86e0c91f-e2d1-4a21-81b1-6ba3307b7ff4",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "gem_partial_exit",
+      "old": "bc27def8-1521-482b-be37-e63a88983261",
+      "current": "260038b7-19e2-481c-98d4-32a4d41a9fb7",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "classic_gem",
+      "old": "9343408d-c6cb-4983-9f00-6ab912fff912",
+      "current": "b46fff59-0e71-454b-b533-a0821e785981",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "mixed_hold",
+      "old": "968cc68f-ab1a-4831-a9e4-b67f1a0fe431",
+      "current": "125e390c-44d7-421d-82b0-30617ffaac7b",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    },
+    {
+      "case": "mixed_classic",
+      "old": "a109d2ae-7d2d-4962-9e88-27bc294a8d0b",
+      "current": "212de965-d93f-41e0-af41-6cf497850f6d",
+      "full_result_equal": true,
+      "engine_digest": "87244e949ab28ea7e76df3edd38912b00ca674f25b75f283a202c2edddf44e0e"
+    }
+  ],
+  "final_source_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+  "scope": "三个旧输入用最终代码、三个新归档重算及最终 201 股样例；另核对 24 个真实输入补充预热/空仓参考价检查前后完整 result；不是仅收益/笔数比较"
+}

@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-11T12:33:03.338080+08:00",
+  "clone": "stock_alei_restore_20261011_110748_91a45c",
+  "version": 27542,
+  "code": "sh.600000",
+  "day": "2024-10-08",
+  "fixture_source": 9411371,
+  "fixture_batch": 27543,
+  "before": {
+    "cache_pointer": true,
+    "published_raw_source": true
+  },
+  "after": {
+    "cache_pointer": false,
+    "published_raw_source": true
+  },
+  "rolled_back_pointer_equal": true,
+  "sdk_calls": 0,
+  "main_database_writes": 0,
+  "scope": "已有恢复工具明确价格修订仅在独立恢复库事务内更新一个最新缓存指针，随后回滚并核对完全相等。固定旧版本的原始价格仍存在，最新指针受版本过滤会漏报。仅证明历史存在性审计方法；不把本副本标记价格当作生产真行情。当前总览在同一事务读取最新版本，不据此声称它有该问题。"
+}

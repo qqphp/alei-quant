@@ -1,0 +1,39 @@
+{
+  "id": "ma_cross_15",
+  "name": "双均线 · 15分钟示例",
+  "version": "1.0.0",
+  "api_version": "1",
+  "entrypoint": "strategy.py:Strategy",
+  "description": "历史15分钟10/30均线交叉，下一bar开盘、股票T+1；只为功能示例，来源不提供实时分钟信号。",
+  "frequency": "15",
+  "datasets": [
+    "bars:15",
+    "factors",
+    "dividends"
+  ],
+  "lookback": 61,
+  "parameters": {
+    "fast": {
+      "type": "integer",
+      "default": 10,
+      "minimum": 2,
+      "maximum": 59,
+      "label": "短期均线"
+    },
+    "slow": {
+      "type": "integer",
+      "default": 30,
+      "minimum": 3,
+      "maximum": 60,
+      "label": "长期均线"
+    },
+    "exposure": {
+      "type": "number",
+      "default": 0.95,
+      "minimum": 0,
+      "maximum": 1,
+      "label": "总目标仓位"
+    }
+  },
+  "dependencies": []
+}

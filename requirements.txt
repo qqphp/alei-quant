@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+psycopg[binary]
+pydantic-settings
+baostock==0.9.4
+pandas
+numpy
+packaging
+psutil
+

@@ -1,0 +1,152 @@
+{
+  "checked_at": "2026-10-10T20:24:00.759290+08:00",
+  "cases": [
+    {
+      "case": "sh.688320_5",
+      "run": "2375cdda-6d60-4b53-be74-0316b0ed9ece",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 144,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 201,
+      "final_cash": 99891.73,
+      "all_states_independently_equal": true
+    },
+    {
+      "case": "sz.300001_5",
+      "run": "99bec558-a1ea-4ca9-ad79-cd010436b74b",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 144,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 200,
+      "final_cash": 100446.36,
+      "all_states_independently_equal": true
+    },
+    {
+      "case": "sh.688320_15",
+      "run": "709d07a2-07a9-46c9-820e-b7e600451f1c",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 48,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 201,
+      "final_cash": 99939.97,
+      "all_states_independently_equal": true
+    },
+    {
+      "case": "sz.300001_15",
+      "run": "94a75c48-e0fb-4161-a19a-0908b1399e19",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 48,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 200,
+      "final_cash": 100544.31,
+      "all_states_independently_equal": true
+    },
+    {
+      "case": "sh.688320_30",
+      "run": "7388aab0-9598-4c68-930f-c6a7c66ecb78",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 24,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 201,
+      "final_cash": 99923.87,
+      "all_states_independently_equal": true
+    },
+    {
+      "case": "sz.300001_30",
+      "run": "a52dd6af-99c9-4927-aa5a-de27fe1575f5",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 24,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 200,
+      "final_cash": 100466.33,
+      "all_states_independently_equal": true
+    },
+    {
+      "case": "sh.688320_60",
+      "run": "681caa2b-65c1-4bbf-8b41-b55dbaea785e",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 12,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 201,
+      "final_cash": 99885.71,
+      "all_states_independently_equal": true
+    },
+    {
+      "case": "sz.300001_60",
+      "run": "b0cbd59c-912c-4315-84e0-eb4972ab5d14",
+      "data_version": 13245,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "minute_states": 12,
+      "daily_states": 3,
+      "fills": 2,
+      "quantity": 200,
+      "final_cash": 100468.32,
+      "all_states_independently_equal": true
+    }
+  ],
+  "rejected_historical_cases": [
+    {
+      "case": "sh.688320_5",
+      "run": "48e03609-ffff-4754-b4b7-812095e872f7",
+      "error": "sh.688320 2024-06-11 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sz.300001_5",
+      "run": "662df6e9-e519-465a-8148-0afe5d2bab2d",
+      "error": "sz.300001 2024-06-11 分钟 volume 与日线汇总不符",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sh.688320_15",
+      "run": "6eaeacfb-40c4-4f59-af2b-e1a67449b0ba",
+      "error": "sh.688320 2024-06-11 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sz.300001_15",
+      "run": "67bcbe54-412e-481d-964a-49d797306ddf",
+      "error": "sz.300001 2024-06-11 分钟 volume 与日线汇总不符",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sh.688320_30",
+      "run": "958c3b21-c4da-4fd6-a11c-f79b0a5c0309",
+      "error": "sh.688320 2024-06-11 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sz.300001_30",
+      "run": "2763e5e1-f262-4408-ad25-726ad1f4fd2f",
+      "error": "sz.300001 2024-06-11 分钟 volume 与日线汇总不符",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sh.688320_60",
+      "run": "9b93c201-dd2a-4da6-8e8d-bcd02297e113",
+      "error": "sh.688320 2024-06-11 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sz.300001_60",
+      "run": "028edcdf-f5cb-4d22-949e-fabe3df7d911",
+      "error": "sz.300001 2024-06-11 分钟 volume 与日线汇总不符",
+      "invalid_result_not_published": true
+    }
+  ],
+  "scope": "真实 2026-09-22~24，两板四频率每 bar 现金/NAV/持仓/可卖、下一 bar 开盘、费用、完整订单和日末核对；无分红事件，不替代跨分红分钟验收；2024 冲突样本未放行"
+}

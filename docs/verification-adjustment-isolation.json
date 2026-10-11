@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-11T01:23:27.292827+08:00",
+  "clone": "stock_alei_restore_20261011_003326_e28fa4",
+  "cases": [
+    {
+      "case": "reference",
+      "batch": 17650,
+      "status": "published",
+      "changed_count": 1,
+      "error": null,
+      "raw_and_quote_unchanged": true
+    },
+    {
+      "case": "repeat",
+      "batch": 17651,
+      "status": "published",
+      "changed_count": 0,
+      "error": null,
+      "raw_and_quote_unchanged": true
+    },
+    {
+      "case": "wrong_flag",
+      "batch": 17652,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "返回行情复权标记与请求不一致，未发布该批次",
+      "raw_and_quote_unchanged": true
+    },
+    {
+      "case": "invalid_ohlc",
+      "batch": 17653,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "行情异常 sh.600000 2026-10-09: 价格非正或非有限值",
+      "raw_and_quote_unchanged": true
+    },
+    {
+      "case": "future_not_ready",
+      "batch": 17654,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "全部返回行情尚未达到官方就绪时刻，保留旧数据",
+      "raw_and_quote_unchanged": true
+    },
+    {
+      "case": "conflicting_duplicate",
+      "batch": 17655,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "同批自然键存在相互冲突的源数据，未发布",
+      "raw_and_quote_unchanged": true
+    }
+  ],
+  "rejected_requests": [
+    {
+      "field": "adjustflag",
+      "value": "4"
+    },
+    {
+      "field": "adjustflag",
+      "value": 1
+    },
+    {
+      "field": "frequency",
+      "value": "5"
+    },
+    {
+      "field": "fields",
+      "value": "date,code,close"
+    }
+  ],
+  "scope": "仅独立副本构造 SDK 响应；不建立来源连接、不写主库。参考与重复、标记/OHLC/就绪/重复冲突边界，全部保留原始日线与最新报价。此副本已有验收夹具，不代表干净备份快照。"
+}

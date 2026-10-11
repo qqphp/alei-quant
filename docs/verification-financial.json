@@ -1,0 +1,10 @@
+{
+  "version": 330,
+  "code": "sh.600000",
+  "dataset": "profit",
+  "publication": "2025-04-30",
+  "same_publication_day_blocked": true,
+  "first_trading_day_after_publication": "2025-05-06",
+  "visible_reports": 1,
+  "scope": "真实披露日期过滤样本；未证明首次披露原值或所有修订场景"
+}

@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-10T20:06:30.329484+08:00",
+  "database": "stock_alei_restore_20261010_191951_a97172",
+  "original_source_version": 13176,
+  "cases": {
+    "st_daily_limit": {
+      "run": "823f2535-55ad-4696-8a31-a8c2293e745f",
+      "data_version": 12625,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+      "status": "completed",
+      "error": null
+    },
+    "ordinary_control": {
+      "run": "c8d3f5a9-2914-4b11-8b9b-417f18fda3e2",
+      "data_version": 12626,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+      "status": "completed",
+      "error": null
+    },
+    "ipo_first_five": {
+      "run": "fb8b0a1d-3841-4639-beec-963f0f6e95f1",
+      "data_version": 12627,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+      "status": "completed",
+      "error": null
+    },
+    "sixth_day_unknown_event": {
+      "run": "cceb5fb7-aac6-4a9e-a338-9d3b01a84799",
+      "data_version": 12627,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+      "status": "failed",
+      "error": "sz.300001 2024-07-04 原始范围超出普通/ST 20% 规则，需核验特殊事件而非猜测放开涨跌幅"
+    },
+    "empty_unknown_reference": {
+      "run": "eefc790e-136e-4a91-896e-cd4c313c500c",
+      "data_version": 12629,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+      "status": "failed",
+      "error": "sz.300001 2024-06-12 参考价变化缺少唯一公司行动，即使空仓/预热也停止"
+    },
+    "minute_invalid_tick": {
+      "run": "ea572816-a39f-4a8f-8614-e1fa3bc964cc",
+      "data_version": 12631,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+      "status": "failed",
+      "error": "sz.300001 2024-06-11 分钟报价不符合 0.01 元档位"
+    },
+    "unknown_corrected_cash": {
+      "run": "4424b8ae-c18a-40d1-910a-23d91b28ab7a",
+      "data_version": 12632,
+      "engine_digest": "35e27e3db2c743fd5c27c71c2ee7862c66568a98df209b8630a549d05150303e",
+      "status": "failed",
+      "error": "sh.688320 2024-06-14 缺少已核验更正版本或出现未知版本，停止账本"
+    }
+  },
+  "independent_checks": [
+    {
+      "case": "st",
+      "daily_buys": {
+        "2024-06-12": 500000,
+        "2024-06-13": 500000
+      },
+      "final_cash": "82576828",
+      "final_quantity": 800000,
+      "T_plus_1_rejection": true,
+      "independently_checked_minute_states": 96
+    },
+    {
+      "case": "normal",
+      "daily_buys": {
+        "2024-06-12": 600000,
+        "2024-06-13": 800000
+      },
+      "final_cash": "76050742",
+      "final_quantity": 1100000,
+      "T_plus_1_rejection": true,
+      "independently_checked_minute_states": 96
+    }
+  ],
+  "IPO_five_trading_days_weekend_skipped": true,
+  "unknown_event_empty_position_and_tick_rejected": true,
+  "scope": "仅独立副本：构造完整分钟、ST 标志、上市日期和异常报价；实际归档引擎任务。不是实际 ST/IPO 公告、真实分钟来源或临停/盘口成交验证；主库未写模拟值。"
+}

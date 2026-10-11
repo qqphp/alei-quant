@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-11T13:23:53.608541+08:00",
+  "clone": "stock_alei_restore_20261011_110748_91a45c",
+  "cases": [
+    {
+      "job": "6740df11-a32a-4e41-a2d1-5481cd1a45a4",
+      "batch": 27544,
+      "parsed_rows_retained": 4,
+      "protocol_complete": true,
+      "unparsed_values_retained": false,
+      "complete_original_array_and_hash_equal": true,
+      "published_rows": 0
+    },
+    {
+      "job": "9b8f517c-9d36-41a4-864f-563f17de1a22",
+      "batch": 27545,
+      "parsed_rows_retained": 1,
+      "protocol_complete": false,
+      "unparsed_values_retained": true,
+      "complete_original_array_and_hash_equal": true,
+      "published_rows": 0
+    }
+  ],
+  "original_real_published_batch_used_as_fixture_base": 29415,
+  "main_database_writes": 0,
+  "sdk_calls": 0,
+  "scope": "明确模拟、两个现金值改动/一行截短，仅恢复副本。完整协议四行冲突时保留四个接收原行及两冲突行；字段数变化时保留此前一行与当前未解析值，协议不完整，后续未读行不虚构。两批次均失败且未增加源记录。实际旧失败29413只留两冲突行，未改写或伪称其四行已恢复。后续新采集进程使用增强保留逻辑。",
+  "provider_sha256": "7d3fb01c3d2b72b4563c40e61d79c397157400ac9c52801038c3c0debe21355a"
+}

@@ -1,0 +1,458 @@
+{
+  "engine": "cash-ledger-0.11",
+  "checked_at": "2026-10-10T19:59:57.155401+08:00",
+  "cases": [
+    {
+      "case": "quantity_199",
+      "run": "59b2133d-2a18-4023-b1a7-c1b6161e30f8",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 0,
+      "first_buy_quantity": null,
+      "final_cash": 100000.0,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "quantity_200",
+      "run": "3ccea93a-8080-47fd-8776-ae6301598918",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 200,
+      "final_cash": 100139.21,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 19.87,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "派息到账",
+          "cash": 19.87
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "quantity_201",
+      "run": "da847fc2-f3fc-46ae-818f-58381708fc5b",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 201,
+      "final_cash": 100139.96,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 19.97,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "派息到账",
+          "cash": 19.97
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "quantity_299",
+      "run": "b2a3eabb-ffe0-4bc4-8c42-0c3b41cb5535",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 299,
+      "final_cash": 100213.07,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 29.7,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "派息到账",
+          "cash": 29.7
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "before_registration_exit",
+      "run": "03224a88-c6f1-4acc-a4d8-d99bdcc81ee6",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 201,
+      "final_cash": 100087.85,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "buy_on_ex",
+      "run": "0db6ed66-10bd-4921-acb2-e476979c7b9a",
+      "data_version": 12987,
+      "daily_states": 5,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 201,
+      "final_cash": 99947.13,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "partial_odd_exit",
+      "run": "9efad134-a4a1-4223-909f-2e70b0b60f5f",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 199,
+      "final_cash": 100138.47,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 19.77,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "派息到账",
+          "cash": 19.77
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "small_partial_exit",
+      "run": "41111706-2bc2-4558-90ba-2b940086f33c",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 49,
+      "final_cash": 100026.56,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 4.87,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "派息到账",
+          "cash": 4.87
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "invalid_reduction",
+      "run": "58fd9f20-76d3-4f7f-8818-26fdec768642",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 299,
+      "final_cash": 100213.07,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 29.7,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sh.688320",
+          "type": "派息到账",
+          "cash": 29.7
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "order_limit",
+      "run": "4a8e8253-a981-4f87-92d3-0377c4fefe11",
+      "data_version": 12987,
+      "daily_states": 7,
+      "independently_derived_fills": 0,
+      "first_buy_quantity": null,
+      "final_cash": 10000000.0,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "minimum_commission_budget",
+      "run": "ebea473e-b101-495f-9a98-3b38cb9fc3de",
+      "data_version": 12988,
+      "daily_states": 7,
+      "independently_derived_fills": 0,
+      "first_buy_quantity": null,
+      "final_cash": 5010.0,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "classic_star",
+      "run": "b86b34e9-08a7-4dca-bb19-6a26b41c6012",
+      "data_version": 12988,
+      "daily_states": 631,
+      "independently_derived_fills": 25,
+      "first_buy_quantity": 2837,
+      "final_cash": 4760.72,
+      "cashflows": [],
+      "final_positions": 2139
+    },
+    {
+      "case": "gem_quantity_99",
+      "run": "59b838f5-4203-49d4-b77a-c4258214042b",
+      "data_version": 13100,
+      "daily_states": 7,
+      "independently_derived_fills": 0,
+      "first_buy_quantity": null,
+      "final_cash": 100000.0,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_quantity_100",
+      "run": "3c9b39e6-7e31-4404-9aa0-7972988bbc87",
+      "data_version": 13100,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 100,
+      "final_cash": 100008.86,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 9.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 9.0
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_quantity_199",
+      "run": "f30c398a-96e2-4819-8d4a-36ac146f73d8",
+      "data_version": 13101,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 100,
+      "final_cash": 100008.86,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 9.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 9.0
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_quantity_201",
+      "run": "7284f10b-0928-48e7-b373-da46acb3af92",
+      "data_version": 13101,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 200,
+      "final_cash": 100027.73,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 18.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 18.0
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_quantity_299",
+      "run": "822b1141-6ede-4e21-a353-147d019277e4",
+      "data_version": 13101,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 200,
+      "final_cash": 100027.73,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 18.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 18.0
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_order_limit",
+      "run": "99fc6fd4-ebbc-4211-ba19-03b3db83e98e",
+      "data_version": 13102,
+      "daily_states": 7,
+      "independently_derived_fills": 0,
+      "first_buy_quantity": null,
+      "final_cash": 10000000.0,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_minimum_commission",
+      "run": "0255e496-cad2-46f5-be0d-86d49a6d4abe",
+      "data_version": 13102,
+      "daily_states": 7,
+      "independently_derived_fills": 0,
+      "first_buy_quantity": null,
+      "final_cash": 2185.0,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_buy_on_ex",
+      "run": "86e0c91f-e2d1-4a21-81b1-6ba3307b7ff4",
+      "data_version": 13103,
+      "daily_states": 5,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 200,
+      "final_cash": 99967.73,
+      "cashflows": [],
+      "final_positions": 0
+    },
+    {
+      "case": "gem_partial_exit",
+      "run": "260038b7-19e2-481c-98d4-32a4d41a9fb7",
+      "data_version": 13103,
+      "daily_states": 7,
+      "independently_derived_fills": 2,
+      "first_buy_quantity": 100,
+      "final_cash": 100008.86,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 9.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 9.0
+        }
+      ],
+      "final_positions": 0
+    },
+    {
+      "case": "classic_gem",
+      "run": "b46fff59-0e71-454b-b533-a0821e785981",
+      "data_version": 13104,
+      "daily_states": 631,
+      "independently_derived_fills": 32,
+      "first_buy_quantity": 4600,
+      "final_cash": 73616.84,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 423.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 423.0
+        },
+        {
+          "date": "2025-07-04",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 364.5,
+          "bonus": 0
+        },
+        {
+          "date": "2025-07-04",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 364.5
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 378.0,
+          "bonus": 0
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 378.0
+        }
+      ],
+      "final_positions": 0
+    }
+  ],
+  "source": "真实 sh.688320 / sz.300001 日线；禾川原始分红两个版本保留，更正版公告 0.11038、虚拟除息 0.10990；固定股息税假设",
+  "scope": "独立核对每个日末现金/持仓/可卖/应收/NAV、前日量上限、下一开盘/费用、订单和唯一权益；不是实际券商到账、盘口或 IPO 全面撮合证明"
+}

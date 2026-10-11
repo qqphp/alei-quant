@@ -1,0 +1,421 @@
+{
+  "backup": "E:\\codex\\stock\\runtime\\backups\\20261011-042642-798347",
+  "database": "stock_alei_restore_20261011_042927_2e2347",
+  "database_version": 22184,
+  "schema_version": 8,
+  "additions": {
+    "methods": 26,
+    "all_method_batch_source_counts_equal": true,
+    "macro": [
+      {
+        "dataset": "deposit_rate",
+        "rows": 43,
+        "all_http_csv_equal": true
+      },
+      {
+        "dataset": "loan_rate",
+        "rows": 43,
+        "all_http_csv_equal": true
+      },
+      {
+        "dataset": "reserve_ratio",
+        "rows": 47,
+        "all_http_csv_equal": true
+      },
+      {
+        "dataset": "money_month",
+        "rows": 441,
+        "all_http_csv_equal": true
+      },
+      {
+        "dataset": "money_year",
+        "rows": 35,
+        "all_http_csv_equal": true
+      }
+    ],
+    "valuation_views": 24,
+    "valuation_points": 67764,
+    "historical_days": 910,
+    "all_snapshot_batch_member_counts_equal": true,
+    "market_groups": [
+      {
+        "type": "1",
+        "members": 5224,
+        "all_counts_ranks_amounts_equal": true
+      },
+      {
+        "type": "5",
+        "members": 1693,
+        "all_counts_ranks_amounts_equal": true
+      }
+    ],
+    "same_day_indices_equal": true,
+    "daily_index": {
+      "rows": 3055702,
+      "invalid": 0
+    },
+    "original_job_status_if_visible": "queued",
+    "fixture_excluded_source_version": 22184
+  },
+  "sha256": {
+    "backend/stockapp/api.py": "099129e38438f8d73776d85dd28877bb845871655ea29861604800bd90601067",
+    "backend/stockapp/catalog.py": "36afb821bebf61c95a984a066d1c66db87d6dfe3f068cc8bd79f0f20e049135d",
+    "backend/stockapp/provider.py": "aad475accfce2a048128ba5f579ec196a3724579f179fa6660bcdc1cf136036b",
+    "backend/stockapp/market.py": "3b35807bf18744c8dfd61766607f1322050963f6fc087eb7d731dcc60611d47e",
+    "backend/stockapp/screening.py": "b196cd645c71c36d2e55467f1fea5fd6d8f898a65facae8983a14512f8a9803a",
+    "backend/stockapp/corporate_actions.py": "5916296b5bd533bc8719d5fde8338c7fdfadebc6e4a96431d8f85524d3dc35c3",
+    "backend/stockapp/schema.sql": "ed16143328b42ab9680107ce34de52c7d479fd6dfaa610ad055ee5c4a7abbecc",
+    "frontend/src/App.vue": "704cc0b36a4e2776c0bfcdee1bb3de6606939b820367a5cb69de53216e122b44",
+    "frontend/src/report-charts.ts": "71f858f80d699910c28811daf81dca6334fc6a4943baccc380174ffeee4b82ea",
+    "frontend/src/data-fields.json": "e178efed3fcd9a2a7d766cf051b922544b6cd11b82d19c2df8c0c396079b0ba2",
+    "frontend/src/components/Chart.vue": "83757af5a33f7103bac4b322b57dd5f6bf7f4f725aafabdc06e7c75a1b791473",
+    "frontend/package-lock.json": "83afad0434e222ffbd37cb4352779be99cbee695921237c21553f180731889c3",
+    "requirements.lock.txt": "980a26fea9d4b1ad27e788c53b3ce5927773ed6c4a23d0b1ef24448e222065df",
+    "docs/research/tubao-2026-joint-dividend.pdf": "56119c4f332f7ae733bff068a16fd290281efa559006ba2547faafe2bbf21e70",
+    "docs/research/local-adjustment-official.md": "6cea6149e476d5e3d41ac1d470b9aed4ccd782680ebda2af3489871afade9066",
+    "backend/stockapp/macro.py": "4ed9913225b2ef9e82dca0619ff711842c65d5be22f698a6eb47cc41d0249ab9",
+    "backend/stockapp/market_summary.py": "a17ea2780198315b13fb7431821b13d8d5480d3abf4d7db35bd9c72eebabca5f",
+    "backend/stockapp/interface_support.py": "a4cc184a582db91003aea493984f699a8cf5e93abb9884425555da84a9706b41",
+    "backend/stockapp/universe.py": "05f789fcfff9e4d99c94f7f51515e4ed0e29051d1c500946e1a29a685fd229c4",
+    "frontend/src/valuation.ts": "d81fb79916d1d92f6e08f55576afc555b3450abae325632154c093c0ae1aa3be",
+    "docs/research/field-docs/valuationDaily.md": "c196b69f5375b9fb8659f7f924547a4c1072b8d587fe5ef9c3f07401f9155718",
+    "docs/research/516480-termination.html": "d6e9971c8d5f376d278dbdcabbc84d2a509c205fedc099065d3be1bfca5d3ed2",
+    "frontend/dist/index.html": "caf5c9c8f22ec8686af3ee57b9da46a0fa2fc42281475409e9440d8ea6d56027",
+    "frontend/dist/assets/index-C0iFYb-I.css": "cc795e92d68e8bb9d037a479f17a238c78ec5068caa73af55ded27fe9a3fa60d",
+    "frontend/dist/assets/index-COmSy_xC.js": "419221af1135f7998401e5c3f9fcf07371f7b3e9bb536b09b7a3f7f447af8882"
+  },
+  "reports_preserved": 17,
+  "chart_views": [
+    {
+      "case": "stock_daily_sh.600000_raw",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600000_forward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600000_backward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_raw",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_forward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_backward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_raw",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_forward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_backward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_raw",
+      "bars": 87,
+      "version": 6567,
+      "all_values_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_forward",
+      "bars": 87,
+      "version": 6567,
+      "all_values_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_backward",
+      "bars": 87,
+      "version": 6567,
+      "all_values_equal": true
+    },
+    {
+      "case": "etf_minute_sh.510050_raw",
+      "bars": 16,
+      "version": 8898,
+      "all_values_equal": true
+    },
+    {
+      "case": "etf_minute_sh.510300_raw",
+      "bars": 16,
+      "version": 8898,
+      "all_values_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_raw",
+      "bars": 8,
+      "version": 18566,
+      "all_values_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_forward",
+      "bars": 8,
+      "version": 18566,
+      "all_values_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_backward",
+      "bars": 8,
+      "version": 18566,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_5_sh.688320_raw",
+      "bars": 144,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_5_sz.300001_raw",
+      "bars": 144,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_15_sh.688320_raw",
+      "bars": 48,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_15_sz.300001_raw",
+      "bars": 48,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_30_sh.688320_raw",
+      "bars": 24,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_30_sz.300001_raw",
+      "bars": 24,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_60_sh.688320_raw",
+      "bars": 12,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_60_sz.300001_raw",
+      "bars": 12,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    }
+  ],
+  "official_reference": [
+    {
+      "code": "sh.600000",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600000",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.000001",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.000001",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600519",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600519",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600039",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600039",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.688320",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.688320",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.300001",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.300001",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    }
+  ],
+  "saved_filters": [
+    {
+      "id": "10290364-20ce-4638-8deb-c54ab4022eef",
+      "fields": 14,
+      "source_values_equal": true
+    },
+    {
+      "id": "aa5b1bc0-1a88-43d2-b736-99f556349e9d",
+      "fields": 12,
+      "source_values_equal": true
+    }
+  ],
+  "replays": [
+    {
+      "case": "tubao_archived",
+      "original": "cba17d14-a32b-464c-84e0-811df49a46e5",
+      "replay": "865dcd1e-19c6-4854-9a47-6839176b5ba1",
+      "full_result_equal": true
+    },
+    {
+      "case": "tubao_backup_current",
+      "original": "cba17d14-a32b-464c-84e0-811df49a46e5",
+      "replay": "5ba1bc5e-f209-4922-8f5b-41cec4c1aecc",
+      "full_result_equal": true
+    },
+    {
+      "case": "classic_570_backup_current",
+      "original": "5f560cea-00af-4cbc-8b74-7bd21d60d23d",
+      "replay": "ce651ed1-7827-4d4e-a745-daf78b123643",
+      "full_result_equal": true
+    }
+  ],
+  "api_stopped": true,
+  "sdk_calls": 0,
+  "scope": "Reads/restored API/replays use backup code and independent clone; main database was read only. Clone contains the maintenance tool's labelled source revision and replay jobs."
+}

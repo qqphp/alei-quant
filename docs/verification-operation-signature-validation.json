@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-11T12:22:44.334844+08:00",
+  "cases": [
+    {
+      "operation": {
+        "method": "query_dividend_data",
+        "args": {
+          "code": "sz.300760",
+          "year": "2026"
+        }
+      },
+      "status": 400,
+      "detail": {
+        "detail": "query_dividend_data 参数不符合官方接口签名：missing a required argument: 'code'"
+      }
+    },
+    {
+      "operation": {
+        "arguments": {}
+      },
+      "status": 400,
+      "detail": {
+        "detail": "不支持的数据方法"
+      }
+    },
+    {
+      "operation": {
+        "method": []
+      },
+      "status": 400,
+      "detail": {
+        "detail": "不支持的数据方法"
+      }
+    },
+    {
+      "operation": {
+        "method": "query_dividend_data",
+        "arguments": {
+          "code": "sz.300760",
+          "unexpected": 1
+        }
+      },
+      "status": 400,
+      "detail": {
+        "detail": "query_dividend_data 参数不符合官方接口签名：got an unexpected keyword argument 'unexpected'"
+      }
+    },
+    {
+      "operation": {
+        "method": "query_dividend_data",
+        "arguments": []
+      },
+      "status": 400,
+      "detail": {
+        "detail": "query_dividend_data 参数不符合官方接口签名：inspect.Signature.bind() argument after ** must be a mapping, not list"
+      }
+    }
+  ],
+  "no_jobs_created": true,
+  "catalog_sha256": "0f0418bfc7af8ad094d407e96f612a1e43c19ee14c844e68b384704de9455a97"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ma_cross_w",
+  "name": "双均线 · 周线示例",
+  "version": "1.0.0",
+  "api_version": "1",
+  "entrypoint": "strategy.py:Strategy",
+  "description": "周线双均线交叉；仅在官方周期就绪后决策，下一可用交易日开盘执行，日末估值。仅为功能示例。",
+  "frequency": "w",
+  "datasets": [
+    "bars:w",
+    "factors",
+    "dividends"
+  ],
+  "lookback": 61,
+  "parameters": {
+    "fast": {
+      "type": "integer",
+      "default": 10,
+      "minimum": 2,
+      "maximum": 59,
+      "label": "短期均线"
+    },
+    "slow": {
+      "type": "integer",
+      "default": 30,
+      "minimum": 3,
+      "maximum": 60,
+      "label": "长期均线"
+    },
+    "exposure": {
+      "type": "number",
+      "default": 0.95,
+      "minimum": 0,
+      "maximum": 1,
+      "label": "总目标仓位"
+    }
+  },
+  "dependencies": []
+}

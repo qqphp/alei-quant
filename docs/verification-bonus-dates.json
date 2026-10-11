@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-10-10T14:31:12.945008+08:00",
+  "check_database": "stock_alei_restore_20261010_142848_31f79d",
+  "scope": "Synthetic delayed listing/payment dates ONLY in independent restored clone; not an actual company announcement or real fractional allocation.",
+  "fixture_data_version": 7657,
+  "original_pinned_version": 7240,
+  "old_pinned_result_equal": true,
+  "runs": {
+    "old_pinned": "f69a450b-b01d-4a70-8de0-3eb2227057f1",
+    "daily": "bc9df53e-69d3-4ac6-b58e-f604a316ddc9",
+    "minute_5": "08aa6bdd-ee16-4479-9eb3-7fca8df9b272",
+    "minute_15": "71e6a99a-ef4b-4573-9934-504ba208b335",
+    "minute_30": "32f39b48-efd2-46ba-81c1-18d1b0a8b188",
+    "minute_60": "399808f3-a570-4147-b697-c48f9e9b14eb"
+  },
+  "daily_cash_nav_position_sellable_receivable_checks": 7,
+  "shares_locked_through": "2023-06-16",
+  "shares_first_sellable": "2023-06-19",
+  "payment_date": "2023-06-20",
+  "payment_once": 491.4,
+  "daily_remaining_quantity": 240,
+  "partial_order_remainder_expired_not_automatically_retried": true,
+  "minute_cases": [
+    {
+      "frequency": "5",
+      "run": "08aa6bdd-ee16-4479-9eb3-7fca8df9b272",
+      "locked_minutes_and_receivable_checks": 96,
+      "partial_sell": 600,
+      "remaining_locked_quantity": 240,
+      "cash_payment_after_run_end": true
+    },
+    {
+      "frequency": "15",
+      "run": "71e6a99a-ef4b-4573-9934-504ba208b335",
+      "locked_minutes_and_receivable_checks": 32,
+      "partial_sell": 600,
+      "remaining_locked_quantity": 240,
+      "cash_payment_after_run_end": true
+    },
+    {
+      "frequency": "30",
+      "run": "32f39b48-efd2-46ba-81c1-18d1b0a8b188",
+      "locked_minutes_and_receivable_checks": 16,
+      "partial_sell": 600,
+      "remaining_locked_quantity": 240,
+      "cash_payment_after_run_end": true
+    },
+    {
+      "frequency": "60",
+      "run": "399808f3-a570-4147-b697-c48f9e9b14eb",
+      "locked_minutes_and_receivable_checks": 8,
+      "partial_sell": 600,
+      "remaining_locked_quantity": 240,
+      "cash_payment_after_run_end": true
+    }
+  ],
+  "main_database_modified": false
+}

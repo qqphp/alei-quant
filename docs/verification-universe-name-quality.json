@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-11T00:25:25.735910+08:00",
+  "job": "f464e44d-2545-474f-8aef-fda99e2b1049",
+  "batch": 17373,
+  "raw_received_rows": 6934,
+  "unique_members": 6934,
+  "missing_name_codes": [
+    "sh.516480"
+  ],
+  "http_csv_full_equal": true,
+  "raw_hashes_equal": true,
+  "scope": "真实重查6934唯一成员；原先重复代码失败与后续缺失名称失败保留，不据重查反推原批次原文。名称空值不补造，成员完整与字段缺失分开。",
+  "repeat": {
+    "id": 17548,
+    "row_count": 6934,
+    "changed_count": 0,
+    "coverage": {
+      "empty": false,
+      "arguments": {
+        "day": "2025-09-02"
+      },
+      "validation": "完整协议分页；仅发布已就绪行情；全市场完整度仍需证券池对照；分红仅税后说明文字变体原样保留；证券池相同重复行计数保留、成员去重；名称空值保持并标记，不影响代码/交易状态成员身份",
+      "wording_variants": 0,
+      "excluded_not_ready": 0,
+      "universe_missing_names": [
+        "sh.516480"
+      ],
+      "universe_identical_duplicates": {}
+    }
+  }
+}

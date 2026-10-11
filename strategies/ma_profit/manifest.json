@@ -1,0 +1,19 @@
+{
+  "id": "ma_profit",
+  "name": "盈利过滤 · 趋势示例",
+  "version": "1.0.0",
+  "api_version": "1",
+  "entrypoint": "strategy.py:Strategy",
+  "description": "短均线高于长均线且最新已可用财报 EPS TTM 高于门槛时持有，条件失效后退出；做多等权、下一日开盘。仅为基本面接入示例。",
+  "frequency": "d",
+  "datasets": ["bars:d", "factors", "dividends", "profit"],
+  "required_fields": {"profit": ["epsTTM"]},
+  "lookback": 251,
+  "parameters": {
+    "fast": {"type": "integer", "default": 10, "minimum": 2, "maximum": 120, "label": "短期均线"},
+    "slow": {"type": "integer", "default": 30, "minimum": 3, "maximum": 250, "label": "长期均线"},
+    "minimum_eps": {"type": "number", "default": 0, "minimum": 0, "label": "EPS TTM 门槛（元/股）"},
+    "exposure": {"type": "number", "default": 0.95, "minimum": 0, "maximum": 1, "label": "总目标仓位"}
+  },
+  "dependencies": []
+}

@@ -1,0 +1,288 @@
+{
+  "experiment_id": "2304b6bd-209a-4cfe-b758-f041a6a0a465",
+  "request": {
+    "name": "示例验收：双均线分段研究",
+    "config": {
+      "end": "2026-10-10",
+      "codes": [
+        "sh.600000"
+      ],
+      "start": "2024-06-01",
+      "capital": 1000000.0,
+      "slippage": 0.0005,
+      "benchmark": "sh.000300",
+      "risk_free": 0.02,
+      "parameters": {
+        "fast": 10,
+        "slow": 30,
+        "exposure": 0.95
+      },
+      "strategy_id": "ma_cross",
+      "dividend_tax": 0.1,
+      "participation": 0.05,
+      "transfer_rate": 1e-05,
+      "commission_rate": 0.0003,
+      "strategy_digest": "971fa556d39972751d0c647c0cc0223691116c1e5aff96bb838bf5bb23be255c",
+      "strategy_version": "1.0.0",
+      "minimum_commission": 5.0
+    },
+    "intervals": {
+      "train": {
+        "start": "2024-06-01",
+        "end": "2024-07-31"
+      },
+      "validation": {
+        "start": "2024-08-01",
+        "end": "2024-09-30"
+      },
+      "out_of_sample": {
+        "start": "2024-10-01",
+        "end": "2024-12-31"
+      }
+    },
+    "candidates": [
+      {
+        "fast": 10,
+        "slow": 30,
+        "exposure": 0.95
+      },
+      {
+        "fast": 20,
+        "slow": 60,
+        "exposure": 0.95
+      }
+    ]
+  },
+  "premature_lock_blocked": true,
+  "initial_detail": {
+    "id": "2304b6bd-209a-4cfe-b758-f041a6a0a465",
+    "name": "示例验收：双均线分段研究",
+    "intervals": {
+      "train": {
+        "end": "2024-07-31",
+        "start": "2024-06-01"
+      },
+      "validation": {
+        "end": "2024-09-30",
+        "start": "2024-08-01"
+      },
+      "out_of_sample": {
+        "end": "2024-12-31",
+        "start": "2024-10-01"
+      }
+    },
+    "candidates": [
+      {
+        "fast": 10,
+        "slow": 30,
+        "exposure": 0.95
+      },
+      {
+        "fast": 20,
+        "slow": 60,
+        "exposure": 0.95
+      }
+    ],
+    "selected": null,
+    "locked_at": null,
+    "created_at": "2026-10-10T10:02:36.369110+08:00",
+    "data_version": "2904",
+    "engine_version": "cash-ledger-0.5.0",
+    "runs": [
+      {
+        "candidate": 0,
+        "stage": "train",
+        "run_id": "4a712af3-0872-432b-9863-10876ba4117d",
+        "status": "queued",
+        "error": null,
+        "metrics": null
+      },
+      {
+        "candidate": 0,
+        "stage": "validation",
+        "run_id": "f9d79e46-fc1a-4a5f-9402-7a9cf815dae2",
+        "status": "queued",
+        "error": null,
+        "metrics": null
+      },
+      {
+        "candidate": 1,
+        "stage": "train",
+        "run_id": "7910f865-77ea-408a-bfbb-98e0408f2934",
+        "status": "queued",
+        "error": null,
+        "metrics": null
+      },
+      {
+        "candidate": 1,
+        "stage": "validation",
+        "run_id": "e7602c88-b23d-46f4-a97b-c4817c2674d6",
+        "status": "queued",
+        "error": null,
+        "metrics": null
+      }
+    ]
+  },
+  "second_choice_blocked": true,
+  "locked_detail": {
+    "id": "2304b6bd-209a-4cfe-b758-f041a6a0a465",
+    "name": "示例验收：双均线分段研究",
+    "intervals": {
+      "train": {
+        "end": "2024-07-31",
+        "start": "2024-06-01"
+      },
+      "validation": {
+        "end": "2024-09-30",
+        "start": "2024-08-01"
+      },
+      "out_of_sample": {
+        "end": "2024-12-31",
+        "start": "2024-10-01"
+      }
+    },
+    "candidates": [
+      {
+        "fast": 10,
+        "slow": 30,
+        "exposure": 0.95
+      },
+      {
+        "fast": 20,
+        "slow": 60,
+        "exposure": 0.95
+      }
+    ],
+    "selected": 0,
+    "locked_at": "2026-10-10T10:03:32.807797+08:00",
+    "created_at": "2026-10-10T10:02:36.369110+08:00",
+    "data_version": "2904",
+    "engine_version": "cash-ledger-0.5.0",
+    "runs": [
+      {
+        "candidate": 0,
+        "stage": "out_of_sample",
+        "run_id": "516fd660-d542-4f38-8a70-8c2b2d2ec330",
+        "status": "completed",
+        "error": null,
+        "metrics": {
+          "fees": 1280.43,
+          "notes": [],
+          "sharpe": -0.2435213566766006,
+          "turnover": 2.8583976902115418,
+          "risk_free": 0.02,
+          "volatility": 0.2152334354744437,
+          "trade_count": 3,
+          "max_drawdown": 0.08276043,
+          "total_return": -0.013296430000000026,
+          "annual_return": -0.053796831407547985,
+          "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+          "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+          "excess_return": 0.007347324023447066,
+          "benchmark_return": -0.020643754023447092
+        }
+      },
+      {
+        "candidate": 0,
+        "stage": "train",
+        "run_id": "4a712af3-0872-432b-9863-10876ba4117d",
+        "status": "completed",
+        "error": null,
+        "metrics": {
+          "fees": 1336.32,
+          "notes": [],
+          "sharpe": -0.2522721170379978,
+          "turnover": 2.8331903378142007,
+          "risk_free": 0.02,
+          "volatility": 0.16369140535408275,
+          "trade_count": 3,
+          "max_drawdown": 0.04793011772583344,
+          "total_return": -0.005707550000000006,
+          "annual_return": -0.0337603608106819,
+          "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+          "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+          "excess_return": 0.032796136963024636,
+          "benchmark_return": -0.03850368696302464
+        }
+      },
+      {
+        "candidate": 0,
+        "stage": "validation",
+        "run_id": "f9d79e46-fc1a-4a5f-9402-7a9cf815dae2",
+        "status": "completed",
+        "error": null,
+        "metrics": {
+          "fees": 2393.56,
+          "notes": [],
+          "sharpe": -0.3682068763573258,
+          "turnover": 4.717736387393719,
+          "risk_free": 0.02,
+          "volatility": 0.16910121218985558,
+          "trade_count": 5,
+          "max_drawdown": 0.08411529827162234,
+          "total_return": -0.00910356000000001,
+          "annual_return": -0.05465924866728511,
+          "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+          "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+          "excess_return": -0.17637723289424967,
+          "benchmark_return": 0.16727367289424966
+        }
+      },
+      {
+        "candidate": 1,
+        "stage": "train",
+        "run_id": "7910f865-77ea-408a-bfbb-98e0408f2934",
+        "status": "completed",
+        "error": null,
+        "metrics": {
+          "fees": 294.41,
+          "notes": [],
+          "sharpe": 1.4979683595829871,
+          "turnover": 0.928557502079737,
+          "risk_free": 0.02,
+          "volatility": 0.1796730836673668,
+          "trade_count": 1,
+          "max_drawdown": 0.04634150153259897,
+          "total_return": 0.04660642000000004,
+          "annual_return": 0.31431773003860886,
+          "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+          "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+          "excess_return": 0.08511010696302468,
+          "benchmark_return": -0.03850368696302464
+        }
+      },
+      {
+        "candidate": 1,
+        "stage": "validation",
+        "run_id": "e7602c88-b23d-46f4-a97b-c4817c2674d6",
+        "status": "completed",
+        "error": null,
+        "metrics": {
+          "fees": 1443.44,
+          "notes": [],
+          "sharpe": 3.31294482844275,
+          "turnover": 2.962287207495249,
+          "risk_free": 0.02,
+          "volatility": 0.25533951370506686,
+          "trade_count": 3,
+          "max_drawdown": 0.08120121066288122,
+          "total_return": 0.14513856000000014,
+          "annual_return": 1.3001788426964924,
+          "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+          "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+          "excess_return": -0.02213511289424952,
+          "benchmark_return": 0.16727367289424966
+        }
+      }
+    ]
+  },
+  "consistent": {
+    "data_version": true,
+    "engine_source": true,
+    "strategy": true,
+    "rules_version": true,
+    "dependencies": true,
+    "seed": true
+  },
+  "selection_policy": "Predeclared default candidate 0; acceptance of workflow, not return optimization"
+}

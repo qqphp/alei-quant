@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-11T01:11:22.492182+08:00",
+  "version": 18223,
+  "source_method_count": 26,
+  "label_count": 143,
+  "all_published_sdk_fields_labelled": true,
+  "source_documents_sha256_equal": 19,
+  "labels_sha256": "e178efed3fcd9a2a7d766cf051b922544b6cd11b82d19c2df8c0c396079b0ba2",
+  "calendar_document": "https://www.baostock.com/mainContent?file=StockBasicInfoAPI.md",
+  "cases": [
+    {
+      "dataset": "profit",
+      "code": "sh.600000",
+      "rows": 7,
+      "http_csv_raw_equal": true
+    },
+    {
+      "dataset": "industry",
+      "code": "sh.600000",
+      "rows": 1,
+      "http_csv_raw_equal": true
+    },
+    {
+      "dataset": "money_month",
+      "code": "",
+      "rows": 441,
+      "http_csv_raw_equal": true
+    },
+    {
+      "dataset": "money_year",
+      "code": "",
+      "rows": 35,
+      "http_csv_raw_equal": true
+    }
+  ],
+  "ui_observation": {
+    "financial": "元/股、比例原值、日期及来源说明；原始0.061950保留",
+    "macro": "441行、9个字段显示文档未注明单位；来源链接supplyData.md",
+    "industry": "名称/行业/更新日中文标签，来源链接stockIndustry.md",
+    "console_error_warn": 0
+  },
+  "scope": "19份官网POST正文及26个方法已发布字段覆盖；四类本机固定版本资料全部HTTP/CSV与源原值相同。单位未知保持未知，不自动按百分比或货币量级换算，不证明源首次发布原版或全历史完整。"
+}

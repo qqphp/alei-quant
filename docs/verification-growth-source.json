@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-10-10T20:09:04.820299+08:00",
+  "job": {
+    "id": "e6661041-9f75-4003-bbcf-2d32e4937fa8",
+    "status": "completed",
+    "progress": 8,
+    "total": 8,
+    "error": null,
+    "checkpoint": {
+      "next_operation": 8,
+      "operations_digest": "9be5cc710ec186bdc8b37f339442d0c95408b99d2ffaff0cd993e26fe42b0f19"
+    },
+    "started_at": "2026-10-10T19:47:32.322621+08:00"
+  },
+  "batches": [
+    {
+      "id": 12951,
+      "method": "query_stock_basic",
+      "row_count": 0,
+      "changed_count": 0,
+      "status": "failed",
+      "arguments": {}
+    },
+    {
+      "id": 13026,
+      "method": "query_stock_basic",
+      "row_count": 8992,
+      "changed_count": 0,
+      "status": "published",
+      "arguments": {}
+    },
+    {
+      "id": 13062,
+      "method": "query_trade_dates",
+      "row_count": 1378,
+      "changed_count": 0,
+      "status": "published",
+      "arguments": {
+        "end_date": "2026-10-09",
+        "start_date": "2023-01-01"
+      }
+    },
+    {
+      "id": 13063,
+      "method": "query_history_k_data_plus",
+      "row_count": 910,
+      "changed_count": 909,
+      "status": "published",
+      "arguments": {
+        "code": "sz.300001",
+        "fields": "date,code,open,high,low,close,preclose,volume,amount,adjustflag,turn,tradestatus,pctChg,peTTM,pbMRQ,psTTM,pcfNcfTTM,isST",
+        "end_date": "2026-10-09",
+        "frequency": "d",
+        "adjustflag": "3",
+        "start_date": "2023-01-01"
+      }
+    },
+    {
+      "id": 13064,
+      "method": "query_adjust_factor",
+      "row_count": 4,
+      "changed_count": 4,
+      "status": "published",
+      "arguments": {
+        "code": "sz.300001",
+        "end_date": "2026-10-09",
+        "start_date": "2023-01-01"
+      }
+    },
+    {
+      "id": 13065,
+      "method": "query_dividend_data",
+      "row_count": 1,
+      "changed_count": 1,
+      "status": "published",
+      "arguments": {
+        "code": "sz.300001",
+        "year": "2023",
+        "yearType": "operate"
+      }
+    },
+    {
+      "id": 13066,
+      "method": "query_dividend_data",
+      "row_count": 1,
+      "changed_count": 1,
+      "status": "published",
+      "arguments": {
+        "code": "sz.300001",
+        "year": "2024",
+        "yearType": "operate"
+      }
+    },
+    {
+      "id": 13067,
+      "method": "query_dividend_data",
+      "row_count": 1,
+      "changed_count": 1,
+      "status": "published",
+      "arguments": {
+        "code": "sz.300001",
+        "year": "2025",
+        "yearType": "operate"
+      }
+    },
+    {
+      "id": 13068,
+      "method": "query_dividend_data",
+      "row_count": 1,
+      "changed_count": 1,
+      "status": "published",
+      "arguments": {
+        "code": "sz.300001",
+        "year": "2026",
+        "yearType": "operate"
+      }
+    }
+  ],
+  "fixed_version": 13068,
+  "daily_rows": 910,
+  "factor_rows": 4,
+  "dividend_rows": 4,
+  "scope": "单证券真实来源分页完成；重载时失败的空批次保留。不是全创业板历史/所有公司行动覆盖。"
+}

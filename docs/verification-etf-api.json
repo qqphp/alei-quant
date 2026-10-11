@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-10-10T15:18:33.140922+08:00",
+  "preflight": [
+    {
+      "case": "unknown_etf",
+      "http_status": 400,
+      "detail": "sh.518880 对应交易规则尚未核验；支持沪深主板 A 股与已核验的 510050/510300 国内股票 ETF",
+      "no_run_created": true
+    },
+    {
+      "case": "outside_verified_range",
+      "http_status": 400,
+      "detail": "sh.510050 已核验 ETF 来源区间为 2026-01-05 至 2026-10-09，需扩展事件覆盖后运行",
+      "no_run_created": true
+    }
+  ],
+  "csv": {
+    "data_version": 8773,
+    "rows": 1,
+    "official_action_terms_preserved": true,
+    "zero_values_preserved": true,
+    "all_fields_preserved": true
+  }
+}

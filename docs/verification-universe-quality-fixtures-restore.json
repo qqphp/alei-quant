@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-11T00:50:33.456910+08:00",
+  "clone": "stock_alei_restore_20261011_003326_e28fa4",
+  "cases": [
+    {
+      "case": "identical_duplicate",
+      "batch": 17641,
+      "status": "published",
+      "changed_count": 0,
+      "error": null
+    },
+    {
+      "case": "repeat",
+      "batch": 17642,
+      "status": "published",
+      "changed_count": 0,
+      "error": null
+    },
+    {
+      "case": "name_conflict",
+      "batch": 17643,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "证券池同一代码的名称或状态冲突，未发布快照"
+    },
+    {
+      "case": "status_conflict",
+      "batch": 17644,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "证券池同一代码的名称或状态冲突，未发布快照"
+    },
+    {
+      "case": "same_code_missing_name",
+      "batch": 17645,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "证券池同一代码的名称或状态冲突，未发布快照"
+    },
+    {
+      "case": "invalid_status",
+      "batch": 17646,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "证券池代码或交易状态缺失，未发布快照"
+    },
+    {
+      "case": "missing_code",
+      "batch": 17647,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "证券池代码或交易状态缺失，未发布快照"
+    },
+    {
+      "case": "single_missing_name",
+      "batch": 17648,
+      "status": "published",
+      "changed_count": 1,
+      "error": null
+    },
+    {
+      "case": "repeat_missing_name",
+      "batch": 17649,
+      "status": "published",
+      "changed_count": 0,
+      "error": null
+    }
+  ],
+  "scope": "副本构造响应，无 SDK/主库写入；完全相同重复行接收数量保留、成员唯一、重复零新值。名称/状态冲突、代码缺失和未知状态零源行零快照发布；独立代码名称为空则原样保留、计数披露，重复零新值。",
+  "program_from_backup": true,
+  "backup": "E:\\codex\\stock\\runtime\\backups\\20261011-003124-293480"
+}

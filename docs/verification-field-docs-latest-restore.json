@@ -1,0 +1,121 @@
+{
+  "backup": "E:\\codex\\stock\\runtime\\backups\\20261011-020740-185179",
+  "documents": [
+    {
+      "file": "stockBasic.md",
+      "bytes": 2114,
+      "sha256": "f8d5ba4ff8f3f664dc7f3fa8205a03e7827aa025044f16e4aa41aa5d3f0f70c8",
+      "equal": true
+    },
+    {
+      "file": "StockBasicInfoAPI.md",
+      "bytes": 3149,
+      "sha256": "91776c0baa6cb59c1d597f08d46e63c38c2365f2d68b05b63437963e7c6612c3",
+      "equal": true
+    },
+    {
+      "file": "dividInfo.md",
+      "bytes": 4047,
+      "sha256": "b3b60b2044899f35aefc40ddca023a69883204ba55d5754049e7fc8593a6f2a1",
+      "equal": true
+    },
+    {
+      "file": "factorInfo.md",
+      "bytes": 2789,
+      "sha256": "6820224b59a62b5e96b3347e0342263f0f9fb448a00a5c4ce1e61d2857b8984b",
+      "equal": true
+    },
+    {
+      "file": "stockIndustry.md",
+      "bytes": 1922,
+      "sha256": "c465300588502ffd0c6b2d5dc45c5412194ad8ae9c0260f5a34dca5de3266e50",
+      "equal": true
+    },
+    {
+      "file": "pythonAPI.md",
+      "bytes": 72580,
+      "sha256": "0437dafc182f56094876bb2d15e5045b60c15ab5322ea0b716925ef61a1c0f4a",
+      "equal": true
+    },
+    {
+      "file": "depositRate.md",
+      "bytes": 3203,
+      "sha256": "a9f9ea1408ffa20ddf754259f89811e3ea5faa4f9551e095695375fa824a6e37",
+      "equal": true
+    },
+    {
+      "file": "loanRate.md",
+      "bytes": 2533,
+      "sha256": "65751fb2260499c7258ca76f005c07e962e8f4a52679af2c703819f822e4f526",
+      "equal": true
+    },
+    {
+      "file": "reserveRatio.md",
+      "bytes": 2760,
+      "sha256": "48de57a805b7a8405dca107d2e05ba5b5a2041e8f9cc19c8c9ecab175c17219d",
+      "equal": true
+    },
+    {
+      "file": "supplyData.md",
+      "bytes": 2681,
+      "sha256": "a3ffe27e67df4c2d37989cbe0285e8d4836ed3b013f2da0cbd2c49c5e6168519",
+      "equal": true
+    },
+    {
+      "file": "supplyDataYear.md",
+      "bytes": 2260,
+      "sha256": "7aaaa90e571736cb075c90ca0a0e07b22863d49a379af4795e7c259ef54872e9",
+      "equal": true
+    },
+    {
+      "file": "seasonProfit.md",
+      "bytes": 2685,
+      "sha256": "1d51b4abbd8db3f05934fc58b339a639978438f4cfaad5632d12240f20275afd",
+      "equal": true
+    },
+    {
+      "file": "seasonExpress.md",
+      "bytes": 3773,
+      "sha256": "030379aac1cd5a78b72521b096f52c8b58e0d5e0e7925b709b5c87f19d150db3",
+      "equal": true
+    },
+    {
+      "file": "seasonBalance.md",
+      "bytes": 2442,
+      "sha256": "8b157300060ae0c33c6c3bcb747ecc6488f2c54a7e5a59f29eaeb5d165e63d63",
+      "equal": true
+    },
+    {
+      "file": "seasonGrowth.md",
+      "bytes": 2684,
+      "sha256": "3be700e9ac875e40454add8c9d2cdb825c6dba785e3aaebb38d9e8aba0ec1ab1",
+      "equal": true
+    },
+    {
+      "file": "seasonOperation.md",
+      "bytes": 2816,
+      "sha256": "53da9ba813c249fcb5a44f52d37d308d45188fa29da9f3e2836fb4b024c38b04",
+      "equal": true
+    },
+    {
+      "file": "seasonCashFlow.md",
+      "bytes": 2589,
+      "sha256": "fde08f2d70215d492d1f2a52cc92a49692c2853395d144e32951910f83f96cd0",
+      "equal": true
+    },
+    {
+      "file": "seasonDupont.md",
+      "bytes": 3497,
+      "sha256": "1c4bcb18f258e17e375ce4074124843a055341f041c1dd0d6a334d01c526dc14",
+      "equal": true
+    },
+    {
+      "file": "seasonForecast.md",
+      "bytes": 3333,
+      "sha256": "d6eb2feb488eb08d5da58a199421dd705921cd1f31fdfca305019675f6c4fdcf",
+      "equal": true
+    }
+  ],
+  "glossary_sha256": "e178efed3fcd9a2a7d766cf051b922544b6cd11b82d19c2df8c0c396079b0ba2",
+  "scope": "19 official field documents and the glossary match the verified backup bytes; no database or SDK calls."
+}

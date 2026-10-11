@@ -1,0 +1,53 @@
+{
+  "first_job": "a16091dc-347f-497c-a7e0-7247af173a5d",
+  "batch": {
+    "id": 12343,
+    "status": "published",
+    "row_count": 2,
+    "changed_count": 2
+  },
+  "source_identity_distinct": true,
+  "raw_rows_equal_failed_source": true,
+  "http_rows_present": true,
+  "csv_rows_present": true,
+  "stages": [
+    {
+      "key": "sh.688320|2024-06-14|2024-06-13|2024-04-26|2024-06-07|2024-05-17|corrected_20240608",
+      "stage": "corrected_20240608"
+    },
+    {
+      "key": "sh.688320|2024-06-14|2024-06-13|2024-04-26|2024-06-07|2024-05-17|original_20240607",
+      "stage": "original_20240607"
+    }
+  ],
+  "ledger_conflict_still_rejected": true,
+  "scope": "仅两条真实来源版本的采集/查询/导出；未开放科创板回测，未合并现金权益。",
+  "repeat": {
+    "job": "6d8a643f-5d32-4d1a-8562-12de49b9bbcc",
+    "batch": {
+      "id": 12349,
+      "status": "published",
+      "row_count": 2,
+      "changed_count": 0
+    },
+    "no_duplicate_revisions": true
+  },
+  "history_resume": {
+    "job": "3a12e654-ac88-4be4-800c-d784e07551b5",
+    "checkpoint_before": 11885,
+    "scope": "修复后通过重跑接口恢复原检查点；尚未证明全部31346项完成。",
+    "published_repaired_operation": {
+      "id": 12354,
+      "status": "published",
+      "row_count": 2,
+      "changed_count": 0
+    },
+    "observed_job": {
+      "id": "3a12e654-ac88-4be4-800c-d784e07551b5",
+      "status": "running",
+      "progress": 11894,
+      "total": 31346,
+      "error": null
+    }
+  }
+}

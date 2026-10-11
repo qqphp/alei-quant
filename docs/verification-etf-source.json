@@ -1,0 +1,260 @@
+{
+  "scope": "仅实际接口覆盖观测；不是 ETF 回测验收或无分红证明",
+  "job_id": "3be70991-af54-413b-899c-c73ee315700d",
+  "job": {
+    "status": "completed",
+    "progress": 6,
+    "total": 6,
+    "error": null
+  },
+  "batches": [
+    {
+      "id": 8076,
+      "method": "query_history_k_data_plus",
+      "arguments": {
+        "code": "sh.510050",
+        "fields": "date,code,open,high,low,close,preclose,volume,amount,adjustflag,pctChg",
+        "end_date": "2026-10-09",
+        "frequency": "d",
+        "adjustflag": "3",
+        "start_date": "2026-01-05"
+      },
+      "status": "published",
+      "row_count": 183,
+      "fields": [
+        "date",
+        "code",
+        "open",
+        "high",
+        "low",
+        "close",
+        "preclose",
+        "volume",
+        "amount",
+        "adjustflag",
+        "pctChg"
+      ],
+      "coverage": {
+        "empty": false,
+        "arguments": {
+          "code": "sh.510050",
+          "fields": "date,code,open,high,low,close,preclose,volume,amount,adjustflag,pctChg",
+          "end_date": "2026-10-09",
+          "frequency": "d",
+          "adjustflag": "3",
+          "start_date": "2026-01-05"
+        },
+        "validation": "完整协议分页；仅发布已就绪行情；全市场完整度仍需证券池对照",
+        "excluded_not_ready": 0
+      }
+    },
+    {
+      "id": 8077,
+      "method": "query_dividend_data",
+      "arguments": {
+        "code": "sh.510050",
+        "year": "2026",
+        "yearType": "operate"
+      },
+      "status": "published",
+      "row_count": 0,
+      "fields": [
+        "code",
+        "dividPreNoticeDate",
+        "dividAgmPumDate",
+        "dividPlanAnnounceDate",
+        "dividPlanDate",
+        "dividRegistDate",
+        "dividOperateDate",
+        "dividPayDate",
+        "dividStockMarketDate",
+        "dividCashPsBeforeTax",
+        "dividCashPsAfterTax",
+        "dividStocksPs",
+        "dividCashStock",
+        "dividReserveToStockPs"
+      ],
+      "coverage": {
+        "empty": true,
+        "arguments": {
+          "code": "sh.510050",
+          "year": "2026",
+          "yearType": "operate"
+        },
+        "validation": "完整协议分页；仅发布已就绪行情；全市场完整度仍需证券池对照",
+        "excluded_not_ready": 0
+      }
+    },
+    {
+      "id": 8078,
+      "method": "query_adjust_factor",
+      "arguments": {
+        "code": "sh.510050",
+        "end_date": "2026-10-09",
+        "start_date": "2026-01-05"
+      },
+      "status": "published",
+      "row_count": 0,
+      "fields": [
+        "code",
+        "dividOperateDate",
+        "foreAdjustFactor",
+        "backAdjustFactor",
+        "adjustFactor"
+      ],
+      "coverage": {
+        "empty": true,
+        "arguments": {
+          "code": "sh.510050",
+          "end_date": "2026-10-09",
+          "start_date": "2026-01-05"
+        },
+        "validation": "完整协议分页；仅发布已就绪行情；全市场完整度仍需证券池对照",
+        "excluded_not_ready": 0
+      }
+    },
+    {
+      "id": 8079,
+      "method": "query_history_k_data_plus",
+      "arguments": {
+        "code": "sh.510300",
+        "fields": "date,code,open,high,low,close,preclose,volume,amount,adjustflag,pctChg",
+        "end_date": "2026-10-09",
+        "frequency": "d",
+        "adjustflag": "3",
+        "start_date": "2026-01-05"
+      },
+      "status": "published",
+      "row_count": 183,
+      "fields": [
+        "date",
+        "code",
+        "open",
+        "high",
+        "low",
+        "close",
+        "preclose",
+        "volume",
+        "amount",
+        "adjustflag",
+        "pctChg"
+      ],
+      "coverage": {
+        "empty": false,
+        "arguments": {
+          "code": "sh.510300",
+          "fields": "date,code,open,high,low,close,preclose,volume,amount,adjustflag,pctChg",
+          "end_date": "2026-10-09",
+          "frequency": "d",
+          "adjustflag": "3",
+          "start_date": "2026-01-05"
+        },
+        "validation": "完整协议分页；仅发布已就绪行情；全市场完整度仍需证券池对照",
+        "excluded_not_ready": 0
+      }
+    },
+    {
+      "id": 8080,
+      "method": "query_dividend_data",
+      "arguments": {
+        "code": "sh.510300",
+        "year": "2026",
+        "yearType": "operate"
+      },
+      "status": "published",
+      "row_count": 0,
+      "fields": [
+        "code",
+        "dividPreNoticeDate",
+        "dividAgmPumDate",
+        "dividPlanAnnounceDate",
+        "dividPlanDate",
+        "dividRegistDate",
+        "dividOperateDate",
+        "dividPayDate",
+        "dividStockMarketDate",
+        "dividCashPsBeforeTax",
+        "dividCashPsAfterTax",
+        "dividStocksPs",
+        "dividCashStock",
+        "dividReserveToStockPs"
+      ],
+      "coverage": {
+        "empty": true,
+        "arguments": {
+          "code": "sh.510300",
+          "year": "2026",
+          "yearType": "operate"
+        },
+        "validation": "完整协议分页；仅发布已就绪行情；全市场完整度仍需证券池对照",
+        "excluded_not_ready": 0
+      }
+    },
+    {
+      "id": 8081,
+      "method": "query_adjust_factor",
+      "arguments": {
+        "code": "sh.510300",
+        "end_date": "2026-10-09",
+        "start_date": "2026-01-05"
+      },
+      "status": "published",
+      "row_count": 0,
+      "fields": [
+        "code",
+        "dividOperateDate",
+        "foreAdjustFactor",
+        "backAdjustFactor",
+        "adjustFactor"
+      ],
+      "coverage": {
+        "empty": true,
+        "arguments": {
+          "code": "sh.510300",
+          "end_date": "2026-10-09",
+          "start_date": "2026-01-05"
+        },
+        "validation": "完整协议分页；仅发布已就绪行情；全市场完整度仍需证券池对照",
+        "excluded_not_ready": 0
+      }
+    }
+  ],
+  "observations": {
+    "sh.510050": {
+      "count": 183,
+      "first": "2026-01-05",
+      "last": "2026-10-09",
+      "reference_changes": []
+    },
+    "sh.510300": {
+      "count": 183,
+      "first": "2026-01-05",
+      "last": "2026-10-09",
+      "reference_changes": [
+        {
+          "previous_date": "2026-01-16",
+          "date": "2026-01-19",
+          "previous_close": "4.8590",
+          "preclose": "4.7360",
+          "difference": "0.1230"
+        }
+      ]
+    }
+  },
+  "formal_announcement": {
+    "url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-01-12/510300_20260112_VTCZ.pdf",
+    "path": "research/510300-202601-dividend.pdf",
+    "sha256": "c8ff747d02fa90db72320458c38249f73720b932d61b7e088f033583aab63992",
+    "announcement_date": "2026-01-12",
+    "record_date": "2026-01-16",
+    "ex_date": "2026-01-19",
+    "pay_date": "2026-01-27",
+    "cash_per_unit": "0.1230",
+    "tax_policy": "本次公告明确个人/机构基金分配收入暂不征税；不套用股票固定股息税假设",
+    "internal_transfer_dates": [
+      "2026-01-23",
+      "2026-01-26"
+    ]
+  },
+  "conclusion": "510300 已知正式分红与 dividend/factor 空返回并存，不能将空值解释为无行动；参考价差不是登记/派息/税费事实来源。"
+}

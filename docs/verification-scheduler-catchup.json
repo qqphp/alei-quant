@@ -1,0 +1,82 @@
+{
+  "database": "stock_alei_restore_20261010_184943_4c2d80",
+  "checked_at": "2026-10-10T19:14:24.666388+08:00",
+  "fixture_only_in_clone": true,
+  "sdk_requests": 0,
+  "offline_trading_days": 425,
+  "first_100_oldest_equal": true,
+  "second_chunk_contiguous": true,
+  "repeat_tick_no_new_jobs": true,
+  "universe_and_four_index_days": 100,
+  "minute_jobs": 4,
+  "minute_operations": 9,
+  "minute_per_code_frequency_equal": true,
+  "etf_floor_respected": true,
+  "bootstrap_latest_only": true,
+  "first_jobs": 409,
+  "second_jobs": 383,
+  "daily_ranges": {
+    "query_daily_history_k_AStock": [
+      "2025-01-03",
+      "2025-06-06"
+    ],
+    "query_daily_history_k_ETF": [
+      "2026-01-05",
+      "2026-06-05"
+    ],
+    "query_daily_adjust_factor": [
+      "2025-01-03",
+      "2025-06-06"
+    ]
+  },
+  "scope": "真实独立副本数据库/调度器；构造离线水位，不是实际关机跨日采集或完整数据验证。保留副本任务不启动工作进程。",
+  "first_tick_seconds": 1.141771599999629,
+  "catchup_enqueue_transactions": 1,
+  "main_worker_reload": {
+    "reason": "加载已验收调度器",
+    "before": [
+      {
+        "id": "3a12e654-ac88-4be4-800c-d784e07551b5",
+        "status": "running",
+        "progress": 12062,
+        "total": 31346,
+        "checkpoint": {
+          "next_operation": 12062,
+          "operations_digest": "98b2ca478dd197d3c181e8680108c1ee92b93b0f9527386589dfd5b42863ccaf"
+        }
+      },
+      {
+        "id": "1c2c9fc2-0ead-485b-9088-26ec7c3062bf",
+        "status": "waiting",
+        "progress": 111,
+        "total": 905,
+        "checkpoint": {
+          "next_operation": 111,
+          "operations_digest": "a20157af3f3565c941b4b4e6454663e78bee03303ad80c668fe1302fa57076c6"
+        }
+      }
+    ],
+    "checkpoint_digest_preserved": true,
+    "requeued_same_jobs": true,
+    "scope": "实际取消终态后重启服务；未据等待超时重启，后续推进需另读回。",
+    "observed_after_reload": [
+      {
+        "id": "3a12e654-ac88-4be4-800c-d784e07551b5",
+        "status": "waiting",
+        "progress": 12094,
+        "total": 31346,
+        "error": "本段已提交 32 项操作，达到 100 项或 60 秒调度阈值；让出唯一采集通道后按检查点继续",
+        "heartbeat_at": "2026-10-10 19:17:30.598612+08:00"
+      },
+      {
+        "id": "1c2c9fc2-0ead-485b-9088-26ec7c3062bf",
+        "status": "queued",
+        "progress": 111,
+        "total": 905,
+        "error": null,
+        "heartbeat_at": "2026-10-10 19:14:56.544207+08:00"
+      }
+    ],
+    "at_least_one_task_advanced": true
+  }
+}

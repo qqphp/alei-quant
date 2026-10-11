@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-09",
+  "version": 20538,
+  "pool_version": 46,
+  "groups": [
+    {
+      "asset": "A 股",
+      "source_rows": 5224,
+      "all_counts_ranks_equal": true,
+      "amount": "1900364743965.0400",
+      "unknown_status": 0
+    },
+    {
+      "asset": "ETF",
+      "source_rows": 1693,
+      "all_counts_ranks_equal": true,
+      "amount": "495205873800.6590",
+      "unknown_status": 2
+    }
+  ],
+  "indices_all_same_source_day": true,
+  "filters": [
+    {
+      "exchange": "sh",
+      "status": "all",
+      "rows": 4188,
+      "all_pages_equal": true
+    },
+    {
+      "exchange": "sh",
+      "status": "0",
+      "rows": 545,
+      "all_pages_equal": true
+    },
+    {
+      "exchange": "sh",
+      "status": "1",
+      "rows": 3643,
+      "all_pages_equal": true
+    },
+    {
+      "exchange": "sz",
+      "status": "all",
+      "rows": 4804,
+      "all_pages_equal": true
+    },
+    {
+      "exchange": "sz",
+      "status": "0",
+      "rows": 647,
+      "all_pages_equal": true
+    },
+    {
+      "exchange": "sz",
+      "status": "1",
+      "rows": 4157,
+      "all_pages_equal": true
+    }
+  ],
+  "name_sort_stable": true,
+  "errors": [
+    {
+      "query": "exchange=bj",
+      "status": 422
+    },
+    {
+      "query": "status=9",
+      "status": 422
+    }
+  ],
+  "daily_index_rows": 2826173,
+  "daily_index_all_latest_source_equal": true,
+  "overview_seconds": [
+    0.4651215000048978,
+    0.38771080000151414,
+    0.3762846999889007
+  ],
+  "overview_median_seconds": 0.38771080000151414,
+  "new_saved_filter_fields_optional": true,
+  "scope": "Actual HTTP and persisted source values. Main database read only; no SDK calls or constructed market records.",
+  "browser": {
+    "asset_switch": "A 股 / ETF",
+    "turnover_ranking_rows": 10,
+    "detail_navigation_code": "sh.511360",
+    "detail_navigation_ipoDate": "2020-09-25",
+    "detail_navigation_status": "1",
+    "console_error_warn": [],
+    "screenshot": "screenshots/market-summary-etf.png",
+    "switch_clears_previous_metadata": true,
+    "loading_status_is_missing_not_delisted": true
+  },
+  "build": {
+    "typescript": "passed",
+    "production": "passed",
+    "script_kb": 772.71,
+    "large_bundle_warning": true
+  }
+}

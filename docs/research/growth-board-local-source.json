@@ -1,0 +1,190 @@
+{
+  "observed_at": "2026-10-10T11:26:53.573828+00:00",
+  "data_version": 12749,
+  "source": "Read-only local published BaoStock source_records; no SDK query or job mutation",
+  "codes": {
+    "sh.688320": {
+      "instruments": {
+        "rows": 1,
+        "first": null,
+        "last": null,
+        "batches": [
+          1
+        ],
+        "sample": [
+          {
+            "payload": {
+              "code": "sh.688320",
+              "type": "1",
+              "status": "1",
+              "ipoDate": "2022-04-28",
+              "outDate": "",
+              "code_name": "禾川科技"
+            },
+            "batch_id": 1,
+            "period": null
+          }
+        ]
+      },
+      "bars:d": {
+        "rows": 910,
+        "first": "2023-01-03",
+        "last": "2026-10-09",
+        "batches": [
+          34,
+          12240
+        ],
+        "sample": [
+          {
+            "payload": {
+              "low": "46.5700",
+              "code": "sh.688320",
+              "date": "2023-01-03",
+              "high": "51.0000",
+              "isST": "0",
+              "open": "46.8100",
+              "turn": "5.399400",
+              "close": "50.2400",
+              "pbMRQ": "4.948164",
+              "peTTM": "68.141810",
+              "psTTM": "8.348070",
+              "amount": "87515263.4200",
+              "pctChg": "7.350400",
+              "volume": "1769934",
+              "preclose": "46.8000",
+              "pcfNcfTTM": "28.570210",
+              "adjustflag": "3",
+              "tradestatus": "1"
+            },
+            "batch_id": 12240,
+            "period": "2023-01-03"
+          }
+        ]
+      },
+      "dividends": {
+        "rows": 3,
+        "first": "2023-06-19",
+        "last": "2024-06-14",
+        "batches": [
+          12242,
+          12343
+        ],
+        "sample": [
+          {
+            "payload": {
+              "code": "sh.688320",
+              "dividPayDate": "2023-06-19",
+              "dividPlanDate": "2023-06-13",
+              "dividStocksPs": "0.000000",
+              "dividCashStock": "10派1.8元（含税，扣税后1.62或1.8元）",
+              "dividAgmPumDate": "2023-05-19",
+              "dividRegistDate": "2023-06-16",
+              "dividOperateDate": "2023-06-19",
+              "dividPreNoticeDate": "",
+              "dividCashPsAfterTax": "0.162或0.18",
+              "dividCashPsBeforeTax": "0.18",
+              "dividStockMarketDate": "",
+              "dividPlanAnnounceDate": "2023-04-28",
+              "dividReserveToStockPs": ""
+            },
+            "batch_id": 12242,
+            "period": "2023-06-19"
+          }
+        ]
+      },
+      "factors": {
+        "rows": 2,
+        "first": "2023-06-19",
+        "last": "2024-06-14",
+        "batches": [
+          12241
+        ],
+        "sample": [
+          {
+            "payload": {
+              "code": "sh.688320",
+              "adjustFactor": "1.004410",
+              "backAdjustFactor": "1.004410",
+              "dividOperateDate": "2023-06-19",
+              "foreAdjustFactor": "0.995814"
+            },
+            "batch_id": 12241,
+            "period": "2023-06-19"
+          }
+        ]
+      }
+    },
+    "sz.300001": {
+      "instruments": {
+        "rows": 1,
+        "first": null,
+        "last": null,
+        "batches": [
+          1
+        ],
+        "sample": [
+          {
+            "payload": {
+              "code": "sz.300001",
+              "type": "1",
+              "status": "1",
+              "ipoDate": "2009-10-30",
+              "outDate": "",
+              "code_name": "特锐德"
+            },
+            "batch_id": 1,
+            "period": null
+          }
+        ]
+      },
+      "bars:d": {
+        "rows": 1,
+        "first": "2026-10-09",
+        "last": "2026-10-09",
+        "batches": [
+          34
+        ],
+        "sample": [
+          {
+            "payload": {
+              "low": "32.1300",
+              "code": "sz.300001",
+              "date": "2026-10-09",
+              "high": "33.6500",
+              "isST": "0",
+              "open": "33.5000",
+              "turn": "1.168000",
+              "close": "32.8700",
+              "pbMRQ": "3.927441",
+              "peTTM": "25.818194",
+              "psTTM": "2.145762",
+              "amount": "393122916.4500",
+              "pctChg": "-1.880600",
+              "volume": "12043907",
+              "preclose": "33.5000",
+              "pcfNcfTTM": "56.958833",
+              "adjustflag": "3",
+              "tradestatus": "1"
+            },
+            "batch_id": 34,
+            "period": "2026-10-09"
+          }
+        ]
+      },
+      "dividends": {
+        "rows": 0,
+        "first": null,
+        "last": null,
+        "batches": [],
+        "sample": []
+      },
+      "factors": {
+        "rows": 0,
+        "first": null,
+        "last": null,
+        "batches": [],
+        "sample": []
+      }
+    }
+  }
+}

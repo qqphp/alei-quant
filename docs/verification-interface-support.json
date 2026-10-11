@@ -1,0 +1,346 @@
+{
+  "checked_at": "2026-10-10T20:23:28.406451+00:00",
+  "version": 22019,
+  "method_count": 26,
+  "cases": [
+    {
+      "method": "query_history_k_data_plus",
+      "collection_status": "verified",
+      "source_datasets": [
+        "bars:15",
+        "bars:30",
+        "bars:5",
+        "bars:60",
+        "bars:d",
+        "bars:m",
+        "bars:w"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 3584,
+      "nonempty_batches": 3584,
+      "coverage_status": "partial",
+      "strategy_access": "行情窗口 / 引擎撮合与基准"
+    },
+    {
+      "method": "query_daily_history_k_AStock",
+      "collection_status": "verified",
+      "source_datasets": [
+        "bars:d"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 1,
+      "nonempty_batches": 1,
+      "coverage_status": "partial",
+      "strategy_access": "行情窗口 / 引擎撮合与基准"
+    },
+    {
+      "method": "query_daily_history_k_ETF",
+      "collection_status": "verified",
+      "source_datasets": [
+        "bars:d"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 1,
+      "nonempty_batches": 1,
+      "coverage_status": "partial",
+      "strategy_access": "行情窗口 / 引擎撮合与基准"
+    },
+    {
+      "method": "query_stock_basic",
+      "collection_status": "verified",
+      "source_datasets": [
+        "instruments"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 8,
+      "nonempty_batches": 8,
+      "coverage_status": "partial",
+      "strategy_access": "当前档案 / 资产规则核对"
+    },
+    {
+      "method": "query_all_stock",
+      "collection_status": "verified",
+      "source_datasets": [
+        "universe"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 914,
+      "nonempty_batches": 914,
+      "coverage_status": "partial",
+      "strategy_access": "历史成员查询 / 回填范围"
+    },
+    {
+      "method": "query_trade_dates",
+      "collection_status": "verified",
+      "source_datasets": [
+        "calendar"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 8,
+      "nonempty_batches": 8,
+      "coverage_status": "partial",
+      "strategy_access": "平台交易日与就绪校验"
+    },
+    {
+      "method": "query_stock_industry",
+      "collection_status": "verified",
+      "source_datasets": [
+        "industry"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 2,
+      "nonempty_batches": 2,
+      "coverage_status": "partial",
+      "strategy_access": "浏览 / 当前参考筛选"
+    },
+    {
+      "method": "query_sz50_stocks",
+      "collection_status": "verified",
+      "source_datasets": [
+        "sz50"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 2,
+      "nonempty_batches": 2,
+      "coverage_status": "partial",
+      "strategy_access": "浏览 / 当前参考筛选"
+    },
+    {
+      "method": "query_hs300_stocks",
+      "collection_status": "verified",
+      "source_datasets": [
+        "hs300"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 2,
+      "nonempty_batches": 2,
+      "coverage_status": "partial",
+      "strategy_access": "浏览 / 当前参考筛选"
+    },
+    {
+      "method": "query_zz500_stocks",
+      "collection_status": "verified",
+      "source_datasets": [
+        "zz500"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 2,
+      "nonempty_batches": 2,
+      "coverage_status": "partial",
+      "strategy_access": "浏览 / 当前参考筛选"
+    },
+    {
+      "method": "query_adjust_factor",
+      "collection_status": "verified",
+      "source_datasets": [
+        "factors"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 3463,
+      "nonempty_batches": 2908,
+      "coverage_status": "partial",
+      "strategy_access": "引擎处理；不直接传入策略"
+    },
+    {
+      "method": "query_daily_adjust_factor",
+      "collection_status": "verified",
+      "source_datasets": [
+        "factors"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 1,
+      "nonempty_batches": 1,
+      "coverage_status": "partial",
+      "strategy_access": "引擎处理；不直接传入策略"
+    },
+    {
+      "method": "query_dividend_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "dividends"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 13788,
+      "nonempty_batches": 9333,
+      "coverage_status": "partial",
+      "strategy_access": "引擎处理；不直接传入策略"
+    },
+    {
+      "method": "query_profit_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "profit"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 28,
+      "nonempty_batches": 22,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_operation_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "operation"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 28,
+      "nonempty_batches": 22,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_growth_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "growth"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 28,
+      "nonempty_batches": 22,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_balance_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "balance"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 28,
+      "nonempty_batches": 22,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_cash_flow_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "cash_flow"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 28,
+      "nonempty_batches": 22,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_dupont_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "dupont"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 28,
+      "nonempty_batches": 22,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_performance_express_report",
+      "collection_status": "verified",
+      "source_datasets": [
+        "express"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 8,
+      "nonempty_batches": 4,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_forecast_report",
+      "collection_status": "verified",
+      "source_datasets": [
+        "forecast"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 8,
+      "nonempty_batches": 3,
+      "coverage_status": "partial",
+      "strategy_access": "声明后按公告时钟读取"
+    },
+    {
+      "method": "query_deposit_rate_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "deposit_rate"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 3,
+      "nonempty_batches": 1,
+      "coverage_status": "partial",
+      "strategy_access": "仅浏览 / 导出"
+    },
+    {
+      "method": "query_loan_rate_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "loan_rate"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 3,
+      "nonempty_batches": 1,
+      "coverage_status": "partial",
+      "strategy_access": "仅浏览 / 导出"
+    },
+    {
+      "method": "query_required_reserve_ratio_data",
+      "collection_status": "verified",
+      "source_datasets": [
+        "reserve_ratio"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 3,
+      "nonempty_batches": 1,
+      "coverage_status": "partial",
+      "strategy_access": "仅浏览 / 导出"
+    },
+    {
+      "method": "query_money_supply_data_month",
+      "collection_status": "verified",
+      "source_datasets": [
+        "money_month"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 2,
+      "nonempty_batches": 2,
+      "coverage_status": "partial",
+      "strategy_access": "仅浏览 / 导出"
+    },
+    {
+      "method": "query_money_supply_data_year",
+      "collection_status": "verified",
+      "source_datasets": [
+        "money_year"
+      ],
+      "source_stats_all_equal": true,
+      "published_batches": 2,
+      "nonempty_batches": 2,
+      "coverage_status": "partial",
+      "strategy_access": "仅浏览 / 导出"
+    }
+  ],
+  "all_source_and_batch_counts_equal": true,
+  "macro_reference_and_engine_use_separate": true,
+  "source_unsupported_and_unverified_separate": true,
+  "empty_and_unobserved_boundaries": true,
+  "main_database_writes": 0,
+  "sdk_calls": 0,
+  "scope": "Persisted publication counts and all dataset source revision counts at one version; does not elevate samples to complete history or first-release proof.",
+  "build": {
+    "typescript": "passed",
+    "production": "passed",
+    "script_kb": 777.84,
+    "large_bundle_warning": true
+  },
+  "browser": {
+    "all_26_methods_visible": true,
+    "source_use_and_unverified_notes_visible": true,
+    "kline_scope_expanded": true,
+    "console_error_warn": [],
+    "screenshot": "screenshots/interface-support.png",
+    "all_columns_visible": true
+  }
+}

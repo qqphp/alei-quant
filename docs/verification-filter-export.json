@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-10T19:35:24.698065+00:00",
+  "cases": [
+    {
+      "id": "10290364-20ce-4638-8deb-c54ab4022eef",
+      "name": "示例：沪市退市 A 股",
+      "fields": 14,
+      "bytes": 964,
+      "sha256": "576ff4938ab6a9e7a2d0c0694bcbdb2284a00dcce15d4dc1c58a47a58ad14d97",
+      "all_source_values_equal": true
+    },
+    {
+      "id": "aa5b1bc0-1a88-43d2-b736-99f556349e9d",
+      "name": "示例：PE 0–20 / 成交额",
+      "fields": 12,
+      "bytes": 936,
+      "sha256": "3f02bc27aab33e64e9dc514c08a5d3ae8368c4687a777f23e4235fe23149e48c",
+      "all_source_values_equal": true
+    }
+  ],
+  "errors": [
+    {
+      "case": "missing",
+      "status": 404
+    },
+    {
+      "case": "invalid_uuid",
+      "status": 422
+    }
+  ],
+  "saved_filters_unchanged": true,
+  "database_writes": 0,
+  "sdk_calls": 0,
+  "limits": "Verifies every field in existing saved filters; no new filter or import endpoint was created.",
+  "browser": {
+    "saved_example": "10290364-20ce-4638-8deb-c54ab4022eef",
+    "actual_download": true,
+    "bytes": 964,
+    "sha256": "576ff4938ab6a9e7a2d0c0694bcbdb2284a00dcce15d4dc1c58a47a58ad14d97",
+    "all_source_values_equal": true,
+    "exchange": "sh",
+    "status": "0",
+    "status_remains_string": true,
+    "legacy_exchange_status_defaults_empty": true,
+    "legacy_pe_max": "20",
+    "console_error_warn": [],
+    "screenshot": "screenshots/exchange-status-filter.png"
+  }
+}

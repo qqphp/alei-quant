@@ -1,0 +1,176 @@
+{
+  "checked_at": "2026-10-10T14:10:51.020443+08:00",
+  "data_version": 7091,
+  "calendar_start": "2023-01-03",
+  "calendar_end": "2026-10-09",
+  "calendar_trade_days": 910,
+  "scope": "Actual current source payloads; independently derived date/period visibility and grouping compared to context builder. Not full strategy runs for every financial family, first-release proof, or real revised express date sample.",
+  "express_distinct_update_day_rows": 0,
+  "series": [
+    {
+      "dataset": "profit",
+      "code": "sh.600000",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 370,
+      "no_visible_history_rejected_days": 540
+    },
+    {
+      "dataset": "profit",
+      "code": "sz.000001",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 380,
+      "no_visible_history_rejected_days": 530
+    },
+    {
+      "dataset": "profit",
+      "code": "sh.600519",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 366,
+      "no_visible_history_rejected_days": 544
+    },
+    {
+      "dataset": "operation",
+      "code": "sh.600000",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 370,
+      "no_visible_history_rejected_days": 540
+    },
+    {
+      "dataset": "operation",
+      "code": "sz.000001",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 380,
+      "no_visible_history_rejected_days": 530
+    },
+    {
+      "dataset": "operation",
+      "code": "sh.600519",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 366,
+      "no_visible_history_rejected_days": 544
+    },
+    {
+      "dataset": "growth",
+      "code": "sh.600000",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 370,
+      "no_visible_history_rejected_days": 540
+    },
+    {
+      "dataset": "growth",
+      "code": "sz.000001",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 380,
+      "no_visible_history_rejected_days": 530
+    },
+    {
+      "dataset": "growth",
+      "code": "sh.600519",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 366,
+      "no_visible_history_rejected_days": 544
+    },
+    {
+      "dataset": "balance",
+      "code": "sh.600000",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 370,
+      "no_visible_history_rejected_days": 540
+    },
+    {
+      "dataset": "balance",
+      "code": "sz.000001",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 380,
+      "no_visible_history_rejected_days": 530
+    },
+    {
+      "dataset": "balance",
+      "code": "sh.600519",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 366,
+      "no_visible_history_rejected_days": 544
+    },
+    {
+      "dataset": "cash_flow",
+      "code": "sh.600000",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 370,
+      "no_visible_history_rejected_days": 540
+    },
+    {
+      "dataset": "cash_flow",
+      "code": "sz.000001",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 380,
+      "no_visible_history_rejected_days": 530
+    },
+    {
+      "dataset": "cash_flow",
+      "code": "sh.600519",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 366,
+      "no_visible_history_rejected_days": 544
+    },
+    {
+      "dataset": "dupont",
+      "code": "sh.600000",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 370,
+      "no_visible_history_rejected_days": 540
+    },
+    {
+      "dataset": "dupont",
+      "code": "sz.000001",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 380,
+      "no_visible_history_rejected_days": 530
+    },
+    {
+      "dataset": "dupont",
+      "code": "sh.600519",
+      "source_rows": 7,
+      "actual_trade_day_visibility_checks": 366,
+      "no_visible_history_rejected_days": 544
+    },
+    {
+      "dataset": "express",
+      "code": "sh.600000",
+      "source_rows": 22,
+      "actual_trade_day_visibility_checks": 910,
+      "no_visible_history_rejected_days": 0
+    },
+    {
+      "dataset": "express",
+      "code": "sz.000001",
+      "source_rows": 0,
+      "missing_declared_data_rejected": true
+    },
+    {
+      "dataset": "express",
+      "code": "sh.600519",
+      "source_rows": 0,
+      "missing_declared_data_rejected": true
+    },
+    {
+      "dataset": "forecast",
+      "code": "sh.600000",
+      "source_rows": 3,
+      "actual_trade_day_visibility_checks": 910,
+      "no_visible_history_rejected_days": 0
+    },
+    {
+      "dataset": "forecast",
+      "code": "sz.000001",
+      "source_rows": 0,
+      "missing_declared_data_rejected": true
+    },
+    {
+      "dataset": "forecast",
+      "code": "sh.600519",
+      "source_rows": 1,
+      "actual_trade_day_visibility_checks": 424,
+      "no_visible_history_rejected_days": 486
+    }
+  ]
+}

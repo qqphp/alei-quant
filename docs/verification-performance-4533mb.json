@@ -1,0 +1,85 @@
+{
+  "checked_at": "2026-10-11T00:35:32.249294+08:00",
+  "version_at_start": 17710,
+  "database_size": 4767798975,
+  "scope": "本机约4.5GB实测，每路由顺序三次；同时采集及独立库恢复，不是满容量并发压测或纯空闲延迟。",
+  "queries": [
+    {
+      "route": "/instruments?type=1&with_bars=true&sort=amount&direction=desc&size=30",
+      "milliseconds": [
+        250.3,
+        122.3,
+        132.9
+      ],
+      "median_ms": 132.9,
+      "bytes": 14480,
+      "rows": 30
+    },
+    {
+      "route": "/instruments?type=1&pe_min=0&pe_max=20&size=30",
+      "milliseconds": [
+        225.0,
+        107.3,
+        134.1
+      ],
+      "median_ms": 134.1,
+      "bytes": 14181,
+      "rows": 30
+    },
+    {
+      "route": "/overview",
+      "milliseconds": [
+        156.8,
+        140.3,
+        140.0
+      ],
+      "median_ms": 140.3,
+      "bytes": 3430,
+      "rows": 0
+    },
+    {
+      "route": "/bars/sh.600000?start=2016-01-01&end=2026-10-09",
+      "milliseconds": [
+        341.5,
+        318.7,
+        324.6
+      ],
+      "median_ms": 324.6,
+      "bytes": 1411978,
+      "rows": 2613
+    },
+    {
+      "route": "/bars/sz.300001?frequency=5&start=2026-09-01&end=2026-10-09",
+      "milliseconds": [
+        537.5,
+        317.4,
+        316.8
+      ],
+      "median_ms": 317.4,
+      "bytes": 537595,
+      "rows": 1104
+    },
+    {
+      "route": "/universe?day=2025-09-02&version=17373&size=1000&page=1",
+      "milliseconds": [
+        347.7,
+        352.6,
+        367.0
+      ],
+      "median_ms": 352.6,
+      "bytes": 81312,
+      "rows": 1000
+    },
+    {
+      "route": "/universe/coverage?start=2023-01-01&end=2026-10-09&version=17548",
+      "milliseconds": [
+        212.5,
+        149.3,
+        181.1
+      ],
+      "median_ms": 181.1,
+      "bytes": 3537,
+      "rows": 0
+    }
+  ]
+}

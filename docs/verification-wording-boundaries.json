@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-10T23:36:38.965926+08:00",
+  "clone": "stock_alei_restore_20261010_184943_4c2d80",
+  "cases": [
+    {
+      "case": "wording_only",
+      "batch": 12347,
+      "status": "published",
+      "changed_count": 0,
+      "error": null
+    },
+    {
+      "case": "duplicate_wording_repeat",
+      "batch": 12348,
+      "status": "published",
+      "changed_count": 0,
+      "error": null
+    },
+    {
+      "case": "different_gross",
+      "batch": 12349,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "同批自然键存在相互冲突的源数据，未发布"
+    },
+    {
+      "case": "different_pay_date",
+      "batch": 12350,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "同批自然键存在相互冲突的源数据，未发布"
+    },
+    {
+      "case": "different_stock_bonus",
+      "batch": 12351,
+      "status": "failed",
+      "changed_count": 0,
+      "error": "同批自然键存在相互冲突的源数据，未发布"
+    }
+  ],
+  "scope": "副本内构造源响应；完整真实记录为模板。两文字变体可发布并重复零新增；不同税前/付款日/送股拒绝且零源行发布。未开启 Session 登录，无 SDK 请求、主库写入为零。"
+}

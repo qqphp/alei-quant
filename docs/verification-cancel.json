@@ -1,0 +1,9 @@
+{
+  "job_id": "9e49d006-7db9-4264-b35e-78c341272e00",
+  "before_processes": [
+    12664,
+    17888
+  ],
+  "status": "cancelled",
+  "remaining_processes": []
+}

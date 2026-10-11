@@ -1,0 +1,13 @@
+{
+  "database": "stock_alei_restore_20261010_151245_15742b",
+  "original_batch": 46,
+  "simulation_batch": 9061,
+  "staging_batch": 9062,
+  "old_members": 7424,
+  "revised_members": 1,
+  "historical_equal": true,
+  "removed_members_not_resurrected": true,
+  "unpublished_ignored": true,
+  "overview_members_equal": true,
+  "note": "仅独立恢复库模拟成员变化/名称修订；主库未写入模拟值，也不是实际减员公告。"
+}

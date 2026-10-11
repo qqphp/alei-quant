@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-10T14:10:19.519471+08:00",
+  "check_database": "stock_alei_restore_20261010_140708_a9a9a7",
+  "scope": "Synthetic correction fixtures ONLY in restored clone; not actual financial revisions or historical first-release proof.",
+  "original_run": "2fc71d67-a282-458f-866b-89dca0eb7a25",
+  "pinned_version": 6567,
+  "synthetic_revision_version": 6955,
+  "old_pinned_replay": "ae99b650-11fe-4b03-bbba-a3597b4fb268",
+  "new_version_run": "f5942317-af7b-4ca8-a565-03158c2b3429",
+  "original_full_result_preserved": true,
+  "new_version_reports_show_fixture_values": true,
+  "new_version_cash_only_days": 87,
+  "new_version_trade_count": 0,
+  "zero_volatility_sharpe_is_null": true,
+  "main_database_modified": false
+}

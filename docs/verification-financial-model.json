@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-10T13:59:57.698696+08:00",
+  "run_id": "c2096312-a7ea-4d28-957a-e67ec93d791a",
+  "engine": "cash-ledger-0.8.0",
+  "data_version": 6567,
+  "signal_financial_visibility_checks": 87,
+  "source_payload_fingerprints": 3,
+  "publication_boundaries": [
+    {
+      "day": "2025-04-30",
+      "visible_periods": [
+        "2024-12-31"
+      ]
+    },
+    {
+      "day": "2025-05-06",
+      "visible_periods": [
+        "2024-12-31",
+        "2025-03-31"
+      ]
+    },
+    {
+      "day": "2025-08-28",
+      "visible_periods": [
+        "2024-12-31",
+        "2025-03-31"
+      ]
+    },
+    {
+      "day": "2025-08-29",
+      "visible_periods": [
+        "2024-12-31",
+        "2025-03-31",
+        "2025-06-30"
+      ]
+    }
+  ],
+  "daily_cash_nav_positions_sellable_rebuilt": 87,
+  "target_orders_from_closed_prices_and_latest_visible_eps": 3,
+  "fees_next_open_and_T1_fills": 3,
+  "cashflows": [
+    {
+      "cash": 0,
+      "code": "sh.600000",
+      "date": "2025-07-16",
+      "type": "除权确认",
+      "bonus": 0,
+      "receivable": 32619.6
+    },
+    {
+      "cash": 32619.6,
+      "code": "sh.600000",
+      "date": "2025-07-16",
+      "type": "派息到账"
+    }
+  ],
+  "exact_source_dividend_duplicates_removed": 4,
+  "nonfinancial_regression_run": "8036ad9e-7dbc-47be-ab00-f1da977d941c",
+  "nonfinancial_full_result_equal": true,
+  "scope": "One fixed stock and current retrospective financial data. References describe rows supplied to callback, not arbitrary Python field-read tracing. No proof of historical first-release originals or all revision families.",
+  "archive_replay": {
+    "run_id": "e18df5f8-6eeb-40c6-9937-3a84a7f5a76b",
+    "full_result_equal": true
+  },
+  "eps_predicate_boundary": {
+    "run_id": "2fc71d67-a282-458f-866b-89dca0eb7a25",
+    "minimum_eps": 1.545,
+    "threshold_purpose": "Functional boundary between actual prior/current EPS, not return optimization or recommended parameter.",
+    "prior_eps": 1.541862,
+    "new_eps": 1.547892,
+    "publication_day": "2025-04-30",
+    "first_visible_trade_day": "2025-05-06",
+    "cash_until_inclusive": "2025-05-06",
+    "first_signal": "2025-05-06",
+    "first_fill": "2025-05-07",
+    "first_quantity": 85000,
+    "report_note": "财报时点功能验收：EPS 门槛取两期实际数值之间以触发边界，不按收益选择，不是推荐参数。"
+  },
+  "latest_checked_at": "2026-10-10T14:05:47.849120+08:00"
+}

@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-10-10T10:43:31.654476+08:00",
+  "version_at_start": 4393,
+  "database_size": 645142207,
+  "concurrent_collection": true,
+  "scope": "当前本机实际规模、每路由顺序三次；不是满容量并发压测",
+  "queries": [
+    {
+      "route": "/instruments?type=1&with_bars=true&sort=amount&direction=desc&size=30",
+      "milliseconds": [
+        270.8,
+        145.2,
+        141.7
+      ],
+      "median_ms": 145.2,
+      "bytes": 14480
+    },
+    {
+      "route": "/instruments?type=1&pe_min=0&pe_max=20&size=30",
+      "milliseconds": [
+        140.9,
+        132.9,
+        150.2
+      ],
+      "median_ms": 140.9,
+      "bytes": 14181
+    },
+    {
+      "route": "/overview",
+      "milliseconds": [
+        175.3,
+        208.1,
+        285.3
+      ],
+      "median_ms": 208.1,
+      "bytes": 3247
+    },
+    {
+      "route": "/bars/sh.600000?start=2023-01-01&end=2026-10-09",
+      "milliseconds": [
+        205.1,
+        201.2,
+        230.8
+      ],
+      "median_ms": 205.1,
+      "bytes": 486463
+    },
+    {
+      "route": "/datasets/bars:d?page=1&size=100",
+      "milliseconds": [
+        1240.4,
+        1022.3,
+        1029.2
+      ],
+      "median_ms": 1029.2,
+      "bytes": 33801
+    }
+  ],
+  "backtests": [
+    {
+      "id": "1b4e4595-e326-4c15-bb2c-ee9b77ff09b4",
+      "kind": "backtest",
+      "status": "completed",
+      "elapsed_seconds": 43.035278,
+      "peak_rss": 82890752
+    },
+    {
+      "id": "937692d2-5838-41e8-a0c5-f0144b68c8cc",
+      "kind": "backtest",
+      "status": "completed",
+      "elapsed_seconds": 38.457905,
+      "peak_rss": 82944000
+    },
+    {
+      "id": "27d8f1c1-ffd6-4879-8df0-0d87f5608078",
+      "kind": "backtest",
+      "status": "completed",
+      "elapsed_seconds": 36.556957,
+      "peak_rss": 82104320
+    }
+  ],
+  "records_at_finish": 661066,
+  "ten_year_sample": {
+    "checked_at": "2026-10-10T10:49:09.000379+08:00",
+    "collection_job": "074a27c7-8064-4da0-8bbf-8e98306bbc1d",
+    "queries": [
+      {
+        "route": "/bars/sh.600000?start=2016-01-01&end=2026-10-09",
+        "total": 2613,
+        "first": "2016-01-04",
+        "last": "2026-10-09",
+        "version": 4531,
+        "milliseconds": [
+          495.2,
+          328.2,
+          548.3
+        ],
+        "median_ms": 495.2,
+        "bytes": 1411977
+      },
+      {
+        "route": "/bars/sh.000300?start=2016-01-01&end=2026-10-09",
+        "total": 2613,
+        "first": "2016-01-04",
+        "last": "2026-10-09",
+        "version": 4533,
+        "milliseconds": [
+          473.7,
+          345.3,
+          419.4
+        ],
+        "median_ms": 419.4,
+        "bytes": 1373217
+      }
+    ]
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "checked_at": "2026-10-11T01:51:12.494817+08:00",
+  "job_id": "0d00d613-2a36-4749-a7c9-902826adacc3",
+  "version": 18465,
+  "operations": 18,
+  "cases": [
+    {
+      "code": "sh.600000",
+      "flag": "1",
+      "rows": 910,
+      "factor_rows": 27,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18535,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 0.0
+    },
+    {
+      "code": "sh.600000",
+      "flag": "2",
+      "rows": 910,
+      "factor_rows": 27,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18535,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 3.9004548755272594e-06
+    },
+    {
+      "code": "sz.000001",
+      "flag": "1",
+      "rows": 910,
+      "factor_rows": 42,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18538,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 0.0
+    },
+    {
+      "code": "sz.000001",
+      "flag": "2",
+      "rows": 910,
+      "factor_rows": 42,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18538,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 5.597741836282921e-06
+    },
+    {
+      "code": "sh.600519",
+      "flag": "1",
+      "rows": 910,
+      "factor_rows": 31,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18541,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 0.0
+    },
+    {
+      "code": "sh.600519",
+      "flag": "2",
+      "rows": 910,
+      "factor_rows": 31,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18541,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 0.0008441270726962102
+    },
+    {
+      "code": "sh.600039",
+      "flag": "1",
+      "rows": 910,
+      "factor_rows": 21,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18544,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 0.0
+    },
+    {
+      "code": "sh.600039",
+      "flag": "2",
+      "rows": 910,
+      "factor_rows": 21,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18544,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 4.93656613897997e-06
+    },
+    {
+      "code": "sh.688320",
+      "flag": "1",
+      "rows": 910,
+      "factor_rows": 3,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18547,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 0.0
+    },
+    {
+      "code": "sh.688320",
+      "flag": "2",
+      "rows": 910,
+      "factor_rows": 3,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18547,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 2.5642805809411584e-05
+    },
+    {
+      "code": "sz.300001",
+      "flag": "1",
+      "rows": 910,
+      "factor_rows": 17,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18553,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 0.0
+    },
+    {
+      "code": "sz.300001",
+      "flag": "2",
+      "rows": 910,
+      "factor_rows": 17,
+      "decimal_ohlc_exact_equal": true,
+      "http_csv_source_equal": true,
+      "chart_ohlc_equal": true,
+      "short_chart_latest_normalization_equal": true,
+      "chart_factor_version": 18553,
+      "unchanged_raw_chart": true,
+      "unchanged_causal_signal": true,
+      "old_continuous_forward_maximum_close_difference": 1.0319584756501854e-05
+    }
+  ],
+  "source_hashes": [
+    {
+      "code": "sh.600000",
+      "flag": "1",
+      "batch": 18404,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sh.600000",
+      "flag": "2",
+      "batch": 18405,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sz.000001",
+      "flag": "1",
+      "batch": 18407,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sz.000001",
+      "flag": "2",
+      "batch": 18408,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sh.600519",
+      "flag": "1",
+      "batch": 18410,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sh.600519",
+      "flag": "2",
+      "batch": 18411,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sh.600039",
+      "flag": "1",
+      "batch": 18413,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sh.600039",
+      "flag": "2",
+      "batch": 18414,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sh.688320",
+      "flag": "1",
+      "batch": 18416,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sh.688320",
+      "flag": "2",
+      "batch": 18417,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sz.300001",
+      "flag": "1",
+      "batch": 18419,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    },
+    {
+      "code": "sz.300001",
+      "flag": "2",
+      "batch": 18465,
+      "rows": 910,
+      "original_field_order_sha256_equal": true
+    }
+  ],
+  "fallback_notice_verified": true,
+  "official_document": {
+    "url": "https://www.baostock.com/helpdocs/api/markdown/localdatafactorInfo.md",
+    "method": "POST",
+    "sha256": "6cea6149e476d5e3d41ac1d470b9aed4ccd782680ebda2af3489871afade9066",
+    "bytes": 4168
+  },
+  "scope": "6只股票各910日，共10920根官方前后复权样本与43680个OHLC精确Decimal相等；固定版本全行HTTP/CSV/源SHA核对，图表双口径及短区间最新归一逐行核对；回测连续信号与旧备份代码逐项相同。有限真实区间不代表所有证券/事件覆盖。图表为浮点数，只在1e-14相对/1e-10绝对容差内比较，原始参考值不改写。",
+  "repeat_job_id": "752fff34-c568-476f-81ee-e3fb28889a8c",
+  "repeat_job": {
+    "status": "completed",
+    "progress": 18,
+    "total": 18
+  },
+  "repeat_all_zero_new_values": true,
+  "repeat_batches": [
+    {
+      "id": 18535,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 27
+    },
+    {
+      "id": 18536,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18537,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18538,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 42
+    },
+    {
+      "id": 18539,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18540,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18541,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 31
+    },
+    {
+      "id": 18542,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18543,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18544,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 21
+    },
+    {
+      "id": 18545,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18546,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18547,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 3
+    },
+    {
+      "id": 18548,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18552,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18553,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 17
+    },
+    {
+      "id": 18554,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    },
+    {
+      "id": 18555,
+      "status": "published",
+      "changed_count": 0,
+      "row_count": 910
+    }
+  ]
+}

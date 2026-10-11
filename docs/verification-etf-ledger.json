@@ -1,0 +1,83 @@
+{
+  "engine": "cash-ledger-0.10.2",
+  "checked_at": "2026-10-10T15:05:55.845512+08:00",
+  "cases": [
+    {
+      "case": "cash_claim",
+      "run": "9d2fd9e5-52b1-481c-a95f-b1312056a05f",
+      "daily_cash_nav_positions_sellable_checks": 13,
+      "independently_derived_fills": 2,
+      "final_cash": 98824.65,
+      "cashflows": [
+        {
+          "date": "2026-01-19",
+          "code": "sh.510300",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 2373.9,
+          "bonus": 0
+        },
+        {
+          "date": "2026-01-27",
+          "code": "sh.510300",
+          "type": "派息到账",
+          "cash": 2373.9
+        }
+      ],
+      "total_return": -0.011753500000000083
+    },
+    {
+      "case": "buy_on_ex",
+      "run": "79525a1b-e744-4b64-a5b8-cc56103d06d3",
+      "daily_cash_nav_positions_sellable_checks": 9,
+      "independently_derived_fills": 2,
+      "final_cash": 99398.74,
+      "cashflows": [],
+      "total_return": -0.0060125999999999236
+    },
+    {
+      "case": "mixed",
+      "run": "7bea0044-a0a1-44da-a2da-81000a5d4239",
+      "daily_cash_nav_positions_sellable_checks": 13,
+      "independently_derived_fills": 4,
+      "final_cash": 95446.04,
+      "cashflows": [
+        {
+          "date": "2026-01-19",
+          "code": "sh.510300",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 1180.8,
+          "bonus": 0
+        },
+        {
+          "date": "2026-01-27",
+          "code": "sh.510300",
+          "type": "派息到账",
+          "cash": 1180.8
+        }
+      ],
+      "total_return": -0.04553960000000001
+    },
+    {
+      "case": "order_limit",
+      "run": "1f92e5d0-f1b1-4d1e-a139-54e3f7d96943",
+      "daily_cash_nav_positions_sellable_checks": 13,
+      "independently_derived_fills": 0,
+      "final_cash": 20000000.0,
+      "cashflows": [],
+      "total_return": 0.0
+    },
+    {
+      "case": "classic",
+      "run": "134b01ab-3aba-4533-a08b-89f5f8173315",
+      "daily_cash_nav_positions_sellable_checks": 149,
+      "independently_derived_fills": 18,
+      "final_cash": 94024.93,
+      "cashflows": [],
+      "total_return": -0.059750700000000045
+    }
+  ],
+  "stock_and_financial_full_results_equal": true,
+  "scope": "仅已核验两只境内股票ETF现金二级买卖，含正式公告510300权益；其它ETF类别与所有公司行动覆盖不由此证明。"
+}

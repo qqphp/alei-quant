@@ -1,0 +1,31 @@
+{
+  "scope": "实际浏览器：历史池来源23条/6列中文标题、分钟信号92条引用前一交易日批次、原始来源限制在折叠区外显示；代码变更资料及510条日线已实见。",
+  "report_id": "30732a69-4e93-4a95-b193-e3a9b272b690",
+  "data_version": 25121,
+  "source_columns": [
+    "来源池日期",
+    "完整快照批次",
+    "数据版本",
+    "平台就绪时刻",
+    "源成员数",
+    "来源池内容摘要"
+  ],
+  "first_source": {
+    "day": "2026-08-31",
+    "source_batch": 20893,
+    "members": 7366
+  },
+  "first_signal": {
+    "at": "2026-09-01T10:30:00+08:00",
+    "universe_ref": 20893
+  },
+  "console_errors": [],
+  "source_limit_visible": true,
+  "screenshots_visually_reviewed": true,
+  "files": {
+    "frontend/src/App.vue": "1a94ce8487b75f4ce06212b5c0248b298eeb01a9cf3518652766c2302b9ff410",
+    "frontend/dist/index.html": "18390a211f5d765494cd79fab581385d6a1fb5c33c942d3090f555af0820c336",
+    "docs/screenshots/universe-input-report.png": "4cad5073bf8a6e4237e0f8d5ed9248b53c1d7c429ce503e8d8e647227cedd921",
+    "docs/screenshots/300114-code-change.png": "337f94e671d3d03a40390654f682b6e0c7feea43d4b0ff5ee514266bf91391c4"
+  }
+}

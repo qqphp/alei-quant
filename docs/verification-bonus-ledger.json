@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-10-10T14:22:29.584105+08:00",
+  "engine": "cash-ledger-0.9.0",
+  "data_version": 7240,
+  "source_action": {
+    "code": "sh.600039",
+    "dividPayDate": "2023-06-15",
+    "dividPlanDate": "2023-06-07",
+    "dividStocksPs": "0.000000",
+    "dividCashStock": "10转4派9.1元（含税，扣税后8.19或9.1元）",
+    "dividAgmPumDate": "2023-04-21",
+    "dividRegistDate": "2023-06-14",
+    "dividOperateDate": "2023-06-15",
+    "dividPreNoticeDate": "",
+    "dividCashPsAfterTax": "0.819或0.91",
+    "dividCashPsBeforeTax": "0.91",
+    "dividStockMarketDate": "2023-06-15",
+    "dividPlanAnnounceDate": "2023-03-31",
+    "dividReserveToStockPs": "0.400000"
+  },
+  "old_run": "49fffe6a-ccae-48c7-b7d1-197627439215",
+  "old_unintended_residual": 240,
+  "cases": [
+    {
+      "case": "clear",
+      "run": "d4413218-a9e7-4479-a206-b37b3c13da9b",
+      "daily_cash_nav_positions_sellable_checks": 7,
+      "independently_derived_fills": 2,
+      "final_quantity": 0,
+      "final_cash": 9813.0,
+      "last_order": {
+        "code": "sh.600039",
+        "side": "sell",
+        "filled": 840,
+        "reason": null,
+        "status": "filled",
+        "quantity": 840,
+        "signal_date": "2023-06-14",
+        "execution_date": "2023-06-15",
+        "corporate_action_adjustment": {
+          "date": "2023-06-15",
+          "original": {
+            "side": "sell",
+            "quantity": 600
+          },
+          "quantity": 840,
+          "opening_nav": 9826.31,
+          "opening_price": 9.8,
+          "target_weight": 0.0,
+          "positions_after_entitlement": 840
+        }
+      }
+    },
+    {
+      "case": "partial_target",
+      "run": "a3c8c493-7ce0-4b31-87ec-386ea1f6fb25",
+      "daily_cash_nav_positions_sellable_checks": 7,
+      "independently_derived_fills": 2,
+      "final_quantity": 500,
+      "final_cash": 4917.95,
+      "last_order": {
+        "code": "sh.600039",
+        "side": "sell",
+        "filled": 340,
+        "reason": null,
+        "status": "filled",
+        "quantity": 340,
+        "signal_date": "2023-06-14",
+        "execution_date": "2023-06-15",
+        "corporate_action_adjustment": {
+          "date": "2023-06-15",
+          "original": {
+            "side": "sell",
+            "quantity": 300
+          },
+          "quantity": 340,
+          "opening_nav": 9826.31,
+          "opening_price": 9.8,
+          "target_weight": 0.5,
+          "positions_after_entitlement": 840
+        }
+      }
+    },
+    {
+      "case": "after_ex",
+      "run": "bf5748d2-799e-479d-b75b-c796dafcc60f",
+      "daily_cash_nav_positions_sellable_checks": 7,
+      "independently_derived_fills": 2,
+      "final_quantity": 0,
+      "final_cash": 9720.69,
+      "last_order": {
+        "code": "sh.600039",
+        "side": "sell",
+        "filled": 840,
+        "reason": null,
+        "status": "filled",
+        "quantity": 840,
+        "signal_date": "2023-06-15",
+        "execution_date": "2023-06-16"
+      }
+    },
+    {
+      "case": "buy_on_ex",
+      "run": "1bea9386-2e5e-4cf5-a6dc-c31900a3085c",
+      "daily_cash_nav_positions_sellable_checks": 5,
+      "independently_derived_fills": 1,
+      "final_quantity": 900,
+      "final_cash": 1174.91,
+      "last_order": {
+        "code": "sh.600039",
+        "side": "sell",
+        "filled": 0,
+        "reason": "回测结束，未使用区间外价格",
+        "status": "expired",
+        "quantity": 900,
+        "signal_date": "2023-06-20",
+        "execution_date": null
+      }
+    }
+  ],
+  "nonfinancial_full_result_equal": true,
+  "financial_full_result_equal": true,
+  "fractional_source_case": {
+    "run": "6a887eed-b91b-4e72-b3d4-35e0cc2bfc17",
+    "error": "sh.603185 送转股存在小数权益，尚未核验零碎股结算，停止发布报告",
+    "no_result_published": true
+  },
+  "scope": "Actual capital-reserve transfer and fixed cash-tax policy; not stock-dividend taxable nominal value or actual shareholder fractional allocation. All source prices/volumes preserved."
+}

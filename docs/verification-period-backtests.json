@@ -1,0 +1,258 @@
+{
+  "checked_at": "2026-10-10T10:39:32.150560+08:00",
+  "checks": [
+    {
+      "run_id": "1b4e4595-e326-4c15-bb2c-ee9b77ff09b4",
+      "frequency": "d",
+      "data_version": 4159,
+      "engine": "cash-ledger-0.6.1",
+      "signal_count": 570,
+      "daily_ledger_reconciled": 570,
+      "fees_reconciled": 78,
+      "next_available_open_orders": 78,
+      "first_signal": {
+        "at": "2024-06-03T17:30:00+08:00",
+        "period": "2024-06-03",
+        "valuation_date": "2024-06-03"
+      },
+      "first_order": {
+        "code": "sh.600000",
+        "side": "buy",
+        "filled": 38200,
+        "reason": null,
+        "status": "filled",
+        "quantity": 38200,
+        "signal_date": "2024-06-03",
+        "execution_date": "2024-06-04"
+      },
+      "metrics": {
+        "fees": 11628.44,
+        "notes": [],
+        "sharpe": -0.8433040872031433,
+        "turnover": 22.36983558441541,
+        "risk_free": 0.02,
+        "volatility": 0.10860717211443469,
+        "trade_count": 78,
+        "max_drawdown": 0.2090049244357285,
+        "total_return": -0.16082761,
+        "annual_return": -0.07458995614261676,
+        "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+        "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+        "excess_return": -0.36679009854061084,
+        "benchmark_return": 0.20596248854061083
+      },
+      "period_validation": null,
+      "warnings": [],
+      "daily_previous_equal": {
+        "metrics": true,
+        "equity": true,
+        "trades": true,
+        "orders": true,
+        "cashflows": true,
+        "positions": true
+      }
+    },
+    {
+      "run_id": "937692d2-5838-41e8-a0c5-f0144b68c8cc",
+      "frequency": "w",
+      "data_version": 4159,
+      "engine": "cash-ledger-0.6.1",
+      "signal_count": 122,
+      "daily_ledger_reconciled": 570,
+      "fees_reconciled": 14,
+      "next_available_open_orders": 14,
+      "first_signal": {
+        "at": "2024-06-01T17:30:00+08:00",
+        "period": "2024-05-31",
+        "valuation_date": "2024-05-31"
+      },
+      "first_order": {
+        "code": "sh.600000",
+        "side": "buy",
+        "filled": 37900,
+        "reason": null,
+        "status": "filled",
+        "quantity": 37900,
+        "signal_at": "2024-06-01T17:30:00+08:00",
+        "signal_date": "2024-06-01",
+        "signal_period": "2024-05-31",
+        "execution_date": "2024-06-03"
+      },
+      "metrics": {
+        "fees": 2389.28,
+        "notes": [],
+        "sharpe": 0.2814992180930043,
+        "turnover": 4.116274508365322,
+        "risk_free": 0.02,
+        "volatility": 0.1210616273123358,
+        "trade_count": 14,
+        "max_drawdown": 0.1387533119075084,
+        "total_return": 0.11149196999999988,
+        "annual_return": 0.047841102113285405,
+        "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+        "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+        "excess_return": -0.09447051854061095,
+        "benchmark_return": 0.20596248854061083
+      },
+      "period_validation": {
+        "amount_differences": [
+          {
+            "code": "sh.600000",
+            "period": "2023-05-12",
+            "official": "3566193765.28",
+            "daily_sum": "3566193765.46",
+            "difference": "-0.18"
+          },
+          {
+            "code": "sh.600000",
+            "period": "2023-05-26",
+            "official": "1099658741.61",
+            "daily_sum": "1099658741.23",
+            "difference": "0.38"
+          },
+          {
+            "code": "sh.600000",
+            "period": "2023-06-02",
+            "official": "986776781.51",
+            "daily_sum": "986776781.91",
+            "difference": "-0.40"
+          },
+          {
+            "code": "sh.600000",
+            "period": "2023-06-16",
+            "official": "758008654.98",
+            "daily_sum": "758008655.16",
+            "difference": "-0.18"
+          },
+          {
+            "code": "sh.600000",
+            "period": "2023-06-21",
+            "official": "424555417.68",
+            "daily_sum": "424555418.07",
+            "difference": "-0.39"
+          },
+          {
+            "code": "sh.600000",
+            "period": "2023-07-07",
+            "official": "575130784.45",
+            "daily_sum": "575130784.92",
+            "difference": "-0.47"
+          },
+          {
+            "code": "sh.600519",
+            "period": "2023-05-12",
+            "official": "20347687930.87",
+            "daily_sum": "20347687931.07",
+            "difference": "-0.20"
+          },
+          {
+            "code": "sh.600519",
+            "period": "2023-05-26",
+            "official": "20187484651.98",
+            "daily_sum": "20187484651.82",
+            "difference": "0.16"
+          },
+          {
+            "code": "sh.600519",
+            "period": "2023-06-16",
+            "official": "23623950019.65",
+            "daily_sum": "23623950019.61",
+            "difference": "0.04"
+          },
+          {
+            "code": "sh.600519",
+            "period": "2023-06-21",
+            "official": "12332709187.96",
+            "daily_sum": "12332709187.94",
+            "difference": "0.02"
+          },
+          {
+            "code": "sh.600519",
+            "period": "2023-07-07",
+            "official": "13127169706.5",
+            "daily_sum": "13127169706.46",
+            "difference": "0.04"
+          }
+        ],
+        "amount_tolerance_yuan": 1
+      },
+      "warnings": [
+        "sh.600519 2025-06-26 差异化分红：实际税前每股 27.673 元，摊薄除息每股 27.600 元；核验公告见运行清单",
+        "官方周期与日线汇总有 11 项成交额小差异（每项不超过平台核对容差 1 元）；保留官方原值，差异明细随报告导出"
+      ],
+      "replay_job_id": "12100598-14ce-4357-98a4-1ba0a8c38d95",
+      "replay_status": "completed",
+      "replay_full_result_equal": true
+    },
+    {
+      "run_id": "27d8f1c1-ffd6-4879-8df0-0d87f5608078",
+      "frequency": "m",
+      "data_version": 4159,
+      "engine": "cash-ledger-0.6.1",
+      "signal_count": 29,
+      "daily_ledger_reconciled": 570,
+      "fees_reconciled": 21,
+      "next_available_open_orders": 21,
+      "first_signal": {
+        "at": "2024-06-01T17:30:00+08:00",
+        "period": "2024-05-31",
+        "valuation_date": "2024-05-31"
+      },
+      "first_order": {
+        "code": "sh.600000",
+        "side": "buy",
+        "filled": 37900,
+        "reason": null,
+        "status": "filled",
+        "quantity": 37900,
+        "signal_at": "2024-06-01T17:30:00+08:00",
+        "signal_date": "2024-06-01",
+        "signal_period": "2024-05-31",
+        "execution_date": "2024-06-03"
+      },
+      "metrics": {
+        "fees": 3317.79,
+        "notes": [],
+        "sharpe": 0.11073885654670637,
+        "turnover": 5.778712554781411,
+        "risk_free": 0.02,
+        "volatility": 0.11588133906965108,
+        "trade_count": 21,
+        "max_drawdown": 0.16506793465637593,
+        "total_return": 0.06088103999999994,
+        "annual_return": 0.026472639421062816,
+        "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+        "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+        "excess_return": -0.1450814485406109,
+        "benchmark_return": 0.20596248854061083
+      },
+      "period_validation": {
+        "amount_differences": [
+          {
+            "code": "sh.600000",
+            "period": "2023-05-31",
+            "official": "7862075868.42",
+            "daily_sum": "7862075868.51",
+            "difference": "-0.09"
+          },
+          {
+            "code": "sh.600519",
+            "period": "2023-05-31",
+            "official": "81245420393.83",
+            "daily_sum": "81245420393.65",
+            "difference": "0.18"
+          }
+        ],
+        "amount_tolerance_yuan": 1
+      },
+      "warnings": [
+        "sh.600519 2025-06-26 差异化分红：实际税前每股 27.673 元，摊薄除息每股 27.600 元；核验公告见运行清单",
+        "官方周期与日线汇总有 2 项成交额小差异（每项不超过平台核对容差 1 元）；保留官方原值，差异明细随报告导出"
+      ],
+      "replay_job_id": "7594a1cb-dd60-49b8-9e07-e1b10100e1fe",
+      "replay_status": "completed",
+      "replay_full_result_equal": true
+    }
+  ],
+  "scope": "真实三股样例；每频率570日独立现金/持仓/费用核对；不含送转股"
+}

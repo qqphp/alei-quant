@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-11T01:39:50.397973+08:00",
+  "collection": "9df6fc48-3104-47c8-92d7-5ff693de2bb2",
+  "batch": 18562,
+  "source_rows": 3,
+  "source_rows_original_hashes_equal": true,
+  "http_csv_equal": true,
+  "conflict_rows_original_equal": true,
+  "rule": {
+    "code": "sz.002043",
+    "ex_date": "2026-06-01",
+    "record_date": "2026-05-29",
+    "pay_date": "2026-06-01",
+    "announcement_date": "2026-05-26",
+    "plan_announce_date": "2026-04-29",
+    "implementation_date": "2026-05-26",
+    "cash_per_share": "0.312",
+    "reference_cash_per_share": "0.3080016",
+    "cash_components": {
+      "0.132": "2025年度",
+      "0.18": "2026年一季度"
+    },
+    "participating_shares": 819121119,
+    "total_shares": 829754480,
+    "bonus_ratio": "0",
+    "document": "docs/research/tubao-2026-joint-dividend.pdf",
+    "source": "https://static.cninfo.com.cn/finalpage/2026-05-26/1225328690.PDF",
+    "sha256": "56119c4f332f7ae733bff068a16fd290281efa559006ba2547faafe2bbf21e70"
+  },
+  "ledger": {
+    "run": "cba17d14-a32b-464c-84e0-811df49a46e5",
+    "engine_digest": "ce95b352a1ffbbeaffeb258b6629b5d8e129528a21c50a02849fef304e30adf9",
+    "daily_states": 8,
+    "fills": 2,
+    "gross_cash": "62.40",
+    "net_cash": "56.16",
+    "one_payment": true,
+    "reference_cash": "0.3080016"
+  },
+  "rejected_compositions": [
+    {
+      "case": "missing_annual",
+      "error": "sz.002043 2026-06-01 同日合并分红的公告组成不完整或条款变化，停止账本"
+    },
+    {
+      "case": "missing_quarter",
+      "error": "sz.002043 2026-06-01 同日合并分红的公告组成不完整或条款变化，停止账本"
+    },
+    {
+      "case": "unknown_cash",
+      "error": "sz.002043 2026-06-01 同日合并分红的公告组成不完整或条款变化，停止账本"
+    },
+    {
+      "case": "wrong_pay_date",
+      "error": "sz.002043 2026-06-01 同日合并分红的公告组成不完整或条款变化，停止账本"
+    },
+    {
+      "case": "wrong_record_date",
+      "error": "sz.002043 2026-06-01 同日合并分红的公告组成不完整或条款变化，停止账本"
+    },
+    {
+      "case": "unknown_bonus",
+      "error": "sz.002043 2026-06-01 同日合并分红的公告组成不完整或条款变化，停止账本"
+    },
+    {
+      "case": "extra_total",
+      "error": "sz.002043 2026-06-01 同日合并分红的公告组成不完整或条款变化，停止账本"
+    }
+  ],
+  "identical_duplicate_one_entitlement": true,
+  "scope": "真实源3行与正式公告、200股合并权益一次到账、8日日末账本/费用/T+1核对。七项纯函数构造边界无SDK或数据库写入，未知分红仍拒绝。固定10%税率是平台假设，非账户实缴税。公告组成只适用于此明确事件。",
+  "repeat": {
+    "id": 18570,
+    "row_count": 3,
+    "changed_count": 0
+  },
+  "regression": {
+    "run": "5f560cea-00af-4cbc-8b74-7bd21d60d23d",
+    "original": "fe94e0af-437d-4414-8c21-b77681423531",
+    "daily_states": 570,
+    "full_result_equal": true
+  }
+}

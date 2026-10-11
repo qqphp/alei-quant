@@ -1,0 +1,1 @@
+{"terminal_tasks_in_ui_order": 301, "task_pages": 16, "active_task_visible_each_page": true, "logs_in_ui_order": 1135, "log_pages": 12, "last_log_page_rows": 35, "browser_error_warn": [], "screenshot": "docs/screenshots/job-log-history.png", "scope": "实际浏览器逐页翻查；全部历史任务编号及日志原文顺序与数据库相等，活动主任务每页可见。没有触发取消或重跑。字段/时间全量比较另见HTTP验收。"}

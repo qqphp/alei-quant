@@ -1,0 +1,211 @@
+{
+  "checked_at": "2026-10-11T12:22:18.748934+08:00",
+  "collection": "786c5992-bf5e-4450-9b80-6b63454da25e",
+  "failed_batch_retained": 29413,
+  "cases": [
+    {
+      "year": "2025",
+      "batch": 29415,
+      "received": 4,
+      "changed": 4,
+      "rule": {
+        "code": "sz.300760",
+        "ex_date": "2025-05-29",
+        "record_date": "2025-05-28",
+        "pay_date": "2025-05-29",
+        "announcement_date": "2025-05-22",
+        "plan_announce_date": "2025-04-29",
+        "implementation_date": "2025-05-22",
+        "cash_per_share": "1.97",
+        "reference_cash_per_share": "1.97",
+        "cash_components": {
+          "0.56": "2024年度",
+          "1.41": "2025年第一次中期"
+        },
+        "source_fields": {
+          "dividAgmPumDate": "2025-05-20",
+          "dividPreNoticeDate": "",
+          "dividStockMarketDate": ""
+        },
+        "participating_shares": 1212441394,
+        "total_shares": 1212441394,
+        "bonus_ratio": "0",
+        "document": "docs/research/mindray-2025-joint-dividend.pdf",
+        "source": "https://static.cninfo.com.cn/finalpage/2025-05-22/1223626414.PDF",
+        "sha256": "98470e8000f0d2c45c4b2584be0e92bb2741668cdba0a358858f8120c37d4fb9"
+      },
+      "raw_hash_and_csv_verified": true,
+      "run": "87011ede-7dbc-43e0-9e73-0f1e3da83377",
+      "engine_digest": "826c394036f003ce0b974379b40c0c22af33c3c036686df4f07537f2d78db6b5",
+      "states": 7,
+      "gross_cash": "394.00",
+      "net_cash": "354.60",
+      "one_payment": true,
+      "reference_matches_preclose": true,
+      "rejected": [
+        {
+          "case": "missing_first",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "missing_second",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "unknown_cash",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_pay_date",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_record_date",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_plan_date",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_agm_date",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "unknown_bonus",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "unknown_stock_date",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "extra_total",
+          "error": "sz.300760 2025-05-29 同日合并分红的公告组成不完整或条款变化，停止账本"
+        }
+      ]
+    },
+    {
+      "year": "2026",
+      "batch": 29416,
+      "received": 3,
+      "changed": 2,
+      "rule": {
+        "code": "sz.300760",
+        "ex_date": "2026-05-28",
+        "record_date": "2026-05-27",
+        "pay_date": "2026-05-28",
+        "announcement_date": "2026-05-20",
+        "implementation_date": "2026-05-20",
+        "component_plan_announce_dates": {
+          "0.31": "2026-03-31",
+          "1.25": "2026-04-29"
+        },
+        "cash_per_share": "1.56",
+        "reference_cash_per_share": "1.56",
+        "cash_components": {
+          "0.31": "2025年度",
+          "1.25": "2026年第一次中期"
+        },
+        "source_fields": {
+          "dividAgmPumDate": "2026-05-19",
+          "dividPreNoticeDate": "",
+          "dividStockMarketDate": ""
+        },
+        "participating_shares": 1212441394,
+        "total_shares": 1212441394,
+        "bonus_ratio": "0",
+        "document": "docs/research/mindray-2026-joint-dividend.pdf",
+        "source": "https://static.cninfo.com.cn/finalpage/2026-05-20/1225320390.PDF",
+        "sha256": "c13e4f6fd029b359dfb349c7d370fcaa9a4bc3a59791a17c24c07f4539267457"
+      },
+      "raw_hash_and_csv_verified": true,
+      "run": "61cfb614-85c5-4d08-b50a-3aa1ab84e44d",
+      "engine_digest": "826c394036f003ce0b974379b40c0c22af33c3c036686df4f07537f2d78db6b5",
+      "states": 8,
+      "gross_cash": "312.00",
+      "net_cash": "280.80",
+      "one_payment": true,
+      "reference_matches_preclose": true,
+      "rejected": [
+        {
+          "case": "missing_first",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "missing_second",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "unknown_cash",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_pay_date",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_record_date",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_plan_date",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "wrong_agm_date",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "unknown_bonus",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "unknown_stock_date",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        },
+        {
+          "case": "extra_total",
+          "error": "sz.300760 2026-05-28 同日合并分红的公告组成不完整或条款变化，停止账本"
+        }
+      ]
+    }
+  ],
+  "repeat": {
+    "job": "358a9fd3-9a8c-4d10-ab19-190e7203db4f",
+    "batches": [
+      {
+        "id": 29468,
+        "status": "published",
+        "row_count": 4,
+        "changed_count": 0
+      },
+      {
+        "id": 29469,
+        "status": "published",
+        "row_count": 3,
+        "changed_count": 0
+      }
+    ]
+  },
+  "main_resume": {
+    "main_resume_before": {
+      "progress": 27132,
+      "total": 31346,
+      "checkpoint": {
+        "next_operation": 27132,
+        "operations_digest": "98b2ca478dd197d3c181e8680108c1ee92b93b0f9527386589dfd5b42863ccaf"
+      }
+    },
+    "main_resume_after": {
+      "progress": 27132,
+      "total": 31346,
+      "checkpoint": {
+        "next_operation": 27132,
+        "operations_digest": "98b2ca478dd197d3c181e8680108c1ee92b93b0f9527386589dfd5b42863ccaf"
+      },
+      "status": "queued"
+    }
+  },
+  "scope": "两次真实同日合并现金事件，200股、15日日末现金/净值/持仓/费用/T+1、原行摘要与HTTP/CSV；20个内存拒绝边界。固定10%税是假设，非账户实缴税；公告公开时分、自派大股东到账时间未核验。失败批次仅保留冲突两行，不声称保留全部四行。2026旧自然键原行仍保留，账本精确重复去重。"
+}

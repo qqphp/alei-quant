@@ -1,0 +1,17 @@
+{
+  "version": 12327,
+  "range": [
+    "2023-01-01",
+    "2026-10-09"
+  ],
+  "trading_days": 910,
+  "snapshot_days": 71,
+  "same_missing_days": true,
+  "avoided_member_cells": 390419,
+  "old_snapshot_query_seconds": 0.2178161000047112,
+  "old_python_peak_bytes": 23048791,
+  "new_coverage_seconds": 0.13667399999394547,
+  "new_python_peak_bytes": 1391699,
+  "scope": "实际本机固定版本单次采样；旧测量仅快照查询，新测量含日历校验；tracemalloc不是进程RSS，不是满容量压测。",
+  "http_after_reload_equal": true
+}

@@ -1,0 +1,355 @@
+{
+  "backup": "E:\\codex\\stock\\runtime\\backups\\20261011-020740-185179",
+  "database": "stock_alei_restore_20261011_020849_2b7971",
+  "database_version": 19075,
+  "schema_version": 7,
+  "sha256": {
+    "backend/stockapp/api.py": "99130133c7c06835cd487693033ffffa2077ac6ad54490572d6d824697e0a8c6",
+    "backend/stockapp/catalog.py": "36afb821bebf61c95a984a066d1c66db87d6dfe3f068cc8bd79f0f20e049135d",
+    "backend/stockapp/provider.py": "14aa5fd5cbb2dbb0ad22b68f04b43dcc0fe10810f47e48a8f01eaaed9c91e885",
+    "backend/stockapp/market.py": "3b35807bf18744c8dfd61766607f1322050963f6fc087eb7d731dcc60611d47e",
+    "backend/stockapp/screening.py": "07ea817e1ad8bc6f059958a14938bb18fd642530b3098f3d7039592b1bf27dc5",
+    "backend/stockapp/corporate_actions.py": "5916296b5bd533bc8719d5fde8338c7fdfadebc6e4a96431d8f85524d3dc35c3",
+    "backend/stockapp/schema.sql": "058ce67b66a771c01ef138ef5341ce78ca87f035095cbc4e71ffa4ebad988854",
+    "frontend/src/App.vue": "d4b9dc923b3cea1c36971c2280679062044a9a35bb5654aec3746804009f21f7",
+    "frontend/src/report-charts.ts": "71f858f80d699910c28811daf81dca6334fc6a4943baccc380174ffeee4b82ea",
+    "frontend/src/data-fields.json": "e178efed3fcd9a2a7d766cf051b922544b6cd11b82d19c2df8c0c396079b0ba2",
+    "frontend/src/components/Chart.vue": "83757af5a33f7103bac4b322b57dd5f6bf7f4f725aafabdc06e7c75a1b791473",
+    "frontend/package-lock.json": "83afad0434e222ffbd37cb4352779be99cbee695921237c21553f180731889c3",
+    "requirements.lock.txt": "980a26fea9d4b1ad27e788c53b3ce5927773ed6c4a23d0b1ef24448e222065df",
+    "docs/research/tubao-2026-joint-dividend.pdf": "56119c4f332f7ae733bff068a16fd290281efa559006ba2547faafe2bbf21e70",
+    "docs/research/local-adjustment-official.md": "6cea6149e476d5e3d41ac1d470b9aed4ccd782680ebda2af3489871afade9066",
+    "frontend/dist/index.html": "ec93ac4ff1f78466b3c785e4219868f4daa9d69dc4c9ea9e66482ee70c8903b7",
+    "frontend/dist/assets/index-DS4DRtsL.js": "37105dc1fef9d391529d7245e4ed2050e5d9d3080f01549678dd83ff6cd65910",
+    "frontend/dist/assets/index-PI3qpNDU.css": "e54773339735fe294066ef7e60ca0f139c533a575c10551eea08f3d51532b14a"
+  },
+  "reports_preserved": 17,
+  "chart_views": [
+    {
+      "case": "stock_daily_sh.600000_raw",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600000_forward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600000_backward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_raw",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_forward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_backward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_raw",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_forward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_backward",
+      "bars": 570,
+      "version": 4159,
+      "all_values_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_raw",
+      "bars": 87,
+      "version": 6567,
+      "all_values_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_forward",
+      "bars": 87,
+      "version": 6567,
+      "all_values_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_backward",
+      "bars": 87,
+      "version": 6567,
+      "all_values_equal": true
+    },
+    {
+      "case": "etf_minute_sh.510050_raw",
+      "bars": 16,
+      "version": 8898,
+      "all_values_equal": true
+    },
+    {
+      "case": "etf_minute_sh.510300_raw",
+      "bars": 16,
+      "version": 8898,
+      "all_values_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_raw",
+      "bars": 8,
+      "version": 18566,
+      "all_values_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_forward",
+      "bars": 8,
+      "version": 18566,
+      "all_values_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_backward",
+      "bars": 8,
+      "version": 18566,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_5_sh.688320_raw",
+      "bars": 144,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_5_sz.300001_raw",
+      "bars": 144,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_15_sh.688320_raw",
+      "bars": 48,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_15_sz.300001_raw",
+      "bars": 48,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_30_sh.688320_raw",
+      "bars": 24,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_30_sz.300001_raw",
+      "bars": 24,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_60_sh.688320_raw",
+      "bars": 12,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_60_sz.300001_raw",
+      "bars": 12,
+      "version": 13245,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_raw",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_forward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_backward",
+      "bars": 610,
+      "version": 16958,
+      "all_values_equal": true
+    }
+  ],
+  "official_reference": [
+    {
+      "code": "sh.600000",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600000",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.000001",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.000001",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600519",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600519",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600039",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.600039",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.688320",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sh.688320",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.300001",
+      "flag": "1",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    },
+    {
+      "code": "sz.300001",
+      "flag": "2",
+      "rows": 910,
+      "http_csv_chart_equal": true
+    }
+  ],
+  "saved_filters": [
+    {
+      "id": "aa5b1bc0-1a88-43d2-b736-99f556349e9d",
+      "fields": 12,
+      "source_values_equal": true
+    }
+  ],
+  "replays": [
+    {
+      "case": "tubao_archived",
+      "original": "cba17d14-a32b-464c-84e0-811df49a46e5",
+      "replay": "25e254a4-c250-42d2-9033-eacf5e8012bb",
+      "full_result_equal": true
+    },
+    {
+      "case": "tubao_backup_current",
+      "original": "cba17d14-a32b-464c-84e0-811df49a46e5",
+      "replay": "fb055256-086b-466d-b707-a00638fbc88c",
+      "full_result_equal": true
+    },
+    {
+      "case": "classic_570_backup_current",
+      "original": "5f560cea-00af-4cbc-8b74-7bd21d60d23d",
+      "replay": "5eb0d27c-aa6c-4502-a5ff-8a54280520f9",
+      "full_result_equal": true
+    }
+  ],
+  "api_stopped": true,
+  "sdk_calls": 0,
+  "scope": "Reads/restored API/replays use backup code and independent clone; main database was read only. Clone contains the maintenance tool's labelled source revision and replay jobs."
+}

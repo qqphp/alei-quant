@@ -1,0 +1,78 @@
+{
+  "id": 6091,
+  "job_id": "3a12e654-ac88-4be4-800c-d784e07551b5",
+  "method": "query_dividend_data",
+  "arguments": {
+    "code": "sh.601966",
+    "year": "2024",
+    "yearType": "operate"
+  },
+  "status": "failed",
+  "fields": [
+    "code",
+    "dividPreNoticeDate",
+    "dividAgmPumDate",
+    "dividPlanAnnounceDate",
+    "dividPlanDate",
+    "dividRegistDate",
+    "dividOperateDate",
+    "dividPayDate",
+    "dividStockMarketDate",
+    "dividCashPsBeforeTax",
+    "dividCashPsAfterTax",
+    "dividStocksPs",
+    "dividCashStock",
+    "dividReserveToStockPs"
+  ],
+  "row_count": 4,
+  "changed_count": 0,
+  "coverage": {
+    "error": "同批自然键存在相互冲突的源数据，未发布",
+    "conflict": {
+      "dataset": "dividends",
+      "records": [
+        {
+          "code": "sh.601966",
+          "dividPayDate": "2024-06-14",
+          "dividPlanDate": "2024-06-07",
+          "dividStocksPs": "0.000000",
+          "dividCashStock": "10派2.86元（含税，扣税后2.574或2.86元）",
+          "dividAgmPumDate": "2024-05-16",
+          "dividRegistDate": "2024-06-13",
+          "dividOperateDate": "2024-06-14",
+          "dividPreNoticeDate": "",
+          "dividCashPsAfterTax": "0.2574或0.286",
+          "dividCashPsBeforeTax": "0.286",
+          "dividStockMarketDate": "",
+          "dividPlanAnnounceDate": "2024-04-25",
+          "dividReserveToStockPs": ""
+        },
+        {
+          "code": "sh.601966",
+          "dividPayDate": "2024-06-14",
+          "dividPlanDate": "2024-06-07",
+          "dividStocksPs": "0.000000",
+          "dividCashStock": "10派0.91元（含税，扣税后0.819或0.91元）",
+          "dividAgmPumDate": "2024-05-16",
+          "dividRegistDate": "2024-06-13",
+          "dividOperateDate": "2024-06-14",
+          "dividPreNoticeDate": "",
+          "dividCashPsAfterTax": "0.0819或0.091",
+          "dividCashPsBeforeTax": "0.091",
+          "dividStockMarketDate": "",
+          "dividPlanAnnounceDate": "2024-04-25",
+          "dividReserveToStockPs": ""
+        }
+      ],
+      "record_key": "sh.601966|2024-06-14|2024-06-13|2024-04-25|2024-06-07|2024-05-16"
+    },
+    "arguments": {
+      "code": "sh.601966",
+      "year": "2024",
+      "yearType": "operate"
+    },
+    "validation": "失败未发布；接收行数不代表完整覆盖"
+  },
+  "created_at": "2026-10-10 13:40:29.620905+08:00",
+  "published_at": null
+}

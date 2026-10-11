@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-10T23:39:05.571679+08:00",
+  "cases": [
+    {
+      "case": "stock_570",
+      "old": "1b4e4595-e326-4c15-bb2c-ee9b77ff09b4",
+      "current": "fe94e0af-437d-4414-8c21-b77681423531",
+      "complete_result_equal": true,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f"
+    },
+    {
+      "case": "financial_87",
+      "old": "c2096312-a7ea-4d28-957a-e67ec93d791a",
+      "current": "6895df57-0aa8-4d76-b604-91b82de6bd30",
+      "complete_result_equal": true,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f"
+    },
+    {
+      "case": "etf_60",
+      "old": "774df5a8-cbaf-4452-9ab5-73fa1678287a",
+      "current": "51052028-6e10-4296-a0ca-1ef1442140f7",
+      "complete_result_equal": true,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f"
+    },
+    {
+      "case": "replay_quantity_201",
+      "old": "39941b7d-d822-47b3-abd7-856d4d6b1dd9",
+      "current": "8f985906-2087-419b-8a5b-0f3650687f78",
+      "complete_result_equal": true,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f"
+    },
+    {
+      "case": "replay_partial_odd_exit",
+      "old": "f844b844-f2f4-430c-b6ef-36720124c32b",
+      "current": "29c512de-91e9-4ae6-8e93-5593c11633d9",
+      "complete_result_equal": true,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f"
+    },
+    {
+      "case": "replay_classic_star",
+      "old": "d4c8d0e3-d1f1-42bd-a77f-07a2f0e4ccd0",
+      "current": "684c37f2-3e61-44d0-8eb6-2e7681d9d03d",
+      "complete_result_equal": true,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 22098,
+  "stock_union_count": 5370,
+  "retired_stock_preserved": true,
+  "known_missing_archive_etf_excluded": true,
+  "unknown_other_code_rejected": true,
+  "references": {
+    "sh.516480": {
+      "type": "5",
+      "source_url": "https://www.sse.com.cn/disclosure/announcement/listing/c/c_20251014_10794536.shtml",
+      "source_date": "2025-10-14",
+      "document": "docs/research/516480-termination.html",
+      "note": "上交所明确为交易型开放式指数证券投资基金；BaoStock 档案为空，仅补充资产类别"
+    }
+  },
+  "official_document": {
+    "http_status": 200,
+    "bytes": 28315,
+    "sha256": "d6e9971c8d5f376d278dbdcabbc84d2a509c205fedc099065d3be1bfca5d3ed2",
+    "path": "docs/research/516480-termination.html"
+  },
+  "main_database_writes": 0,
+  "sdk_calls": 0,
+  "scope": "Backfill asset class only. Original provider archive and historical source name/status untouched; no ETF quote, trading rule, or historical-time permission inferred."
+}

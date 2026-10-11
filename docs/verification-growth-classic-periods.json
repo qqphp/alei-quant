@@ -1,0 +1,218 @@
+{
+  "checked_at": "2026-10-11T00:37:03.859671+08:00",
+  "cases": [
+    {
+      "case": "sz.300001_5",
+      "run": "40f4da7c-779b-4bbf-a488-bf0889738bd5",
+      "data_version": 16954,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 61,
+      "source_periods_checked": 0,
+      "daily_states": 23,
+      "minute_states": 1104,
+      "signal_events": 1104,
+      "fills": 31,
+      "cashflows": [],
+      "final_cash": 7753.26,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    },
+    {
+      "case": "sz.300001_15",
+      "run": "6ef057c9-3f87-4c60-8dab-562e00e6b2b9",
+      "data_version": 16956,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 61,
+      "source_periods_checked": 0,
+      "daily_states": 23,
+      "minute_states": 368,
+      "signal_events": 368,
+      "fills": 8,
+      "cashflows": [],
+      "final_cash": 103424.82,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    },
+    {
+      "case": "sz.300001_30",
+      "run": "f2c309ad-d55a-412c-b2ff-6a2d75f43a40",
+      "data_version": 16957,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 61,
+      "source_periods_checked": 0,
+      "daily_states": 23,
+      "minute_states": 184,
+      "signal_events": 184,
+      "fills": 4,
+      "cashflows": [],
+      "final_cash": 104181.13,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    },
+    {
+      "case": "sz.300001_60",
+      "run": "27d576dd-7246-4954-83d5-82270dda7a92",
+      "data_version": 16958,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 61,
+      "source_periods_checked": 0,
+      "daily_states": 23,
+      "minute_states": 92,
+      "signal_events": 92,
+      "fills": 2,
+      "cashflows": [],
+      "final_cash": 101351.89,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    },
+    {
+      "case": "sh.688320_w",
+      "run": "a368e58c-7925-4334-a597-c3b5a6460af1",
+      "data_version": 16958,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 61,
+      "source_periods_checked": 191,
+      "daily_states": 610,
+      "minute_states": 0,
+      "signal_events": 130,
+      "fills": 6,
+      "cashflows": [],
+      "final_cash": 117652.54,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    },
+    {
+      "case": "sz.300001_w",
+      "run": "17cdcb49-e05a-4c09-b7c0-b56ac1f9f62a",
+      "data_version": 16958,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 61,
+      "source_periods_checked": 191,
+      "daily_states": 610,
+      "minute_states": 0,
+      "signal_events": 130,
+      "fills": 5,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 432.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 432.0
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 666.0,
+          "bonus": 0
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 666.0
+        }
+      ],
+      "final_cash": 7157.05,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    },
+    {
+      "case": "sh.688320_m",
+      "run": "8d0d3980-d1b2-48b3-b249-33832355ddb8",
+      "data_version": 16958,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 13,
+      "source_periods_checked": 44,
+      "daily_states": 610,
+      "minute_states": 0,
+      "signal_events": 31,
+      "fills": 6,
+      "cashflows": [],
+      "final_cash": 115864.17,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    },
+    {
+      "case": "sz.300001_m",
+      "run": "d6ad1fd8-7b40-4629-94f5-729a019d190c",
+      "data_version": 16958,
+      "engine_digest": "3de1d0e6ddbfc636cbaabb6116f50e785c9e8e7127c1262828cf080b277f025f",
+      "lookback": 13,
+      "source_periods_checked": 44,
+      "daily_states": 610,
+      "minute_states": 0,
+      "signal_events": 31,
+      "fills": 8,
+      "cashflows": [
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 432.0,
+          "bonus": 0
+        },
+        {
+          "date": "2024-06-14",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 432.0
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "除权确认",
+          "cash": 0,
+          "receivable": 612.0,
+          "bonus": 0
+        },
+        {
+          "date": "2026-05-27",
+          "code": "sz.300001",
+          "type": "派息到账",
+          "cash": 612.0
+        }
+      ],
+      "final_cash": 124926.39,
+      "all_states_independently_equal": true,
+      "benchmark_and_metrics_independently_equal": true
+    }
+  ],
+  "rejected_cases": [
+    {
+      "case": "sh.688320_5",
+      "run": "f563d153-17a6-4979-929c-1a116fb14e04",
+      "error": "sh.688320 2026-09-07 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sh.688320_15",
+      "run": "9108e18c-e397-4747-a8ef-7d53478c3c08",
+      "error": "sh.688320 2026-08-27 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sh.688320_30",
+      "run": "68fa92bb-cf14-4574-8377-c750425cb32b",
+      "error": "sh.688320 2026-08-27 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    },
+    {
+      "case": "sh.688320_60",
+      "run": "db44e4ff-a44d-4922-a1a6-63742cec5245",
+      "error": "sh.688320 2026-08-27 分钟 open 与日线冲突",
+      "invalid_result_not_published": true
+    }
+  ],
+  "scope": "原经典参数/预热，固定版本来源；独立官方周期汇总/可用时钟、连续价格均线、目标变化、下一开盘/前bar量、费用/T+1/权益及全部状态。四项禾川长分钟源冲突没有有效结果，成功样本不是策略盈利能力证明。"
+}

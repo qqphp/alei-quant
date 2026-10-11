@@ -1,0 +1,61 @@
+[
+  {
+    "file": "baostock-minute-source-stockKData.md",
+    "url": "https://www.baostock.com/helpdocs/api/markdown/stockKData.md",
+    "bytes": 12485,
+    "sha256": "2a6db3b24ab21a199aa17bd949dfbe545d3279007bea1664854f9b7c20542aac"
+  },
+  {
+    "file": "baostock-minute-source-home.md",
+    "url": "https://www.baostock.com/helpdocs/api/markdown/home.md",
+    "bytes": 10167,
+    "sha256": "4c36406af64644cb97110bb5bb399db40011915cf3673c983099e9a1c068bd1e"
+  },
+  {
+    "file": "baostock-minute-source-modifyRecord.md",
+    "url": "https://www.baostock.com/helpdocs/api/markdown/modifyRecord.md",
+    "bytes": 7286,
+    "sha256": "3c6a08854e08356f7c3a7f05a153374c314e300845e21fc2dd516b3f6eca0912"
+  },
+  {
+    "file": "baostock-0.9.4-source.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/66/61/8ad575eb83d4b22852a922e669bc13c9723675343e885b0040ab11a6a321/baostock-0.9.4.tar.gz",
+    "bytes": 28131,
+    "sha256": "54dd26ec53100da02dcd47a21fc487ed5b2e12a4124af7961143d8ca0bc682e9"
+  },
+  {
+    "file": "baostock-minute-sdk-history.py.txt",
+    "archive_member": "baostock-0.9.4/baostock/security/history.py",
+    "bytes": 10191,
+    "sha256": "fe653aa09c0f07e9f9479407c8f2f5455b4ec60c3a9571c652cd9343f7d0094f",
+    "equals_local_installed": true
+  },
+  {
+    "file": "baostock-minute-sdk-resultset.py.txt",
+    "archive_member": "baostock-0.9.4/baostock/data/resultset.py",
+    "bytes": 7489,
+    "sha256": "70882a035bc9c20991255d5495c31f68fabc923d313cd35652c33563141797a6",
+    "equals_local_installed": true
+  },
+  {
+    "file": "baostock-minute-sdk-demo_A_stock_5mk-data.py.txt",
+    "archive_member": "baostock-0.9.4/baostock/demo/demo_A_stock_5mk-data.py",
+    "bytes": 1397,
+    "sha256": "e57b5c1dd92accef7f2223eb84a58dc2a3ccd18091fcf87fd1b53390223ee403",
+    "equals_local_installed": true
+  },
+  {
+    "file": "sse-trading-2023.docx",
+    "url": "https://www.sse.com.cn/lawandrules/sselawsrules2025/repeal/rules/c/10824490/files/dcbe58edb194451d93f19b1f7dd8fb4c.docx",
+    "bytes": 51948,
+    "sha256": "7aa2319f6dcf597be1e86b3b69d7c2ad0e6acb2a5d0cc6be48a01af602fded40",
+    "local_sha_rechecked": true
+  },
+  {
+    "file": "szse-trading-2023.pdf",
+    "url": "https://docs.static.szse.cn/www/lawrules/rule/repeal/rules/W020230217564423808793.pdf",
+    "bytes": 620843,
+    "sha256": "7018114a6e11deb239c2a72e71e49defc6e8841b3e2c093b3bbf809282c67222",
+    "local_sha_rechecked": true
+  }
+]

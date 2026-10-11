@@ -1,0 +1,17 @@
+{
+  "id": "ma_cross",
+  "name": "双均线 · 经典示例",
+  "version": "1.0.0",
+  "api_version": "1",
+  "entrypoint": "strategy.py:Strategy",
+  "description": "短期均线上穿长期均线后持有，下穿后空仓；等权、做多、下一交易日开盘执行。仅为功能示例。",
+  "frequency": "d",
+  "datasets": ["bars:d", "factors", "dividends"],
+  "lookback": 251,
+  "parameters": {
+    "fast": {"type": "integer", "default": 10, "minimum": 2, "maximum": 120, "label": "短期均线"},
+    "slow": {"type": "integer", "default": 30, "minimum": 3, "maximum": 250, "label": "长期均线"},
+    "exposure": {"type": "number", "default": 0.95, "minimum": 0, "maximum": 1, "label": "总目标仓位"}
+  },
+  "dependencies": []
+}

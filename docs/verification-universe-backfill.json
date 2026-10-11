@@ -1,0 +1,9 @@
+{
+  "job_id": "24a6b900-c6d0-4344-b813-e54b946cfc44",
+  "status": "cancelled",
+  "codes": 4907,
+  "derived_codes_equal": true,
+  "former_member_included": "sh.600190",
+  "missing_range_rejected": "历史证券池缺少 877 个交易日，先回填证券池；例如 2023-02-23、2023-02-24、2023-02-27、2023-02-28、2023-03-01",
+  "note": "配置与取消验收，不是4907只股票行情回填完成。"
+}

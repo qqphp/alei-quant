@@ -1,0 +1,420 @@
+{
+  "checked_at": "2026-10-11T01:48:55.386231+08:00",
+  "cases": [
+    {
+      "case": "stock_daily_sh.600000_raw",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 28,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600000_forward",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 28,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600000_backward",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 28,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_raw",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 24,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_forward",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 24,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sz.000001_backward",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 24,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_raw",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 26,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_forward",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 26,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "stock_daily_sh.600519_backward",
+      "run": "fe94e0af-437d-4414-8c21-b77681423531",
+      "version": 4159,
+      "bars": 570,
+      "trades": 26,
+      "drawdown_points": 570,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_raw",
+      "run": "6895df57-0aa8-4d76-b604-91b82de6bd30",
+      "version": 6567,
+      "bars": 87,
+      "trades": 3,
+      "drawdown_points": 87,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_forward",
+      "run": "6895df57-0aa8-4d76-b604-91b82de6bd30",
+      "version": 6567,
+      "bars": 87,
+      "trades": 3,
+      "drawdown_points": 87,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "financial_daily_sh.600000_backward",
+      "run": "6895df57-0aa8-4d76-b604-91b82de6bd30",
+      "version": 6567,
+      "bars": 87,
+      "trades": 3,
+      "drawdown_points": 87,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "etf_minute_sh.510050_raw",
+      "run": "51052028-6e10-4296-a0ca-1ef1442140f7",
+      "version": 8898,
+      "bars": 16,
+      "trades": 0,
+      "drawdown_points": 4,
+      "intraday_drawdown_points": 16,
+      "all_equal": true
+    },
+    {
+      "case": "etf_minute_sh.510300_raw",
+      "run": "51052028-6e10-4296-a0ca-1ef1442140f7",
+      "version": 8898,
+      "bars": 16,
+      "trades": 0,
+      "drawdown_points": 4,
+      "intraday_drawdown_points": 16,
+      "all_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_raw",
+      "run": "cba17d14-a32b-464c-84e0-811df49a46e5",
+      "version": 18566,
+      "bars": 8,
+      "trades": 2,
+      "drawdown_points": 8,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_forward",
+      "run": "cba17d14-a32b-464c-84e0-811df49a46e5",
+      "version": 18566,
+      "bars": 8,
+      "trades": 2,
+      "drawdown_points": 8,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "joint_dividend_sz.002043_backward",
+      "run": "cba17d14-a32b-464c-84e0-811df49a46e5",
+      "version": 18566,
+      "bars": 8,
+      "trades": 2,
+      "drawdown_points": 8,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_5_sh.688320_raw",
+      "run": "2375cdda-6d60-4b53-be74-0316b0ed9ece",
+      "version": 13245,
+      "bars": 144,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 144,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_5_sz.300001_raw",
+      "run": "99bec558-a1ea-4ca9-ad79-cd010436b74b",
+      "version": 13245,
+      "bars": 144,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 144,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_15_sh.688320_raw",
+      "run": "709d07a2-07a9-46c9-820e-b7e600451f1c",
+      "version": 13245,
+      "bars": 48,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 48,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_15_sz.300001_raw",
+      "run": "94a75c48-e0fb-4161-a19a-0908b1399e19",
+      "version": 13245,
+      "bars": 48,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 48,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_30_sh.688320_raw",
+      "run": "7388aab0-9598-4c68-930f-c6a7c66ecb78",
+      "version": 13245,
+      "bars": 24,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 24,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_30_sz.300001_raw",
+      "run": "a52dd6af-99c9-4927-aa5a-de27fe1575f5",
+      "version": 13245,
+      "bars": 24,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 24,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_60_sh.688320_raw",
+      "run": "681caa2b-65c1-4bbf-8b41-b55dbaea785e",
+      "version": 13245,
+      "bars": 12,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 12,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_60_sz.300001_raw",
+      "run": "b0cbd59c-912c-4315-84e0-eb4972ab5d14",
+      "version": 13245,
+      "bars": 12,
+      "trades": 2,
+      "drawdown_points": 3,
+      "intraday_drawdown_points": 12,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_raw",
+      "run": "a368e58c-7925-4334-a597-c3b5a6460af1",
+      "version": 16958,
+      "bars": 610,
+      "trades": 6,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_forward",
+      "run": "a368e58c-7925-4334-a597-c3b5a6460af1",
+      "version": 16958,
+      "bars": 610,
+      "trades": 6,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_w_sh.688320_backward",
+      "run": "a368e58c-7925-4334-a597-c3b5a6460af1",
+      "version": 16958,
+      "bars": 610,
+      "trades": 6,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_raw",
+      "run": "17cdcb49-e05a-4c09-b7c0-b56ac1f9f62a",
+      "version": 16958,
+      "bars": 610,
+      "trades": 5,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_forward",
+      "run": "17cdcb49-e05a-4c09-b7c0-b56ac1f9f62a",
+      "version": 16958,
+      "bars": 610,
+      "trades": 5,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_w_sz.300001_backward",
+      "run": "17cdcb49-e05a-4c09-b7c0-b56ac1f9f62a",
+      "version": 16958,
+      "bars": 610,
+      "trades": 5,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_raw",
+      "run": "8d0d3980-d1b2-48b3-b249-33832355ddb8",
+      "version": 16958,
+      "bars": 610,
+      "trades": 6,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_forward",
+      "run": "8d0d3980-d1b2-48b3-b249-33832355ddb8",
+      "version": 16958,
+      "bars": 610,
+      "trades": 6,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sh.688320_m_sh.688320_backward",
+      "run": "8d0d3980-d1b2-48b3-b249-33832355ddb8",
+      "version": 16958,
+      "bars": 610,
+      "trades": 6,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_raw",
+      "run": "d6ad1fd8-7b40-4629-94f5-729a019d190c",
+      "version": 16958,
+      "bars": 610,
+      "trades": 8,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_forward",
+      "run": "d6ad1fd8-7b40-4629-94f5-729a019d190c",
+      "version": 16958,
+      "bars": 610,
+      "trades": 8,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    },
+    {
+      "case": "sz.300001_m_sz.300001_backward",
+      "run": "d6ad1fd8-7b40-4629-94f5-729a019d190c",
+      "version": 16958,
+      "bars": 610,
+      "trades": 8,
+      "drawdown_points": 610,
+      "intraday_drawdown_points": 0,
+      "all_equal": true
+    }
+  ],
+  "runs": {
+    "stock_daily": "fe94e0af-437d-4414-8c21-b77681423531",
+    "financial_daily": "6895df57-0aa8-4d76-b604-91b82de6bd30",
+    "etf_minute": "51052028-6e10-4296-a0ca-1ef1442140f7",
+    "joint_dividend": "cba17d14-a32b-464c-84e0-811df49a46e5",
+    "sh.688320_5": "2375cdda-6d60-4b53-be74-0316b0ed9ece",
+    "sz.300001_5": "99bec558-a1ea-4ca9-ad79-cd010436b74b",
+    "sh.688320_15": "709d07a2-07a9-46c9-820e-b7e600451f1c",
+    "sz.300001_15": "94a75c48-e0fb-4161-a19a-0908b1399e19",
+    "sh.688320_30": "7388aab0-9598-4c68-930f-c6a7c66ecb78",
+    "sz.300001_30": "a52dd6af-99c9-4927-aa5a-de27fe1575f5",
+    "sh.688320_60": "681caa2b-65c1-4bbf-8b41-b55dbaea785e",
+    "sz.300001_60": "b0cbd59c-912c-4315-84e0-eb4972ab5d14",
+    "sh.688320_w": "a368e58c-7925-4334-a597-c3b5a6460af1",
+    "sz.300001_w": "17cdcb49-e05a-4c09-b7c0-b56ac1f9f62a",
+    "sh.688320_m": "8d0d3980-d1b2-48b3-b249-33832355ddb8",
+    "sz.300001_m": "d6ad1fd8-7b40-4629-94f5-729a019d190c"
+  },
+  "fixed_version_http_source_equal": true,
+  "helper_sha256": "71f858f80d699910c28811daf81dca6334fc6a4943baccc380174ffeee4b82ea",
+  "boundary": [
+    {
+      "frequency": "5",
+      "opening_and_lunch_equal": true,
+      "missing_not_fabricated": true
+    },
+    {
+      "frequency": "15",
+      "opening_and_lunch_equal": true,
+      "missing_not_fabricated": true
+    },
+    {
+      "frequency": "30",
+      "opening_and_lunch_equal": true,
+      "missing_not_fabricated": true
+    },
+    {
+      "frequency": "60",
+      "opening_and_lunch_equal": true,
+      "missing_not_fabricated": true
+    }
+  ],
+  "first_loss_uses_initial_capital": true,
+  "empty_curve_preserved": true,
+  "scope": "真实固定版本报告K线、全部成交点、逐日回撤和最大回撤独立核对；分钟开盘定位K线结束分类，四频率开市/午休及缺失场景只在内存构造，原始成交价不改写。不是盘口排队验证。"
+}

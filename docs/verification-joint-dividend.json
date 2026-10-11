@@ -1,0 +1,69 @@
+{
+  "run_id": "a7b8e270-4572-47e1-b1e1-d5c210d2dfbd",
+  "engine": "cash-ledger-0.7.2",
+  "data_version": 6140,
+  "raw_components": [
+    {
+      "code": "sh.601966",
+      "dividPayDate": "2024-06-14",
+      "dividPlanDate": "2024-06-07",
+      "dividStocksPs": "0.000000",
+      "dividCashStock": "10派2.86元（含税，扣税后2.574或2.86元）",
+      "dividAgmPumDate": "2024-05-16",
+      "dividRegistDate": "2024-06-13",
+      "dividOperateDate": "2024-06-14",
+      "dividPreNoticeDate": "",
+      "dividCashPsAfterTax": "0.2574或0.286",
+      "dividCashPsBeforeTax": "0.286",
+      "dividStockMarketDate": "",
+      "dividPlanAnnounceDate": "2024-04-25",
+      "dividReserveToStockPs": ""
+    },
+    {
+      "code": "sh.601966",
+      "dividPayDate": "2024-06-14",
+      "dividPlanDate": "2024-06-07",
+      "dividStocksPs": "0.000000",
+      "dividCashStock": "10派0.91元（含税，扣税后0.819或0.91元）",
+      "dividAgmPumDate": "2024-05-16",
+      "dividRegistDate": "2024-06-13",
+      "dividOperateDate": "2024-06-14",
+      "dividPreNoticeDate": "",
+      "dividCashPsAfterTax": "0.0819或0.091",
+      "dividCashPsBeforeTax": "0.091",
+      "dividStockMarketDate": "",
+      "dividPlanAnnounceDate": "2024-04-25",
+      "dividReserveToStockPs": ""
+    }
+  ],
+  "merged_cash": "0.377",
+  "reference_cash": "0.37444",
+  "source": {
+    "code": "sh.601966",
+    "ex_date": "2024-06-14",
+    "record_date": "2024-06-13",
+    "pay_date": "2024-06-14",
+    "announcement_date": "2024-06-07",
+    "plan_announce_date": "2024-04-25",
+    "implementation_date": "2024-06-07",
+    "cash_per_share": "0.377",
+    "reference_cash_per_share": "0.37444",
+    "cash_components": {
+      "0.286": "2023年度",
+      "0.091": "2024年一季度"
+    },
+    "participating_shares": 1463502683,
+    "total_shares": 1473522713,
+    "bonus_ratio": "0",
+    "source": "http://epaper.oss.zqrb.cn/images/2024-06/07/D29/zqrb20240607D29.pdf",
+    "sha256": "23fe5832f3338bbb24f313445f0ac95cddb5b3bc007c102b3bfa115b57f01c8e"
+  },
+  "quantity_on_record_day": 48400,
+  "fixed_tax": 0.1,
+  "cash_payment": "16422.12",
+  "cashflow_rows": 2,
+  "daily_cash_nav_positions_sellable_rebuilt": 8,
+  "regression_run": "645bcd8e-f81f-4f6b-886c-23ec601a7ec7",
+  "original_daily_full_result_equal": true,
+  "scope": "Actual cash-only jointly paid annual/quarterly dividend; raw source untouched. No general authorization to sum conflicting amounts."
+}
