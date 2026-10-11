@@ -288,6 +288,8 @@ function rowFields(data: any[]) { return data.length ? Object.keys(data[0]) : []
 const candleOptions = computed<EChartsOption>(() => {
   const bars = priceData.value.data
   const dates = bars.map((b: any) => b.time ? b.date+' '+b.time.slice(8,10)+':'+b.time.slice(10,12) : b.date)
+  const priceDigits = selected.value?.type === '5' ? 3 : 2
+  const priceTooltip = { valueFormatter: (value: unknown) => Array.isArray(value) ? value.map(item => number(item, priceDigits)).join(' ') : number(value, priceDigits) }
   return {
     animation: false, color: ['#c3963e', '#537baa', '#735b9a'], backgroundColor: 'transparent',
     tooltip: { trigger: 'axis', axisPointer: { type: 'cross' } },
@@ -297,8 +299,8 @@ const candleOptions = computed<EChartsOption>(() => {
     yAxis: [{ scale: true, splitLine: { lineStyle: { color: '#edf1f3' } }, axisLabel: { color: '#87929b' } }, { gridIndex: 1, scale: true, splitNumber: 2, axisLabel: { formatter: (v: number) => valuationField.value || indicator.value==='macd'?v.toFixed(2):(v/10000).toFixed(0) + '万', color: '#87929b' }, splitLine: { show: false } }],
     dataZoom: [{ type: 'inside', xAxisIndex: [0, 1], start: tradeChartContext.value?0:65, end: 100 }, { type: 'slider', xAxisIndex: [0, 1], bottom: 4, height: 17, borderColor: 'transparent', fillerColor: '#0c887f20', handleStyle: { color: '#0c887f' } }],
     series: [
-      { name: 'K线', type: 'candlestick', data: bars.map((b: any) => [b.open, b.close, b.low, b.high]), itemStyle: { color: '#d45d5d', color0: '#309d87', borderColor: '#d45d5d', borderColor0: '#309d87' }, markPoint: { data:tradeChartPoints.value.points, tooltip:{formatter:(params:any)=>`${params.data.name} · ${params.data.execution}<br/>原始成交价 ${number(params.data.value,4)} 元 · 数量 ${params.data.quantity}`} } },
-      ...[10, 30].map((n, i) => ({ name: 'MA' + n, type: 'line' as const, data: bars.map((b: any) => b['ma' + n]), showSymbol: false, lineStyle: { width: 1.3, color: ['#c3963e', '#537baa'][i] } })),
+      { name: 'K线', type: 'candlestick', data: bars.map((b: any) => [b.open, b.close, b.low, b.high]), tooltip: priceTooltip, itemStyle: { color: '#d45d5d', color0: '#309d87', borderColor: '#d45d5d', borderColor0: '#309d87' }, markPoint: { data:tradeChartPoints.value.points, tooltip:{formatter:(params:any)=>`${params.data.name} · ${params.data.execution}<br/>原始成交价 ${number(params.data.value,4)} 元 · 数量 ${params.data.quantity}`} } },
+      ...[10, 30].map((n, i) => ({ name: 'MA' + n, type: 'line' as const, data: bars.map((b: any) => b['ma' + n]), tooltip: priceTooltip, showSymbol: false, lineStyle: { width: 1.3, color: ['#c3963e', '#537baa'][i] } })),
       ...(valuationField.value?[{name:valuationField.value.label,type:'line' as const,xAxisIndex:1,yAxisIndex:1,showSymbol:false,connectNulls:false,data:valuationData.value!.values,lineStyle:{color:'#735b9a',width:1.5}}]:[{ name: indicator.value==='macd'?'MACD':'成交量', type: 'bar' as const, xAxisIndex: 1, yAxisIndex: 1, data: bars.map((b: any) => ({ value: indicator.value==='macd'?b.macd:b.volume, itemStyle: { color: (indicator.value==='macd'?b.macd>=0:b.close>=b.open) ? '#d45d5d99' : '#309d8799' } })) }]),
       ...(indicator.value==='macd'?['dif','dea'].map((field)=>({name:field.toUpperCase(),type:'line' as const,xAxisIndex:1,yAxisIndex:1,showSymbol:false,data:bars.map((b:any)=>b[field])})):[]),
     ],
