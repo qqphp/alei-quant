@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 import json
 import csv
 from io import StringIO
@@ -7,6 +7,7 @@ import re
 from typing import Literal
 from uuid import UUID
 from uuid import uuid4
+from zoneinfo import ZoneInfo
 
 from fastapi import FastAPI, HTTPException, Request, Query, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -17,7 +18,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from . import db, jobs, plugins, experiments, universe
 from .catalog import catalogue, BY_METHOD, REFERENCE_DATASETS, validate_operation
-from .config import ROOT
+from .config import ROOT, settings
 from .engine import submit_backtest, replay
 from .market import chart
 from .market_summary import summarize
@@ -29,7 +30,7 @@ from .code_changes import REFERENCE as CODE_CHANGE_REFERENCE
 from .source_revisions import ZHONGYAN_LIMIT
 
 app = FastAPI(title="阿雷 · 本地量化", version="0.1.0")
-origins = {"http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:8000", "http://127.0.0.1:8000"}
+origins = {f"http://{host}:{port}" for host in ("localhost", "127.0.0.1") for port in (5173, settings().api_port)}
 app.add_middleware(CORSMiddleware, allow_origins=sorted(origins), allow_methods=["GET", "POST", "PATCH", "DELETE"], allow_headers=["Content-Type", "X-Stock-Local"])
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=["localhost", "127.0.0.1", "::1", "testserver"])
 
@@ -165,11 +166,19 @@ def universe_export(day: date, version: int | None = Query(None, ge=0)):
 def backfill_universe(request: UniverseRange):
     status = universe.coverage(str(request.start),str(request.end),db.latest_version())
     operations = [{"method":"query_all_stock","arguments":{"day":day}} for day in status["missing_days"]]
-    if not operations:
-        return {"job_id":None,"days":0,"note":"区间交易日证券池均已有完整已发布快照"}
-    config = {"operations":operations,"note":"按交易日采集历史成员和交易状态，名称保留回溯原值；不改用当前证券池"}
-    active = db.one("SELECT id FROM jobs WHERE kind='collect' AND status IN ('queued','running','waiting') AND config=%s",(db.jb(config),))
-    return {"job_id":str(active["id"]) if active else jobs.submit("collect",config),"days":len(operations),"note":config["note"]}
+    identity = {"start":str(request.start),"end":str(request.end)}
+    config = {"universe_range":identity,"operations":operations,"note":"按交易日采集历史成员和交易状态，名称保留回溯原值；不改用当前证券池"}
+    with db.connect() as conn:
+        conn.execute("SELECT pg_advisory_xact_lock(hashtextextended(%s,0))", ("universe_backfill:"+db.dumps(identity),))
+        active = conn.execute("SELECT id FROM jobs WHERE kind='collect' AND status IN ('queued','running','waiting') AND config->'universe_range'=%s ORDER BY created_at LIMIT 1", (db.jb(identity),)).fetchone()
+        if active:
+            job_id = str(active["id"])
+        elif operations:
+            job_id = str(uuid4())
+            conn.execute("INSERT INTO jobs(id,kind,config) VALUES(%s,'collect',%s)", (job_id,db.jb(config)))
+        else:
+            return {"job_id":None,"days":0,"note":"区间交易日证券池均已有完整已发布快照"}
+    return {"job_id":job_id,"days":len(operations),"note":config["note"]}
 
 
 @app.post("/api/backfill")
@@ -298,9 +307,10 @@ def instrument_detail(code: str):
 
 
 @app.get("/api/bars/{code}")
-def bars(code: str, start: date = date(2023, 1, 1), end: date = date.today(), frequency: str = "d", adjustment: Literal["raw", "forward", "backward"] = "raw", limit: int = Query(5000, ge=1, le=20000), version: int | None = Query(None, ge=0)):
+def bars(code: str, start: date = date(2023, 1, 1), end: date | None = None, frequency: str = "d", adjustment: Literal["raw", "forward", "backward"] = "raw", limit: int = Query(5000, ge=1, le=20000), version: int | None = Query(None, ge=0)):
     if frequency not in {"d", "w", "m", "5", "15", "30", "60"}:
         raise ValueError("不支持的频率")
+    end = end if end is not None else datetime.now(ZoneInfo("Asia/Shanghai")).date()
     return chart(code, frequency, str(start), str(end), adjustment, limit, version)
 
 

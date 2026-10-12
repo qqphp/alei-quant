@@ -1,4 +1,5 @@
 import ast
+import errno
 from hashlib import sha256
 import importlib
 import importlib.machinery
@@ -10,6 +11,7 @@ from pathlib import Path
 import re
 import shutil
 import sys
+from tempfile import TemporaryDirectory
 from types import ModuleType
 
 from packaging.requirements import Requirement
@@ -65,9 +67,38 @@ def digest_directory(directory):
     return digest.hexdigest()
 
 
+def archive_directory(source, target, digest):
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if not target.exists():
+        with TemporaryDirectory(prefix=".archive-", dir=target.parent) as temporary:
+            staged = Path(temporary) / "content"
+            shutil.copytree(source, staged, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+            if digest_directory(staged) != digest:
+                raise ValueError("归档复制期间源文件发生变化，请检查源目录后重试")
+            try:
+                staged.rename(target)
+            except OSError as exc:
+                if exc.errno not in {errno.EEXIST, errno.ENOTEMPTY}:
+                    raise
+    if digest_directory(target) != digest:
+        raise ValueError("归档文件摘要变化，请恢复原版本")
+
+
+def read_source_file(file):
+    try:
+        return file.read_text(encoding="utf-8")
+    except OSError as exc:
+        raise ValueError(f"无法读取策略文件 {file.name}，请检查文件是否存在及读取权限") from exc
+
+
 def install(directory):
-    source = Path(directory).resolve()
-    manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
+    try:
+        source = Path(directory).resolve()
+        if not source.is_dir():
+            raise ValueError("策略路径必须是存在的目录")
+    except OSError as exc:
+        raise ValueError("无法访问策略目录，请检查路径和读取权限") from exc
+    manifest = json.loads(read_source_file(source / "manifest.json"))
     if not isinstance(manifest, dict):
         raise ValueError("模型清单必须为 JSON 对象")
     for key in ("id", "version", "api_version", "entrypoint", "parameters", "lookback"):
@@ -82,7 +113,7 @@ def install(directory):
     entry_file = (source / entry).resolve()
     if not entry_file.is_relative_to(source) or entry_file.suffix != ".py":
         raise ValueError("Python 入口必须位于模型目录内")
-    tree = ast.parse(entry_file.read_text(encoding="utf-8"))
+    tree = ast.parse(read_source_file(entry_file))
     if class_name not in {n.name for n in tree.body if isinstance(n, ast.ClassDef)}:
         raise ValueError("清单入口类不存在")
     dependencies = manifest.get("dependencies", [])
@@ -100,15 +131,12 @@ def install(directory):
             raise ValueError(f"缺少依赖：{requirement.name}，安装阶段不自动联网执行") from exc
         if installed not in requirement.specifier:
             raise ValueError(f"依赖版本不兼容：{requirement.name}")
-    digest = digest_directory(source)
+    try:
+        digest = digest_directory(source)
+    except OSError as exc:
+        raise ValueError("无法读取完整策略包，请检查文件和读取权限") from exc
     target = ROOT / "runtime" / "strategies" / manifest["id"] / (manifest["version"] + "-" + digest[:16])
-    if target.exists():
-        if digest_directory(target) != digest:
-            raise ValueError("已登记的策略文件发生变化，请恢复版本")
-    else:
-        shutil.copytree(source, target, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
-        if digest_directory(target) != digest:
-            raise ValueError("策略复制期间文件发生变化，未登记该版本；请检查源目录后重新安装")
+    archive_directory(source, target, digest)
     db.execute("INSERT INTO strategies(id,version,digest,manifest,source_path) VALUES(%s,%s,%s,%s,%s) ON CONFLICT DO NOTHING",
                (manifest["id"], manifest["version"], digest, db.jb(manifest), str(target)))
     return {"id": manifest["id"], "version": manifest["version"], "digest": digest}

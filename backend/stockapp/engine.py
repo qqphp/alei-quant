@@ -7,7 +7,6 @@ import importlib.metadata
 import json
 import math
 from pathlib import Path
-import shutil
 import sys
 import random
 from uuid import uuid4
@@ -99,10 +98,7 @@ def freeze(config):
     source = ROOT / "backend" / "stockapp"
     digest = plugins.digest_directory(source)
     archived = ROOT / "runtime" / "engines" / digest / "stockapp"
-    if not archived.exists():
-        shutil.copytree(source, archived, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
-    if plugins.digest_directory(archived) != digest:
-        raise ValueError("历史引擎文件摘要变化")
+    plugins.archive_directory(source, archived, digest)
     frozen["engine_source"] = {"digest": digest, "package": str(archived.parent)}
     return frozen
 

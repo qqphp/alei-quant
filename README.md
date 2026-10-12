@@ -12,7 +12,7 @@ Windows 本机应用：Vue 3 / TypeScript / ECharts、FastAPI、PostgreSQL、Bao
 .\scripts\start.ps1
 ```
 
-浏览器打开 <http://127.0.0.1:8000>。停止：`.\scripts\stop.ps1`。前端修改后运行 `start.ps1 -Build`，须先停止已登记服务。
+默认浏览器入口为 <http://127.0.0.1:8000>；可在项目根目录 `.env` 中设置 `STOCK_API_PORT`（1–65535），启动脚本会输出实际地址，重启脚本与前端开发代理也使用该端口。停止：`.\scripts\stop.ps1`。前端修改后运行 `start.ps1 -Build`，须先停止已登记服务。
 
 启动入口会等待 API、配置中的数据库和工作进程就绪（最长 20 秒），检查通过后才提示成功。失败时停止本次登记的服务，诊断日志保留在 `runtime`。
 

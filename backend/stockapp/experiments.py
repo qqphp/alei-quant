@@ -24,7 +24,9 @@ def create(name, config, intervals, candidates):
         previous = end
     if not 1 <= len(candidates) <= 20:
         raise ValueError("一次研究接受 1–20 组参数，全部通过现有任务队列运行")
-    frozen = engine.freeze({**config, **intervals["train"]})
+    # 用完整跨度校验所有阶段，数据/模型/规则仍只冻结一次。
+    frozen = engine.freeze({**config, "start": intervals["train"]["start"], "end": intervals["out_of_sample"]["end"]})
+    frozen["config"].update(intervals["train"])
     manifest = frozen["strategy"]["manifest"]
     candidates = [plugins.validate_parameters(manifest, candidate) for candidate in candidates]
     if len({db.dumps(candidate) for candidate in candidates}) != len(candidates):

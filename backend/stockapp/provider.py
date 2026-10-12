@@ -1,4 +1,5 @@
 """唯一采集连接、协议请求预算、完整分页与发布版本。"""
+from contextlib import ExitStack
 from datetime import datetime, date
 from decimal import Decimal, InvalidOperation
 import hashlib
@@ -11,7 +12,7 @@ import baostock as bs
 from baostock.util import socketutil
 from baostock.common import context
 
-from . import db, jobs
+from . import db, jobs, universe
 from .catalog import BY_METHOD, DAILY_FIELDS, INDEX_FIELDS, PERIOD_FIELDS, MINUTE_FIELDS, REFERENCE_DATASETS, record_identity, validate_operation
 from .config import settings
 from .market import ready_at
@@ -287,10 +288,19 @@ def collect(job):
         raise ValueError("采集检查点超出操作范围")
     jobs.heartbeat(job["id"], cursor, len(operations))
     segment_start = time.monotonic()
-    with Session(job["id"]) as source:
+    with ExitStack() as stack:
+        source = None
         for index in range(cursor, len(operations)):
             jobs.heartbeat(job["id"])
-            source.query(operations[index])
+            operation = operations[index]
+            skip = False
+            if job["config"].get("universe_range") and operation["method"] == "query_all_stock":
+                day = operation["arguments"]["day"]
+                skip = bool(universe.snapshots(day, day, db.latest_version()))
+            if not skip:
+                if source is None:
+                    source = stack.enter_context(Session(job["id"]))
+                source.query(operation)
             jobs.heartbeat(job["id"], index+1, len(operations), {"next_operation": index+1, "operations_digest": digest})
             if index+1 < len(operations) and ((index+1-cursor) >= 100 or time.monotonic()-segment_start >= 60):
                 raise jobs.CollectionSlice(f"本段已提交 {index+1-cursor} 项操作，达到 100 项或 60 秒调度阈值；让出唯一采集通道后按检查点继续")
