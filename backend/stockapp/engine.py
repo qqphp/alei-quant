@@ -24,7 +24,7 @@ from .corporate_actions import merge_dividends, reference_cash, VERIFIED_REFEREN
 from .asset_rules import rules_for, supplemental_actions, growth_documents, floor_quantity, quantity_error, ipo_unlimited_days, price_bounds
 from .config import ROOT
 
-ENGINE_VERSION = "cash-ledger-0.12.1"
+ENGINE_VERSION = "cash-ledger-0.13.1"
 D = lambda value: Decimal(str(value))
 
 

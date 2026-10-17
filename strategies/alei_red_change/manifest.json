@@ -1,0 +1,15 @@
+{
+  "id": "alei_red_change",
+  "name": "阿雷红变策略",
+  "version": "1.1.0",
+  "api_version": "1",
+  "entrypoint": "strategy.py:Strategy",
+  "description": "RVC001 固定 EMA3/EMA8 金叉红箭头买入，持有后首次粉K或绿K卖出；红K和蓝K继续持有。连续信号价、固定池等分仓位，下一交易日开盘执行。",
+  "frequency": "d",
+  "datasets": ["bars:d", "factors", "dividends"],
+  "lookback": 11,
+  "parameters": {
+    "exposure": {"type": "number", "default": 0.95, "minimum": 0, "maximum": 1, "label": "总目标仓位"}
+  },
+  "dependencies": []
+}

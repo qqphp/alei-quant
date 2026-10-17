@@ -307,11 +307,11 @@ def instrument_detail(code: str):
 
 
 @app.get("/api/bars/{code}")
-def bars(code: str, start: date = date(2023, 1, 1), end: date | None = None, frequency: str = "d", adjustment: Literal["raw", "forward", "backward"] = "raw", limit: int = Query(5000, ge=1, le=20000), version: int | None = Query(None, ge=0)):
+def bars(code: str, start: date = date(2023, 1, 1), end: date | None = None, frequency: str = "d", adjustment: Literal["raw", "forward", "backward"] = "raw", limit: int = Query(5000, ge=1, le=20000), version: int | None = Query(None, ge=0), rvc001_red_exit: Literal["pink", "pink_or_green"] = "pink_or_green"):
     if frequency not in {"d", "w", "m", "5", "15", "30", "60"}:
         raise ValueError("不支持的频率")
     end = end if end is not None else datetime.now(ZoneInfo("Asia/Shanghai")).date()
-    return chart(code, frequency, str(start), str(end), adjustment, limit, version)
+    return chart(code, frequency, str(start), str(end), adjustment, limit, version, rvc001_red_exit)
 
 
 @app.post("/api/watchlist/{code}")

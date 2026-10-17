@@ -5,6 +5,7 @@ from zoneinfo import ZoneInfo
 
 from . import db
 from .code_changes import published_markers
+from .rvc001 import ema, attach_chart_indicator
 
 
 def ready_at(day, frequency):
@@ -23,6 +24,7 @@ def price_series(code, frequency="d", version=None, end=None):
     boundary = end + "T23:59:59.999" if end and frequency in {"5", "15", "30", "60"} else end
     source = db.payloads("bars:" + frequency, code=code, version=version, end=boundary)
     scale, previous_close, output = 1.0, None, []
+    ema3 = ema8 = None
     for row in source:
         bar = dict(row)
         for key in ("open", "high", "low", "close", "preclose", "volume", "amount", "pctChg", "turn", "peTTM", "pbMRQ", "psTTM", "pcfNcfTTM"):
@@ -32,12 +34,15 @@ def price_series(code, frequency="d", version=None, end=None):
             scale *= previous_close / bar["preclose"]
         bar["signal_close"] = bar["close"] * scale
         bar["signal_scale"] = scale
+        ema3 = ema(ema3, bar["signal_close"], 3)
+        ema8 = ema(ema8, bar["signal_close"], 8)
+        bar.update(signal_ema3=ema3, signal_ema8=ema8)
         previous_close = bar["close"]
         output.append(bar)
     return output
 
 
-def chart(code, frequency, start, end, adjustment, limit=10000, version=None):
+def chart(code, frequency, start, end, adjustment, limit=10000, version=None, rvc001_red_exit="pink_or_green"):
     version = db.latest_version() if version is None else version
     data = price_series(code, frequency, version=version, end=end)
     now = datetime.now(ZoneInfo("Asia/Shanghai"))
@@ -45,6 +50,7 @@ def chart(code, frequency, start, end, adjustment, limit=10000, version=None):
     data = [b for b in data if ready_at(b["date"], frequency) <= now]
     if adjustment != "raw" and frequency != "d":
         raise ValueError("其它周期的复权因子对齐尚待验证，目前支持原始行情")
+    attach_chart_indicator(data, start, rvc001_red_exit)
     factor_version, factors, factor_dates = None, [], []
     if data and adjustment != "raw":
         coverage = db.one("SELECT id FROM data_batches WHERE method='query_adjust_factor' AND status='published' AND id<=%s "
@@ -97,6 +103,12 @@ def chart(code, frequency, start, end, adjustment, limit=10000, version=None):
             "not_ready": not_ready, "non_price_markers": markers,
             "adjustment_source": "official_factors" if factors else "raw" if adjustment == "raw" else "continuous",
             "factor_version": factor_version, "price_note": price_note,
+            "rvc001_red_exit": rvc001_red_exit,
+            "rvc001_note": ("RVC001：日线使用平台连续信号价格，与阿雷红变/绿变策略一致，不随主图复权切换。" if frequency == "d" else
+                            "RVC001：使用本周期原始信号价格；阿雷红变/绿变回测策略仅支持日线。") +
+                           ("红变出场：首次粉K或绿K；绿变出场：首次绿K。" if rvc001_red_exit == "pink_or_green" else
+                            "旧版红变出场：首次粉K；绿变出场：首次绿K。") +
+                           "红箭头为金叉，粉/绿箭头为区间起点空仓后两套规则的出场信号，小标记为原公式死叉；信号不表示已经成交。",
             "algorithm": price_note + " MACD 12/26/9，柱线为 2*(DIF-DEA)",
             "version": version}
 

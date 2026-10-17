@@ -17,6 +17,7 @@
 | `date`、`signal_at`、`frequency`、`codes` | 信号就绪的上海日期/完整时刻、声明频率、运行时固定股票池 |
 | `valuation_date` | 信号时点前最近已结束交易日；账户估值与财务可见性使用该日 |
 | `history[code]` | 截止信号时刻已经就绪、长度不超过 lookback 的对应周期行情；原始价格和仅使用已结束日线构造的连续信号收盘价格 |
+| `history[code]` 的 `signal_ema3`、`signal_ema8`（日线） | 从固定版本最早可用连续信号价递推的 EMA3/EMA8，不随滑动窗口重置；RVC001 使用冻结的固定公式模块，红变1.1.0的粉/绿出场需要引擎0.13.1，详见 [RVC001](rvc001.md) |
 | `account` | 现金、应收分红、净资产、总持仓及 valuation_date 当日可卖数量；日内市场单无跨日现金预留，`frozen_cash=0` |
 | `targets`、`first_signal` | 前次目标权重、是否首个信号日 |
 | `seed`、`rng` | 固定平台种子、每次运行独立的 NumPy Generator；启动时还初始化 Python random 与 NumPy 全局种子。自建 RNG 或其它框架需由模型显式使用保存的种子 |

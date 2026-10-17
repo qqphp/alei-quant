@@ -1,0 +1,197 @@
+{
+  "checked_at": "2026-10-12T22:35:55.770568+08:00",
+  "data_version": 33943,
+  "start": "2024-06-01",
+  "end": "2026-10-09",
+  "codes": [
+    "sh.600000",
+    "sz.000001",
+    "sh.600519"
+  ],
+  "reports": [
+    {
+      "strategy": "alei_red_change",
+      "name": "阿雷红变策略",
+      "run_id": "3337ff1e-6111-4023-99cf-168c96f4423a",
+      "replay_id": "8c48cbb0-6bcb-4aab-bf58-2492582440a9",
+      "engine_version": "cash-ledger-0.13.1",
+      "model_digest": "f1e1a68657c2608a0154884e998ca6761e0015e077674c9b26b4c51c67de3c96",
+      "engine_digest": "602aaa124f34bfce452990b7d224be8e279c7d9e5651b8038e638cc0213a445c",
+      "signals": 570,
+      "orders": 208,
+      "trades": 206,
+      "metrics": {
+        "fees": 36954.51,
+        "notes": [],
+        "sharpe": 0.13116059852787235,
+        "turnover": 61.04949673918889,
+        "risk_free": 0.02,
+        "volatility": 0.09625368803692101,
+        "trade_count": 206,
+        "max_drawdown": 0.14690545677416722,
+        "total_return": 0.06537923000000001,
+        "annual_return": 0.028394541841830767,
+        "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+        "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+        "excess_return": -0.14058325854061082,
+        "benchmark_return": 0.20596248854061083
+      },
+      "all_order_signals_and_next_day_execution_equal": true,
+      "frozen_replay_and_export_equal": true
+    },
+    {
+      "strategy": "alei_green_change",
+      "name": "阿雷绿变策略",
+      "run_id": "e7b58077-6b52-4593-b826-5fb805577cc6",
+      "replay_id": "fd05a551-0a39-484a-acc6-abf314831438",
+      "engine_version": "cash-ledger-0.13.1",
+      "model_digest": "51e9b915b1d38f154470378817838cc7896f93b0d615fc62801eea9074ee6906",
+      "engine_digest": "602aaa124f34bfce452990b7d224be8e279c7d9e5651b8038e638cc0213a445c",
+      "signals": 570,
+      "orders": 207,
+      "trades": 206,
+      "metrics": {
+        "fees": 36046.1,
+        "notes": [],
+        "sharpe": -0.0221982371708681,
+        "turnover": 61.376960689314735,
+        "risk_free": 0.02,
+        "volatility": 0.12610126217253076,
+        "trade_count": 206,
+        "max_drawdown": 0.18034176524868906,
+        "total_return": 0.021190849999999983,
+        "annual_return": 0.009313808641850496,
+        "annualization": "252 个交易日；日末净值、样本标准差；换手=双向成交额/平均净资产",
+        "excess_method": "策略区间总收益减价格指数区间总收益；百分点差，不是相对净值比或 alpha",
+        "excess_return": -0.18477163854061085,
+        "benchmark_return": 0.20596248854061083
+      },
+      "all_order_signals_and_next_day_execution_equal": true,
+      "frozen_replay_and_export_equal": true
+    }
+  ],
+  "chart_cases": [
+    {
+      "code": "sh.600000",
+      "bars": 570,
+      "markers": {
+        "buy": 34,
+        "red_exit": 33,
+        "pink_exit": 22,
+        "green_exit": 33,
+        "down_cross": 33
+      },
+      "independent_ema_sd_equal": true,
+      "adjustment_invariant": true,
+      "limit_and_window_invariant": true
+    },
+    {
+      "code": "sz.000001",
+      "bars": 570,
+      "markers": {
+        "buy": 31,
+        "red_exit": 31,
+        "pink_exit": 29,
+        "green_exit": 30,
+        "down_cross": 30
+      },
+      "independent_ema_sd_equal": true,
+      "adjustment_invariant": true,
+      "limit_and_window_invariant": true
+    },
+    {
+      "code": "sh.600519",
+      "bars": 570,
+      "markers": {
+        "buy": 40,
+        "red_exit": 39,
+        "pink_exit": 29,
+        "green_exit": 39,
+        "down_cross": 39
+      },
+      "independent_ema_sd_equal": true,
+      "adjustment_invariant": true,
+      "limit_and_window_invariant": true
+    }
+  ],
+  "classic_original": "a04ecb13-cddc-4fb8-9f88-baabc2825e38",
+  "classic_replay": "1c17c7a7-2e00-4935-8e49-b49223c1e156",
+  "classic_original_manifest_and_result_equal": true,
+  "offline_tests": 25,
+  "old_rvc_originals": {
+    "alei_red_change": "88b8ee20-f903-4f94-aeb9-dcb07e737bcb",
+    "alei_green_change": "ac4cdfbc-b6d7-40aa-9342-ac74e9a07974"
+  },
+  "old_rvc_replays": {
+    "alei_red_change": "161d42c5-4abb-43ff-8417-c290e655e2d4",
+    "alei_green_change": "9793f96f-26f2-4c46-9c78-359d2be472b2"
+  },
+  "old_rvc_manifest_and_result_equal": true,
+  "legacy_chart_cases": [
+    {
+      "strategy": "alei_red_change",
+      "code": "sh.600000",
+      "bars": 570,
+      "original_indicator_and_exit_markers_equal": true
+    },
+    {
+      "strategy": "alei_red_change",
+      "code": "sz.000001",
+      "bars": 570,
+      "original_indicator_and_exit_markers_equal": true
+    },
+    {
+      "strategy": "alei_red_change",
+      "code": "sh.600519",
+      "bars": 570,
+      "original_indicator_and_exit_markers_equal": true
+    },
+    {
+      "strategy": "alei_green_change",
+      "code": "sh.600000",
+      "bars": 570,
+      "original_indicator_and_exit_markers_equal": true
+    },
+    {
+      "strategy": "alei_green_change",
+      "code": "sz.000001",
+      "bars": 570,
+      "original_indicator_and_exit_markers_equal": true
+    },
+    {
+      "strategy": "alei_green_change",
+      "code": "sh.600519",
+      "bars": 570,
+      "original_indicator_and_exit_markers_equal": true
+    }
+  ],
+  "old_red_disabled_new_red_1_1_enabled": true,
+  "green_model_digest_unchanged": true,
+  "scope": "红变1.1.0首次粉/绿K出场，绿变1.0.0仍只在绿K出场；真实已入库行情，新运行、旧RVC及经典报告冻结重算和旧副图标记核对。没有调用行情SDK、写入模拟行情或实施实盘交易。",
+  "green_result_equal_except_data_version": true,
+  "frontend": {
+    "typecheck_and_build_passed": true,
+    "bundle_kb": 787.14,
+    "existing_large_bundle_warning": true,
+    "fixture_cases": 3,
+    "bars": 1710,
+    "markers": 389,
+    "shared_green_exits": 23,
+    "one_arrow_and_both_strategy_labels_verified": true,
+    "legacy_mode_selector_verified": true
+  },
+  "browser": {
+    "new_report": "3337ff1e-6111-4023-99cf-168c96f4423a",
+    "new_report_mode": "pink_or_green",
+    "legacy_report": "88b8ee20-f903-4f94-aeb9-dcb07e737bcb",
+    "legacy_report_mode": "pink",
+    "shared_green_exit_tooltip_date": "2026-08-27",
+    "new_and_legacy_rules_visibly_verified": true,
+    "console_error_warn_count": 0,
+    "screenshots": [
+      "docs/screenshots/rvc001-v1.1-models.png",
+      "docs/screenshots/rvc001-v1.1-chart.png",
+      "docs/screenshots/rvc001-v1.1-green-exit.png"
+    ]
+  }
+}
